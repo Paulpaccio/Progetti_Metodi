@@ -11,7 +11,7 @@
 10) Quali sono il codice, il titolo e la descrizione di un'opera d'arte, indipendentemente dal suo tipo specifico?
 
 # Diagramma Entity-Relation
-![E-R](diagrammi/DiagrammaER_Onto-PM.drawio.png)
+![E-R](Diagrammi/DiagrammaER_Onto-PM.drawio.png)
 
 # Graffoo
-![E-R](diagrammi/Graffoo_Onto-PM.drawio.png)
+![E-R](Diagrammi/Graffoo_Onto-PM.drawio.png)
