@@ -8,7 +8,7 @@ Questa cartella documenta il modello concettuale e l'ontologia OWL sviluppati pe
 ontologia/
 ├── README.md                         ← questo file
 ├── ontologia_dati_cultura.ttl        ← ontologia OWL (Turtle)
-└── diagrammi/
+└── Diagrammi/
     ├── graffoo.drawio                ← disegno graffoo, sorgente editabile
     ├── graffoo.svg                   ← disegno graffoo, per la visualizzazione
     ├── er_diagram.drawio              ← schema E-R, sorgente editabile
@@ -60,29 +60,28 @@ Le CQ sono state riviste più volte nel corso dello sviluppo, mano a mano che il
 ---
 
 ## 3. Scelte di design e criticità affrontate
+Questa sezione riassume le principali decisioni di modellazione prese durante lo sviluppo dell’ontologia, con particolare attenzione alle esigenze reali del dataset fornito.
 
-Questa sezione raccoglie le decisioni di modellazione più significative prese durante lo sviluppo.
+#### `Artwork` vs `Painting`: attributi generali e relazioni specifiche
+Gli attributi comuni (`hasCode`, `hasTitle`, `hasDescription`) sono stati collocati su Artwork perché rappresentano caratteristiche condivise da qualunque opera d’arte. Le relazioni (`isHostedIn`, `hasTimeReference`) invece sono su `Painting` perché derivano direttamente dal contenuto del CSV, che contiene solo dipinti. Altri tipi di opere (come sculture o digital artworks) potrebbero non avere le stesse relazioni, quindi abbiamo modellato solo ciò che era realmente presente nei dati.
 
-#### Perché `Artwork` porta gli attributi e `Painting` porta le relazioni
-Una scelta di modellazione che vale la pena spiegare esplicitamente, perché non è ovvia a prima vista: `hasCode`, `hasTitle`, `hasDescription` sono dichiarate su `Artwork` (il genitore), mentre `isHostedIn` e `hasTimeReference` sono dichiarate su `Painting` (il figlio). La logica: identificativo, titolo e descrizione sono caratteristiche di *qualunque* opera d'arte, indipendentemente dal tipo — se in futuro si aggiungesse un'altra sottoclasse (es. `Sculpture`), erediterebbe queste proprietà gratuitamente. Le relazioni con l'istituto e con il tempo di riferimento, invece, sono state derivate specificamente dallo scenario del dipinto (l'unico tipo di opera effettivamente trattato nel progetto), e quindi dichiarate al livello più specifico.
+#### `Painting` come sottoclasse, non come tipo controllato
+Abbiamo scelto `Painting` come sottoclasse di `Artwork` perché il dataset contiene esclusivamente dipinti. Un approccio alternativo (una singola classe con un tipo controllato, come in DCAT-AP o EDM) sarebbe più flessibile in un contesto con molti tipi diversi di opere, ma per questo progetto la sottoclasse è la soluzione più semplice e coerente con i dati disponibili.
 
-#### `Painting` come sottoclasse di `Artwork`, invece di un tipo su vocabolario controllato
-Lo scenario del progetto richiede esplicitamente un'opera generica (`Artwork`) specializzata in dipinto (`Painting`). L'alternativa -- usare un'unica classe con una proprietà `dc:type`/`edm:hasType` su vocabolario controllato, come fanno EDM e DCAT-AP -- sarebbe più scalabile se il progetto dovesse rappresentare più tipi di opera in futuro (evita di dover creare una nuova classe OWL per ogni nuovo tipo), ma per un progetto che composto da solo dipinti, la sottoclasse resta la scelta più semplice e con un rado di sfida più alto dovendo definire noi le varie concettualità ontologiche.
+#### `hasCode` e `hasName` con dominio “union”
+Le proprietà `hasCode` e `hasName` sono condivise tra più classi tramite `owl:unionOf`, evitando duplicazioni inutili. Questa scelta mantiene il modello più pulito e riduce la ripetizione di proprietà equivalenti.
 
-#### `hasCode` e `hasName` con dominio "union"
-`hasCode` è condiviso tra `Artwork` e `CulturalInstituteOrSite`, `hasName` tra `CulturalInstituteOrSite` e `Place`, invece di duplicare la proprietà con un nome diverso per ciascuna classe.
+#### TimeReference suddiviso in tre sottoclassi disgiunte
+Il dataset assegna a ogni dipinto un solo tipo di riferimento temporale: data esatta, intervallo di anni o secolo. Per riflettere questa struttura, `ExactDate`, `YearRange` e `CenturyReference` sono state rese disgiunte. Avevamo considerato anche la possibilità di ricavare automaticamente il secolo dalle date per uniformare i valori, ma l’idea è stata scartata per non introdurre logiche aggiuntive non richieste dal progetto.
 
-#### `TimeReference` specializzata in tre sottoclassi disgiunte
-Il testo descrive tre modi differenti di esprimere il tempo di un'opera. La disgiunzione (`owl:AllDisjointClasses` su `ExactDate`, `YearRange`, `CenturyReference`) formalizza esattamente questo: per ogni opera esiste un solo modo di rappresentare il suo riferimento temporale nel grafo, anche se in linea di principio una data esatta "appartiene" anche a un secolo -- quella relazione resta interrogabile via query (es. sul valore EDTF), senza bisogno di duplicare il dato.
+#### `hasEDTFValue` per uniformare il confronto temporale
+`hasEDTFValue` è stato aggiunto a `TimeReference` per fornire un valore temporale uniforme (EDTF) indipendentemente dal tipo di riferimento. Senza questa proprietà, confrontare date, intervalli e secoli richiederebbe tre logiche diverse. Il datatype è xsd:string perché EDTF non ha un tipo nativo in OWL.
 
-#### `hasEDTFValue` su `TimeReference`
-Aggiunta per rendere possibile la CQ 5: senza un valore in un formato comune (EDTF -- Extended Date/Time Format, Library of Congress) a tutte e tre le sottoclassi, confrontare/ordinare per intervallo temporale richiederebbe tre logiche diverse (una data, due anni, un numero di secolo). È dichiarata `xsd:string` perché EDTF non ha un datatype nativo in RDF/OWL.
+#### Chiavi (`owl:hasKey`) per garantire l’univocità dei codici
+Il progetto richiede che ogni codice identifichi uno e un solo soggetto (opera, istituto o luogo). Per questo motivo, `owl:hasKey` è stato dichiarato su `Artwork`, `CulturalInstituteOrSite` e `Place`, in modo da garantire l’univocità globale dei codici presenti nel dataset.
 
-#### `owl:hasKey` su `Artwork`, `CulturalInstituteOrSite`, `Place`
-Il testo dice esplicitamente che ciascuna di queste entità è identificata *univocamente* da un codice -- un'affermazione bidirezionale (non solo "ogni istanza ha al più un codice", ma anche "quel codice appartiene al più a un'istanza") che `owl:FunctionalProperty` da sola non copre. La chiave è dichiarata su `Artwork` (non su `Painting`) perché è lì che vive `hasCode`; per ereditarietà, si applica comunque correttamente anche alle istanze di `Painting`.
-
-#### `hasCenturyPart` come stringa vincolata (`owl:oneOf`), non come individui
-Sono stati valutati due modi di limitare `hasCenturyPart` ai soli valori ammessi durante la progettazione: un `owl:oneOf` su letterali stringa, oppure individui nominati (`:Inizio`, `:Metà`, ecc.) con `hasCenturyPart` come object property. La versione a individui (poi scartata) evita il rischio di valori scritti con maiuscole/minuscole incoerenti (in OWL letterali come `"Fine"` e `"fine"` sono valori distinti, e violerebbero l'enumerazione), ma introduce una classe e una proprietà in più. Per una mancata conoscenza adeguata in merito quindi, si è scelta la versione a stringhe, con un'unica convenzione di maiuscole (solo l'iniziale del valore, es. `"Prima metà"`) documentata esplicitamente nel file `.ttl` tramite `rdfs:comment`.
+#### `hasCenturyPart` come stringa vincolata
+I valori ammessi per `hasCenturyPart` sono stati modellati come stringhe vincolate tramite `owl:oneOf`. L’alternativa (usare individui dedicati) avrebbe evitato problemi di maiuscole/minuscole, ma avrebbe introdotto una classe e una proprietà aggiuntiva. Per semplicità, è stata scelta la versione a stringhe, con una convenzione documentata nel file [`RDF_Ontologia-PM.ttl`](./RDF_Ontologia-PM.ttl)
 
 ---
 
