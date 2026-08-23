@@ -1,4 +1,4 @@
-# Ontologia — Progetto SHELL, sotto-progetto dati.cultura
+# Ontologia - Progetto SHELL
 
 Questa cartella documenta il modello concettuale e l'ontologia OWL sviluppati per il sotto-progetto **dati.cultura** del progetto SHELL (rifacimento del catalogo [dati.cultura.gov.it](https://dati.cultura.gov.it/)), con particolare riferimento al dataset delle opere d'arte (dipinti) conservate in istituti e luoghi della cultura.
 
