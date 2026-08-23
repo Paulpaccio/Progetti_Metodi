@@ -1,0 +1,9 @@
+1)	Qual è il codice, il titolo e la descrizione di un'opera d'arte?
+2)	In quale istituto/luogo della cultura è conservato il dipinto X?
+3)	In quale luogo geografico si trova l'istituto X?
+4)	Qual è il tempo di riferimento del dipinto X, sia esso una data esatta, un intervallo di anni o un secolo?
+5)	Quali opere d'arte hanno un riferimento temporale compreso in un dato intervallo di anni, indipendentemente dal formato originale del dato (data esatta, intervallo o secolo)?
+7)	Quali istituti della cultura si trovano nel luogo geografico X?	hasCulturalInstitute (inversa di isLocatedIn)
+8)	Dato un codice identificativo, esiste un'unica opera d'arte (o istituto, o luogo) a cui corrisponde?
+9)	Per un'opera datata genericamente a un secolo, è nota anche la parte del secolo (inizio, metà, fine, prima/seconda metà) a cui risale?
+10)	Quali sono il codice, il titolo e la descrizione di un'opera d'arte, indipendentemente dal suo tipo specifico?
