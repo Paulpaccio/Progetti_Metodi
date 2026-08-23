@@ -85,8 +85,8 @@ I valori ammessi per `hasCenturyPart` sono stati modellati come stringhe vincola
 
 #### Costruzioni dei diagrammi e del graffoo - Fonti
 Siccome ci si è imbattuti in situazioni non viste a lezione, sono state utilizzati due siti come riferimento
-[Per costruzione Graffoo](https://essepuntato.it/graffoo/specification/)
-[Per costruzione Diagramma E-R](https://www.slideserve.com/kaelem/progettazione-concettuale-il-modello-entit-relazioni)
+- [Per costruzione Graffoo](https://essepuntato.it/graffoo/specification/)
+- [Per costruzione Diagramma E-R](https://www.slideserve.com/kaelem/progettazione-concettuale-il-modello-entit-relazioni)
 
 ---
 
