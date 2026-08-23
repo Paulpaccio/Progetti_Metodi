@@ -83,6 +83,11 @@ Il progetto richiede che ogni codice identifichi uno e un solo soggetto (opera, 
 #### `hasCenturyPart` come stringa vincolata
 I valori ammessi per `hasCenturyPart` sono stati modellati come stringhe vincolate tramite `owl:oneOf`. L’alternativa (usare individui dedicati) avrebbe evitato problemi di maiuscole/minuscole, ma avrebbe introdotto una classe e una proprietà aggiuntiva. Per semplicità, è stata scelta la versione a stringhe, con una convenzione documentata nel file [`RDF_Ontologia-PM.ttl`](./RDF_Ontologia-PM.ttl)
 
+#### Costruzioni dei diagrammi e del graffoo - Fonti
+Siccome ci si è imbattuti in situazioni non viste a lezione, sono state utilizzati due siti come riferimento
+[Per costruzione Graffoo](https://essepuntato.it/graffoo/specification/)
+[Per costruzione Diagramma E-R](https://www.slideserve.com/kaelem/progettazione-concettuale-il-modello-entit-relazioni)
+
 ---
 
 ## 4. Come consultare l'ontologia
