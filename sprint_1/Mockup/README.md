@@ -1,10 +1,10 @@
-# dati.cultura.gov.it — Mockup del rifacimento del sito
+# dati.cultura.gov.it - Mockup del rifacimento del sito
 
 Mockup a bassa fedeltà del rifacimento del catalogo open data del Ministero della Cultura ([dati.cultura.gov.it](https://dati.cultura.gov.it/)), realizzato nell'ambito del progetto SHELL (corso *Metodi informatici per la trasformazione digitale*, a.a. 2025/2026).
 
 Le schermate mostrano la struttura prevista per l'incremento di prodotto delle prime User Story: navigazione principale, home/landing page, catalogo dataset e sezione aggiornamenti.
 
-## Screenshot
+## Immagini/Screenshot
 
 ### 1. Home page / landing
 
