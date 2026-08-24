@@ -1,0 +1,223 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix dco: <http://www.progetto-shell.org/dati-cultura-ontology#> .
+@prefix data: <http://www.progetto-shell.org/data/> .
+
+data:artwork-0100454512 dco:hasCode "0100454512" ;
+	dco:hasDescription "Tela dipinta" ;
+	dco:hasTimeReference data:timeref-century-17-Met%C3%A0 ;
+	dco:hasTitle "Adorazione dei Magi" ;
+	dco:isHostedIn data:institute-b34403d79c17 ;
+	rdf:type dco:Painting .
+
+data:artwork-0500638012 dco:hasCode "0500638012" ;
+	dco:hasDescription "Tela di formato verticale, rappresenta una fanciulla con pizzo e nastro rosso al collo" ;
+	dco:hasTimeReference data:timeref-yearrange-1756-1762 ;
+	dco:hasTitle "Giovane donna in abito bruno, con collarino di pizzo bianco e nastro rosso" ;
+	dco:isHostedIn data:institute-1469952786491 ;
+	rdf:type dco:Painting .
+
+data:artwork-0500717049 dco:hasCode "0500717049" ;
+	dco:hasDescription "Tela di piccole dimensioni, rappresenta il ritratto di una figura maschile, a mezzo busto, posto di tre quarti" ;
+	dco:hasTimeReference data:timeref-century-17-NessunaParte ;
+	dco:hasTitle "Ritratto di gentiluomo" ;
+	dco:isHostedIn data:institute-1469952786491 ;
+	rdf:type dco:Painting .
+
+data:artwork-0500717074 dco:hasCode "0500717074" ;
+	dco:hasDescription "Tela di formato orizzontale, rappresenta una vista a volo d'uccello della città di Belluno; in alto al centro lo stemma Boldù sorretto da putti; ai lati i due basilischi dello stemma cittadino; in basso a sinistra un putto sta scolpendo un'iscrizione" ;
+	dco:hasTimeReference data:timeref-century-17-NessunaParte ;
+	dco:hasTitle "Pianta prospettica della città di Belluno" ;
+	dco:isHostedIn data:institute-3ef59d5 ;
+	rdf:type dco:Painting .
+
+data:artwork-0500717120 dco:hasCode "0500717120" ;
+	dco:hasDescription "Tavola di formato verticale, rappresenta il ritratto di una giovane donna" ;
+	dco:hasTimeReference data:timeref-century-20-NessunaParte ;
+	dco:hasTitle "Ritratto di Gianna" ;
+	dco:isHostedIn data:institute-1469952786491 ;
+	rdf:type dco:Painting .
+
+data:artwork-0500729081 dco:hasCode "0500729081" ;
+	dco:hasTimeReference data:timeref-century-20-NessunaParte ;
+	dco:hasTitle "Ciociara" ;
+	dco:isHostedIn data:institute-26ef140d0b25c ;
+	rdf:type dco:Painting .
+
+data:artwork-0800070069 dco:hasCode "0800070069" ;
+	dco:hasDescription "Dipinto raffigurante paesaggio con campi e colline. Al centro è collocato un albero, mentre alla sua destra sale una stradina. Sulla sinistra si intravede un contadino su un carro trascinato da un bue. Sempre sulla sinistra, in lontananza, è collocato un piccolo paese" ;
+	dco:hasTimeReference data:timeref-century-20-NessunaParte ;
+	dco:hasTitle "Paesaggio emiliano" ;
+	dco:isHostedIn data:institute-1477239995289 ;
+	rdf:type dco:Painting .
+
+data:artwork-0800686820 dco:hasCode "0800686820" ;
+	dco:hasDescription "Dipinto su tela tensionata ad un telaio con biette di espansione agli angolari; il telaio è posto all'interno di una cornice doppia con passepartout interno rivestito di tela bianca e vetro di protezione frontale ed un profilo esterno modanato e argentato. La scena mostra un consesso di persone in abiti civili che tengono dietro in corteo funebre ad un carretto trainato da una coppia di giovenche bianche nella stradina che si inerpica a raggiungere un borgo in cima ad una collina" ;
+	dco:hasTimeReference data:timeref-date-1986-12-31 ;
+	dco:hasTitle "I fer dl'amstir" ;
+	dco:isHostedIn data:institute-1234 ;
+	rdf:type dco:Painting .
+
+data:artwork-0900593220 dco:hasCode "0900593220" ;
+	dco:hasDescription "Paesaggio fluviale con alberi e montagne sullo sfondo" ;
+	dco:hasTimeReference data:timeref-century-19-Seconda%20met%C3%A0 ;
+	dco:hasTitle "Paesaggio scozzese" ;
+	dco:isHostedIn data:institute-9ed8ea96c7e ;
+	rdf:type dco:Painting .
+
+data:artwork-1201388916 dco:hasCode "1201388916" ;
+	dco:hasDescription "Nel dipinto è raffigurato l'interno di una dimora alpina, con al centro un grande camino col fuoco acceso e una pentola in rame fumante appesa. Ai due lati del camino due finestre da cui si vedono paesaggi innevati. In primo piano è un basso muro su due livelli sul quale sono appoggiati numerosi oggetti e alimenti. Al di qua del muro una sedia impagliata" ;
+	dco:hasTimeReference data:timeref-century-20-NessunaParte ;
+	dco:hasTitle "Inverno in Cadore" ;
+	dco:isHostedIn data:institute-d2122b195 ;
+	rdf:type dco:Painting .
+
+data:artwork-1400001122-11 dco:hasCode "1400001122-11" ;
+	dco:hasDescription "Dipinto" ;
+	dco:hasTimeReference data:timeref-century-17-NessunaParte ;
+	dco:hasTitle "Resurrezione di Cristo" ;
+	dco:isHostedIn data:institute-1489147295188 ;
+	rdf:type dco:Painting .
+
+data:artwork-1400079575 dco:hasCode "1400079575" ;
+	dco:hasDescription "Dipinto a olio su cartoncino raffigurante una veduta della campagna romana, colta nella quiete dopo un temporale; nel cielo, infatti, si affrontano nubi maestose e squarci di sereno; sullo sfondo si riconosce la sagoma del Mausoleo di Cecilia Metella sulla via Appia" ;
+	dco:hasTimeReference data:timeref-century-19-Fine ;
+	dco:hasTitle "All'acqua Santa, dopo il temporale" ;
+	dco:isHostedIn data:institute-2c095 ;
+	rdf:type dco:Painting .
+
+data:artwork-1500190885 dco:hasCode "1500190885" ;
+	dco:hasDescription "Dipinto" ;
+	dco:hasTimeReference data:timeref-century-17-Met%C3%A0 ;
+	dco:hasTitle "Madonna del Carmine" ;
+	dco:isHostedIn data:institute-5dfd27ce08 ;
+	rdf:type dco:Painting .
+
+data:institute-1234 dco:hasCode "1234" ;
+	dco:hasName "Palazzo della Residenza della Cassa dei Risparmi di Forlì" ;
+	dco:isLocatedIn data:place-040012 ;
+	rdf:type dco:CulturalInstituteOrSite .
+
+data:institute-1469952786491 dco:hasCode "1469952786491" ;
+	dco:hasName "Palazzo Pellegrini a S. Cecilia" ;
+	dco:isLocatedIn data:place-023091 ;
+	rdf:type dco:CulturalInstituteOrSite .
+
+data:institute-1477239995289 dco:hasCode "1477239995289" ;
+	dco:hasName "Istituto d'Arte - IsArt" ;
+	dco:isLocatedIn data:place-037006 ;
+	rdf:type dco:CulturalInstituteOrSite .
+
+data:institute-1489147295188 dco:hasCode "1489147295188" ;
+	dco:hasName "Chiesa di Santa Maria Assunta" ;
+	dco:isLocatedIn data:place-070024 ;
+	rdf:type dco:CulturalInstituteOrSite .
+
+data:institute-26ef140d0b25c dco:hasCode "26ef140d0b25c" ;
+	dco:hasName "Palazzo della Ragione" ;
+	dco:isLocatedIn data:place-023091 ;
+	rdf:type dco:CulturalInstituteOrSite .
+
+data:institute-2c095 dco:hasCode "2c095" ;
+	dco:hasName "Villa Praitano" ;
+	dco:isLocatedIn data:place-070006 ;
+	rdf:type dco:CulturalInstituteOrSite .
+
+data:institute-3ef59d5 dco:hasCode "3ef59d5" ;
+	dco:hasName "Palazzo Fulcis" ;
+	dco:isLocatedIn data:place-025006 ;
+	rdf:type dco:CulturalInstituteOrSite .
+
+data:institute-5dfd27ce08 dco:hasCode "5dfd27ce08" ;
+	dco:hasName "Castel Capuano" ;
+	dco:isLocatedIn data:place-063049 ;
+	rdf:type dco:CulturalInstituteOrSite .
+
+data:institute-9ed8ea96c7e dco:hasCode "9ed8ea96c7e" ;
+	dco:hasName "Villa Guinigi" ;
+	dco:isLocatedIn data:place-046017 ;
+	rdf:type dco:CulturalInstituteOrSite .
+
+data:institute-b34403d79c17 dco:hasCode "b34403d79c17" ;
+	dco:hasName "Casa Privata" ;
+	dco:isLocatedIn data:place-103050 ;
+	rdf:type dco:CulturalInstituteOrSite .
+
+data:institute-d2122b195 dco:hasCode "d2122b195" ;
+	dco:hasName "Museo Nazionale di Arti e Tradizioni Popolari" ;
+	dco:isLocatedIn data:place-058091 ;
+	rdf:type dco:CulturalInstituteOrSite .
+
+data:place-023091 dco:hasISTATCode "023091" ;
+	dco:hasName "Verona" ;
+	rdf:type dco:Place .
+
+data:place-025006 dco:hasISTATCode "025006" ;
+	dco:hasName "Belluno" ;
+	rdf:type dco:Place .
+
+data:place-037006 dco:hasISTATCode "037006" ;
+	dco:hasName "Bologna" ;
+	rdf:type dco:Place .
+
+data:place-040012 dco:hasISTATCode "040012" ;
+	dco:hasName "Forlì" ;
+	rdf:type dco:Place .
+
+data:place-046017 dco:hasISTATCode "046017" ;
+	dco:hasName "Lucca" ;
+	rdf:type dco:Place .
+
+data:place-058091 dco:hasISTATCode "058091" ;
+	dco:hasName "Roma" ;
+	rdf:type dco:Place .
+
+data:place-063049 dco:hasISTATCode "063049" ;
+	dco:hasName "Napoli" ;
+	rdf:type dco:Place .
+
+data:place-070006 dco:hasISTATCode "070006" ;
+	dco:hasName "Campobasso" ;
+	rdf:type dco:Place .
+
+data:place-070024 dco:hasISTATCode "070024" ;
+	dco:hasName "Fossalto" ;
+	rdf:type dco:Place .
+
+data:place-103050 dco:hasISTATCode "103050" ;
+	dco:hasName "Omegna" ;
+	rdf:type dco:Place .
+
+data:timeref-century-17-Met%C3%A0 dco:hasCenturyNumber "17"^^xsd:integer ;
+	dco:hasCenturyPart "Metà" ;
+	dco:hasEDTFValue "16XX" ;
+	rdf:type dco:CenturyReference .
+
+data:timeref-century-17-NessunaParte dco:hasCenturyNumber "17"^^xsd:integer ;
+	dco:hasEDTFValue "16XX" ;
+	rdf:type dco:CenturyReference .
+
+data:timeref-century-19-Fine dco:hasCenturyNumber "19"^^xsd:integer ;
+	dco:hasCenturyPart "Fine" ;
+	dco:hasEDTFValue "18XX" ;
+	rdf:type dco:CenturyReference .
+
+data:timeref-century-19-Seconda%20met%C3%A0 dco:hasCenturyNumber "19"^^xsd:integer ;
+	dco:hasCenturyPart "Seconda metà" ;
+	dco:hasEDTFValue "18XX" ;
+	rdf:type dco:CenturyReference .
+
+data:timeref-century-20-NessunaParte dco:hasCenturyNumber "20"^^xsd:integer ;
+	dco:hasEDTFValue "19XX" ;
+	rdf:type dco:CenturyReference .
+
+data:timeref-date-1986-12-31 dco:hasDate "1986-12-31"^^xsd:date ;
+	dco:hasEDTFValue "1986-12-31" ;
+	rdf:type dco:ExactDate .
+
+data:timeref-yearrange-1756-1762 dco:hasEDTFValue "1756/1762" ;
+	dco:hasEndYear "1762"^^xsd:gYear ;
+	dco:hasStartYear "1756"^^xsd:gYear ;
+	rdf:type dco:YearRange .
+
