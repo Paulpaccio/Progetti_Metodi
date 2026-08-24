@@ -1,5 +1,5 @@
 prefixes:
-  ex: "http://www.progetto-shell.org/dati-cultura-ontology#"
+  dco: "http://www.progetto-shell.org/dati-cultura-ontology#"
   data: "http://www.progetto-shell.org/data/"
   xsd: "http://www.w3.org/2001/XMLSchema#"
 
@@ -10,11 +10,11 @@ mappings:
       - ['paintings.csv~csv']
     s: data:artwork-$(codice_opera)
     po:
-      - [a, ex:Painting]
-      - [ex:hasCode, $(codice_opera)]
-      - [ex:hasTitle, $(titolo_opera)]
-      - [ex:hasDescription, $(descrizione_opera)]
-      - p: ex:isHostedIn
+      - [a, dco:Painting]
+      - [dco:hasCode, $(codice_opera)]
+      - [dco:hasTitle, $(titolo_opera)]
+      - [dco:hasDescription, $(descrizione_opera)]
+      - p: dco:isHostedIn
         o:
           mapping: institute
           condition:
@@ -22,7 +22,7 @@ mappings:
             parameters:
               - [str1, $(codice_luogo_istituto)]
               - [str2, $(codice_luogo_istituto)]
-      - p: ex:hasTimeReference
+      - p: dco:hasTimeReference
         o:
           mapping: exact_date
           condition:
@@ -30,7 +30,7 @@ mappings:
             parameters:
               - [str1, $(codice_opera)]
               - [str2, $(codice_opera)]
-      - p: ex:hasTimeReference
+      - p: dco:hasTimeReference
         o:
           mapping: year_range
           condition:
@@ -38,7 +38,7 @@ mappings:
             parameters:
               - [str1, $(codice_opera)]
               - [str2, $(codice_opera)]
-      - p: ex:hasTimeReference
+      - p: dco:hasTimeReference
         o:
           mapping: century_reference
           condition:
@@ -52,10 +52,10 @@ mappings:
       - ['institutes.csv~csv']
     s: data:institute-$(codice_luogo_istituto)
     po:
-      - [a, ex:CulturalInstituteOrSite]
-      - [ex:hasCode, $(codice_luogo_istituto)]
-      - [ex:hasName, $(nome_luogo_istituto)]
-      - p: ex:isLocatedIn
+      - [a, dco:CulturalInstituteOrSite]
+      - [dco:hasCode, $(codice_luogo_istituto)]
+      - [dco:hasName, $(nome_luogo_istituto)]
+      - p: dco:isLocatedIn
         o:
           mapping: place
           condition:
@@ -69,35 +69,35 @@ mappings:
       - ['places.csv~csv']
     s: data:place-$(codice_istat_luogo)
     po:
-      - [a, ex:Place]
-      - [ex:hasISTATCode, $(codice_istat_luogo)]
-      - [ex:hasName, $(nome_luogo)]
+      - [a, dco:Place]
+      - [dco:hasISTATCode, $(codice_istat_luogo)]
+      - [dco:hasName, $(nome_luogo)]
 
   exact_date:
     sources:
       - ['exact_dates.csv~csv']
     s: data:timeref-date-$(data)
     po:
-      - [a, ex:ExactDate]
-      - [ex:hasDate, $(data), xsd:date]
-      - [ex:hasEDTFValue, $(edtf)]
+      - [a, dco:ExactDate]
+      - [dco:hasDate, $(data), xsd:date]
+      - [dco:hasEDTFValue, $(edtf)]
 
   year_range:
     sources:
       - ['year_ranges.csv~csv']
     s: data:timeref-yearrange-$(anno_inizio)-$(anno_fine)
     po:
-      - [a, ex:YearRange]
-      - [ex:hasStartYear, $(anno_inizio), xsd:gYear]
-      - [ex:hasEndYear, $(anno_fine), xsd:gYear]
-      - [ex:hasEDTFValue, $(edtf)]
+      - [a, dco:YearRange]
+      - [dco:hasStartYear, $(anno_inizio), xsd:gYear]
+      - [dco:hasEndYear, $(anno_fine), xsd:gYear]
+      - [dco:hasEDTFValue, $(edtf)]
 
   century_reference:
     sources:
       - ['century_references.csv~csv']
     s: data:timeref-century-$(numero_secolo)-$(parte_secolo_uri)
     po:
-      - [a, ex:CenturyReference]
-      - [ex:hasCenturyNumber, $(numero_secolo), xsd:integer]
-      - [ex:hasCenturyPart, $(parte_secolo)]
-      - [ex:hasEDTFValue, $(edtf)]
+      - [a, dco:CenturyReference]
+      - [dco:hasCenturyNumber, $(numero_secolo), xsd:integer]
+      - [dco:hasCenturyPart, $(parte_secolo)]
+      - [dco:hasEDTFValue, $(edtf)]
