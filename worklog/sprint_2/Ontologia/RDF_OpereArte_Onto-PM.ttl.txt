@@ -6,7 +6,7 @@
 
 data:artwork-0100454512 dco:hasCode "0100454512" ;
 	dco:hasDescription "Tela dipinta" ;
-	dco:hasTimeReference data:timeref-century-17-Met%C3%A0 ;
+	dco:hasTimeReference data:timeref-century-17-Meta ;
 	dco:hasTitle "Adorazione dei Magi" ;
 	dco:isHostedIn data:institute-b34403d79c17 ;
 	rdf:type dco:Painting .
@@ -20,34 +20,34 @@ data:artwork-0500638012 dco:hasCode "0500638012" ;
 
 data:artwork-0500717049 dco:hasCode "0500717049" ;
 	dco:hasDescription "Tela di piccole dimensioni, rappresenta il ritratto di una figura maschile, a mezzo busto, posto di tre quarti" ;
-	dco:hasTimeReference data:timeref-century-17-NessunaParte ;
+	dco:hasTimeReference data:timeref-century-17-XX ;
 	dco:hasTitle "Ritratto di gentiluomo" ;
 	dco:isHostedIn data:institute-1469952786491 ;
 	rdf:type dco:Painting .
 
 data:artwork-0500717074 dco:hasCode "0500717074" ;
 	dco:hasDescription "Tela di formato orizzontale, rappresenta una vista a volo d'uccello della città di Belluno; in alto al centro lo stemma Boldù sorretto da putti; ai lati i due basilischi dello stemma cittadino; in basso a sinistra un putto sta scolpendo un'iscrizione" ;
-	dco:hasTimeReference data:timeref-century-17-NessunaParte ;
+	dco:hasTimeReference data:timeref-century-17-XX ;
 	dco:hasTitle "Pianta prospettica della città di Belluno" ;
 	dco:isHostedIn data:institute-3ef59d5 ;
 	rdf:type dco:Painting .
 
 data:artwork-0500717120 dco:hasCode "0500717120" ;
 	dco:hasDescription "Tavola di formato verticale, rappresenta il ritratto di una giovane donna" ;
-	dco:hasTimeReference data:timeref-century-20-NessunaParte ;
+	dco:hasTimeReference data:timeref-century-20-XX ;
 	dco:hasTitle "Ritratto di Gianna" ;
 	dco:isHostedIn data:institute-1469952786491 ;
 	rdf:type dco:Painting .
 
 data:artwork-0500729081 dco:hasCode "0500729081" ;
-	dco:hasTimeReference data:timeref-century-20-NessunaParte ;
+	dco:hasTimeReference data:timeref-century-20-XX ;
 	dco:hasTitle "Ciociara" ;
 	dco:isHostedIn data:institute-26ef140d0b25c ;
 	rdf:type dco:Painting .
 
 data:artwork-0800070069 dco:hasCode "0800070069" ;
 	dco:hasDescription "Dipinto raffigurante paesaggio con campi e colline. Al centro è collocato un albero, mentre alla sua destra sale una stradina. Sulla sinistra si intravede un contadino su un carro trascinato da un bue. Sempre sulla sinistra, in lontananza, è collocato un piccolo paese" ;
-	dco:hasTimeReference data:timeref-century-20-NessunaParte ;
+	dco:hasTimeReference data:timeref-century-20-XX ;
 	dco:hasTitle "Paesaggio emiliano" ;
 	dco:isHostedIn data:institute-1477239995289 ;
 	rdf:type dco:Painting .
@@ -61,21 +61,21 @@ data:artwork-0800686820 dco:hasCode "0800686820" ;
 
 data:artwork-0900593220 dco:hasCode "0900593220" ;
 	dco:hasDescription "Paesaggio fluviale con alberi e montagne sullo sfondo" ;
-	dco:hasTimeReference data:timeref-century-19-Seconda%20met%C3%A0 ;
+	dco:hasTimeReference data:timeref-century-19-SecondaMeta ;
 	dco:hasTitle "Paesaggio scozzese" ;
 	dco:isHostedIn data:institute-9ed8ea96c7e ;
 	rdf:type dco:Painting .
 
 data:artwork-1201388916 dco:hasCode "1201388916" ;
 	dco:hasDescription "Nel dipinto è raffigurato l'interno di una dimora alpina, con al centro un grande camino col fuoco acceso e una pentola in rame fumante appesa. Ai due lati del camino due finestre da cui si vedono paesaggi innevati. In primo piano è un basso muro su due livelli sul quale sono appoggiati numerosi oggetti e alimenti. Al di qua del muro una sedia impagliata" ;
-	dco:hasTimeReference data:timeref-century-20-NessunaParte ;
+	dco:hasTimeReference data:timeref-century-20-XX ;
 	dco:hasTitle "Inverno in Cadore" ;
 	dco:isHostedIn data:institute-d2122b195 ;
 	rdf:type dco:Painting .
 
 data:artwork-1400001122-11 dco:hasCode "1400001122-11" ;
 	dco:hasDescription "Dipinto" ;
-	dco:hasTimeReference data:timeref-century-17-NessunaParte ;
+	dco:hasTimeReference data:timeref-century-17-XX ;
 	dco:hasTitle "Resurrezione di Cristo" ;
 	dco:isHostedIn data:institute-1489147295188 ;
 	rdf:type dco:Painting .
@@ -89,7 +89,7 @@ data:artwork-1400079575 dco:hasCode "1400079575" ;
 
 data:artwork-1500190885 dco:hasCode "1500190885" ;
 	dco:hasDescription "Dipinto" ;
-	dco:hasTimeReference data:timeref-century-17-Met%C3%A0 ;
+	dco:hasTimeReference data:timeref-century-17-Meta ;
 	dco:hasTitle "Madonna del Carmine" ;
 	dco:isHostedIn data:institute-5dfd27ce08 ;
 	rdf:type dco:Painting .
@@ -189,12 +189,12 @@ data:place-103050 dco:hasISTATCode "103050" ;
 	dco:hasName "Omegna" ;
 	rdf:type dco:Place .
 
-data:timeref-century-17-Met%C3%A0 dco:hasCenturyNumber "17"^^xsd:integer ;
+data:timeref-century-17-Meta dco:hasCenturyNumber "17"^^xsd:integer ;
 	dco:hasCenturyPart "Metà" ;
 	dco:hasEDTFValue "16XX" ;
 	rdf:type dco:CenturyReference .
 
-data:timeref-century-17-NessunaParte dco:hasCenturyNumber "17"^^xsd:integer ;
+data:timeref-century-17-XX dco:hasCenturyNumber "17"^^xsd:integer ;
 	dco:hasEDTFValue "16XX" ;
 	rdf:type dco:CenturyReference .
 
@@ -203,12 +203,12 @@ data:timeref-century-19-Fine dco:hasCenturyNumber "19"^^xsd:integer ;
 	dco:hasEDTFValue "18XX" ;
 	rdf:type dco:CenturyReference .
 
-data:timeref-century-19-Seconda%20met%C3%A0 dco:hasCenturyNumber "19"^^xsd:integer ;
+data:timeref-century-19-SecondaMeta dco:hasCenturyNumber "19"^^xsd:integer ;
 	dco:hasCenturyPart "Seconda metà" ;
 	dco:hasEDTFValue "18XX" ;
 	rdf:type dco:CenturyReference .
 
-data:timeref-century-20-NessunaParte dco:hasCenturyNumber "20"^^xsd:integer ;
+data:timeref-century-20-XX dco:hasCenturyNumber "20"^^xsd:integer ;
 	dco:hasEDTFValue "19XX" ;
 	rdf:type dco:CenturyReference .
 
@@ -220,4 +220,3 @@ data:timeref-yearrange-1756-1762 dco:hasEDTFValue "1756/1762" ;
 	dco:hasEndYear "1762"^^xsd:gYear ;
 	dco:hasStartYear "1756"^^xsd:gYear ;
 	rdf:type dco:YearRange .
-
