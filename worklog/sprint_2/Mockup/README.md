@@ -27,16 +27,6 @@ Mostra la tabella dei **tempi di conservazione** (non oltre 7 giorni per i dati 
 
 Queste schermate coprono solo la porzione di informativa relativa a US2.5
 
-## Footer
-
-![Footer](Immagini/PM-Footer.png)
-
-Presente in tutte le pagine del sito, racchiude:
-
-- **Contatti istituzionali**: indirizzo, email e PEC del Ministero della Cultura
-- **Link utili**: amministrazione trasparente, informativa sulla privacy, note legali, dichiarazione di accessibilità
-- **Social**: collegamenti a Facebook, Instagram, X e LinkedIn
-
 ## Note
 
 Questo mockup rappresenta lo stato del prodotto per le US relative a home, navigazione e catalogo dataset. Verrà esteso nelle sprint successive man mano che verranno completate nuove User Story (es. pagina Contatti, scheda di dettaglio dataset, pagina Ontologia).
