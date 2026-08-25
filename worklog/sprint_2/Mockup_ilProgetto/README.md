@@ -21,13 +21,12 @@ all'utente, in maniera breve ma esaustiva, la nascita e le finalità del progett
 Spiega ai neofiti cosa significa un dato LOD. La spiegazione sintetica e non tecnica è inserita dentro un riquadro per saltare subito all'occchio. Successivamente si spiega con un gergo più adeguato, la loro funzione.
 
 #### 1.3 DOMANDE FREQUENTI
-![Informativa privacy - tempi di conservazione](Immagini/05.2-privacy-dati-navigazione.png)
+![Q&A](Immagini/ilProgetto_QnA.png)
+![Q&A](Immagini/ilProgetto_QnAext.png)
 
-Mostra la tabella dei **tempi di conservazione** (non oltre 7 giorni per i dati di navigazione) e un box di evidenza che rassicura l'utente sull'anonimizzazione delle statistiche pubblicate.
-
-Queste schermate coprono solo la porzione di informativa relativa a US2.5
+Sono inserite le domande più frequenti poste dagli utenti, con la possibilità di andare in una sezione apposita da sviluppare. Nonostante non sia, magari, conforme al metodo SCRUM in quanto è inserita un link che non sarà sviluppato, è attinente.
 
 ## Note
 
-Questo mockup rappresenta lo stato del prodotto per le US relative a home, navigazione e catalogo dataset. Verrà esteso nelle sprint successive man mano che verranno completate nuove User Story (es. pagina Contatti, scheda di dettaglio dataset, pagina Ontologia).
+Questo mockup rappresenta lo stato del prodotto per le US relative alla descrizione del progetto. Verrà esteso nelle sprint successive man mano che verranno completate nuove User Story (es. pagina Contatti, scheda di dettaglio dataset, pagina Ontologia).
 
