@@ -11,7 +11,7 @@ Le schermate mostrano la struttura prevista per l'incremento di prodotto delle p
 La sezione IL PROGETTO spiega all'utente, in maniera breve ma esaustiva, la nascita e le finalità del progetto, anche per chi non avvezzo ai LOD. Essa è divisa a sua volta in tre sezioni
 
 #### 1.1 IL PROGETTO
-![head](Immagini/ilProgetto_head.png.png)
+![head](Immagini/ilProgetto_head.png)
 
 all'utente, in maniera breve ma esaustiva, la nascita e le finalità del progetto, rimandando alla sezione dataset.
 
