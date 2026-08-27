@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sparql xmlns='http://www.w3.org/2005/sparql-results#'>
+	<head>
+		<variable name='titoloOpera'/>
+		<variable name='nomeIstituto'/>
+	</head>
+	<results>
+		<result>
+			<binding name='titoloOpera'>
+				<literal>Adorazione dei Magi</literal>
+			</binding>
+			<binding name='nomeIstituto'>
+				<literal>Casa Privata</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='titoloOpera'>
+				<literal>Giovane donna in abito bruno, con collarino di pizzo bianco e nastro rosso</literal>
+			</binding>
+			<binding name='nomeIstituto'>
+				<literal>Palazzo Pellegrini a S. Cecilia</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='titoloOpera'>
+				<literal>Ritratto di gentiluomo</literal>
+			</binding>
+			<binding name='nomeIstituto'>
+				<literal>Palazzo Pellegrini a S. Cecilia</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='titoloOpera'>
+				<literal>Pianta prospettica della città di Belluno</literal>
+			</binding>
+			<binding name='nomeIstituto'>
+				<literal>Palazzo Fulcis</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='titoloOpera'>
+				<literal>Ritratto di Gianna</literal>
+			</binding>
+			<binding name='nomeIstituto'>
+				<literal>Palazzo Pellegrini a S. Cecilia</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='titoloOpera'>
+				<literal>Ciociara</literal>
+			</binding>
+			<binding name='nomeIstituto'>
+				<literal>Palazzo della Ragione</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='titoloOpera'>
+				<literal>Paesaggio emiliano</literal>
+			</binding>
+			<binding name='nomeIstituto'>
+				<literal>Istituto d'Arte - IsArt</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='titoloOpera'>
+				<literal>I fer dl'amstir</literal>
+			</binding>
+			<binding name='nomeIstituto'>
+				<literal>Palazzo della Residenza della Cassa dei Risparmi di Forlì</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='titoloOpera'>
+				<literal>Paesaggio scozzese</literal>
+			</binding>
+			<binding name='nomeIstituto'>
+				<literal>Villa Guinigi</literal>
+			</binding>
+		</result>
+		<result>
+			<binding name='titoloOpera'>
+				<literal>Inverno in Cadore</literal>
+			</binding>
+			<binding name='nomeIstituto'>
+				<literal>Museo Nazionale di Arti e Tradizioni Popolari</literal>
+			</binding>
+		</result>
+	</results>
+</sparql>
