@@ -13,7 +13,7 @@ I dati (ontologia + istanze) sono stati caricati sulla versione gratuita per com
 e contiene **337 statement** (ontologia + dati dei dipinti, istituti e luoghi).
 
 **Endpoint SPARQL (query):**
-http://localhost:7200/repositories/dati-cultura
+`http://localhost:7200/repositories/dati-cultura`
 > Nota: l'endpoint funziona solo in locale, sul computer di chi lo esegue.
 
 ---
@@ -27,7 +27,7 @@ http://localhost:7200/repositories/dati-cultura
 > CQ3: "In quale luogo geografico si trova l'istituto X?"
 > CQ6: "Quali dipinti sono conservati presso l'istituto X?"
 > CQ7: "Quali istituti della cultura si trovano nel luogo geografico X?"
-```
+```sparql
 SELECT ?titoloOpera ?nomeIstituto ?nomeLuogo 
 WHERE { 
 ?opera a dco:Painting ; dco:hasTitle 
@@ -63,3 +63,27 @@ ORDER BY ?secolo
 datati al XX secolo sono correttamente esclusi dal filtro.
 
 ---
+## 3. Come provare le query
+
+### Metodo 1 — Da browser, con l'interfaccia grafica (Workbench)
+Aprendo un browser qualsiasi (Safari, Chrome, ecc.) e navigando all'indirizzo
+`http://localhost:7200/sparql?repositoryId=dati-cultura` 
+si apre l'editor SPARQL del Workbench di GraphDB, dove il testo di una query può essere incollato in un apposito
+riquadro. Una volta eseguita, i risultati compaiono in una tabella, come nello screenshot
+mostrato sopra per la Query 1.
+
+### Metodo 2 — Come chiamata API (esempio via URL)
+
+Questo secondo metodo mostra come un altro programma, anziché una persona, potrebbe leggere
+i nostri dati senza passare dall'interfaccia grafica del Workbench. 
+A differenza del Metodo 1, dove l'indirizzo e la query sono due cose separate (prima si apre
+la pagina, poi si scrive la query in un riquadro), qui l'intero indirizzo e la
+query scelta, vanno scritti tutti insieme e incollati direttamente nella barra degli indirizzi del
+browser. Un esempio pronto, che restituisce le prime cinque triple del dataset, è il seguente:
+`http://localhost:7200/repositories/dati-cultura?query=PREFIX%20dco%3A%20%3Chttp%3A%2F%2Fwww.progetto-shell.org%2Fdati-cultura-ontology%23%3E%20SELECT%20%3FtitoloOpera%20%3FnomeIstituto%20WHERE%20%7B%20%3Fopera%20a%20dco%3APainting%20%3B%20dco%3AhasTitle%20%3FtitoloOpera%20%3B%20dco%3AisHostedIn%20%3Fistituto%20.%20%3Fistituto%20dco%3AhasName%20%3FnomeIstituto%20%7D%20LIMIT%2010`
+
+> **Nota**: L'indirizzo è pieno di simboli `%` perché un URL non può contenere direttamente certi
+caratteri, come gli spazi o le parentesi graffe: vanno tradotti in un codice speciale,
+chiamato *URL encoding*.
+> **Nota sulla trasparenza**: per la sezione sopra è stato utilizzato uno strumento di IA (Claude) per
+costruire questo esempio, verificandone poi il funzionamento nel browser.
