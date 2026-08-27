@@ -24,8 +24,11 @@ e contiene **337 statement** (ontologia + dati dei dipinti, istituti e luoghi).
 
 ### Query 1 — Catena dipinto → istituto → luogo (CQ 2, 3, 6, 7)
 > CQ2: "In quale istituto/luogo della cultura è conservato il dipinto X?"
+> 
 > CQ3: "In quale luogo geografico si trova l'istituto X?"
+> 
 > CQ6: "Quali dipinti sono conservati presso l'istituto X?"
+> 
 > CQ7: "Quali istituti della cultura si trovano nel luogo geografico X?"
 ```sparql
 SELECT ?titoloOpera ?nomeIstituto ?nomeLuogo 
@@ -43,7 +46,9 @@ correttamente collegati (es. "Adorazione dei Magi" → "Casa Privata" → "Omegn
 
 ### Query 2 — Dipinti datati per intervallo di secoli (CQ 4, 5, 9)
 > CQ4: "Qual è il tempo di riferimento del dipinto X, sia esso una data esatta, un intervallo di anni o un secolo?"
+> 
 > CQ5: "Quali opere d'arte hanno un riferimento temporale compreso in un dato intervallo di anni, indipendentemente dal formato originale del dato?"
+> 
 > CQ9: "Per un'opera datata genericamente a un secolo, è nota anche la parte del secolo a cui risale?"
 ```sparql
 SELECT ?titoloOpera ?secolo ?partesecolo
