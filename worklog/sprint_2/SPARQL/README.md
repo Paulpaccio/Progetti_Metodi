@@ -95,4 +95,6 @@ caratteri, come gli spazi o le parentesi graffe: vanno tradotti in un codice spe
 chiamato *URL encoding*.
 > 
 > **Nota sulla trasparenza**: per la sezione sopra è stato utilizzato uno strumento di IA (Claude) per
-costruire questo esempio, verificandone poi il funzionamento nel browser.
+costruire questo esempio, verificandone poi il funzionamento nel browser:
+> 
+> [esempio-risposta-api.srx](Immagini/esempio-risposta-api.srx)
