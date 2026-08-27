@@ -14,4 +14,4 @@ Deliverable relativi alla protezione dei dati personali prodotti nello sprint 2.
   - `05-privacy-dati-navigazione.png`
   - `05.1-privacy-dati-navigazione.png`
   - `05.2-privacy-dati-navigazione.png`
-- [ ] Sezione 4.2 dell'informativa (dati di navigazione) → da consegnare successivamente
+- [ ] Sezione dell'informativa (dati di navigazione) → da consegnare successivamente
