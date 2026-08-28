@@ -29,7 +29,8 @@ La scelta di articolare la pagina in sezioni brevi con indice risponde al requis
 ### 2.1 L'ontologia delle opere d'arte
 ![Intro](Immagini/06-ontologia-intro.png)
 
-<img width="1920" height="1080" alt="10" src="https://github.com/user-attachments/assets/09187bfa-88ad-40cb-baa0-84f5b0751867" />
+<img width="1920" height="1080" alt="10" src="https://github.com/user-attachments/assets/f5ffe7d3-2995-4836-a93f-55d2afcea40d" />
+
 
 Testo di apertura con il rimando alla sezione *Accesso ai dati*, che collega la comprensione del modello alla sua interrogazione pratica (US1.4).
 
@@ -37,7 +38,7 @@ Testo di apertura con il rimando alla sezione *Accesso ai dati*, che collega la 
 ![Esplora il modello](Immagini/07-ontologia-esplora.png)
 
 
-<img width="1920" height="1080" alt="Muckup Cultura" src="https://github.com/user-attachments/assets/c81f4db3-c3ed-440e-984c-1b9706cdbf1b" />
+<img width="1920" height="1080" alt="11" src="https://github.com/user-attachments/assets/92ed85d2-af45-4671-bce6-d73130efcd6d" />
 
 Cinque classi principali. Un dipinto è un caso particolare di opera d'arte, da cui eredita codice, titolo e descrizione; ogni dipinto è conservato in un istituto, che si trova in un comune, e ha un riferimento temporale che può assumere tre forme. Il diagramma qui riportato è una rappresentazione semplificata del modello: la versione completa, comprensiva di proprietà, tipi di dato e assiomi, è disponibile in formato Graffoo nella sezione Scarica il modello.
 
@@ -46,7 +47,7 @@ Diagramma semplificato: Diagramma semplificato: Painting come sottoclasse di Art
 ### 2.3 Legenda delle classi
 ![Legenda](Immagini/08-ontologia-legenda.png)
 
-<img width="1920" height="1080" alt="Muckup Cultura" src="https://github.com/user-attachments/assets/8f34fd67-55a8-46f9-89ba-21e81512ea1d" />
+<img width="1920" height="1080" alt="12" src="https://github.com/user-attachments/assets/37dec7b5-decb-48aa-9d1c-05ce7498a455" />
 
 
 
@@ -59,9 +60,10 @@ Il tempo viene trattato come entità autonoma anziché come valore testuale: nel
 ### 2.4 A quali domande risponde
 ![Domande](Immagini/09-ontologia-domande.png)
 
-<img width="1920" height="1080" alt="13" src="https://github.com/user-attachments/assets/b7db1002-2c16-452c-ae6c-b80ec2527e5f" />
+<img width="1920" height="1080" alt="13" src="https://github.com/user-attachments/assets/6e78cdb7-255c-4e0d-8484-87b6710208b7" />
 
-<img width="1920" height="1080" alt="14" src="https://github.com/user-attachments/assets/8d6d8b65-c1f0-4801-895b-defe6ab72bcf" />
+<img width="1920" height="1080" alt="14" src="https://github.com/user-attachments/assets/5eef9192-ffbb-4b90-b88d-2ff9a2be0925" />
+
 
 Le domande esposte sul sito sono riformulazioni divulgative delle competency question prodotte nella US2.2. La forma originale, con la variabile `X`, è corretta come artefatto di progettazione ma risulta incomprensibile a un visitatore: sul sito le domande sono quindi poste come se le formulerebbe l'utente, mentre l'elenco integrale in forma originale resta disponibile nel PDF scaricabile.
 
@@ -71,8 +73,7 @@ Le tre domande, nel loro insieme, percorrono ogni arco del diagramma semplificat
 ![Scarica](Immagini/10-ontologia-scarica.png)
 
 
-<img width="1920" height="1080" alt="15" src="https://github.com/user-attachments/assets/5a6389e9-ec35-42f9-9927-4b8654506cf6" />
-
+<img width="1920" height="1080" alt="15" src="https://github.com/user-attachments/assets/a801a9fb-85a4-4ce9-b5df-b71636f34696" />
 
 Tre card di download (TTL, PNG, PDF) con formato e dimensione dichiarati, coerenti con il principio di pubblicazione in formato aperto e riutilizzabile.
 
