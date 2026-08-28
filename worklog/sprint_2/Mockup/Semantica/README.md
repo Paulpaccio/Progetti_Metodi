@@ -46,10 +46,15 @@ Diagramma semplificato: Diagramma semplificato: Painting come sottoclasse di Art
 ### 2.3 Legenda delle classi
 ![Legenda](Immagini/08-ontologia-legenda.png)
 
-<img width="1920" height="1080" alt="12" src="https://github.com/user-attachments/assets/92ef2037-b036-4cbc-a9e3-564c54320aca" />
+<img width="1920" height="1080" alt="Muckup Cultura" src="https://github.com/user-attachments/assets/8f34fd67-55a8-46f9-89ba-21e81512ea1d" />
 
 
-Tabella con, per ciascuna classe, che cosa rappresenta e da quale proprietà è identificata (`hasCode`, `hasISTATCode`, `hasEDTFValue`). Segue il box sul trattamento del tempo, che motiva la scelta di modellare il riferimento temporale come entità autonoma anziché come valore testuale.
+
+La sezione presenta la struttura dell'ontologia in forma tabellare: per ciascuna classe sono indicati che cosa rappresenta e da quale proprietà è identificata univocamente.
+Le cinque classi principali — Artwork, Painting, CulturalInstituteOrSite, Place, TimeReference — sono seguite dalle tre sottoclassi di TimeReference.
+Artwork porta le proprietà descrittive comuni a qualunque opera d'arte — codice identificativo, titolo, descrizione — mentre Painting, unico tipo di opera attualmente pubblicato, è la classe da cui partono le relazioni verso l'istituto conservatore e verso il riferimento temporale.
+
+Il tempo viene trattato come entità autonoma anziché come valore testuale: nelle fonti di catalogazione la datazione compare in forme eterogenee — date complete, intervalli di anni, riferimenti di secolo con eventuali specificazioni di parte — che una singola proprietà testuale non consentirebbe di confrontare. Alle tre sottoclassi si affianca un valore espresso secondo lo standard EDTF, destinato all'interoperabilità con sistemi esterni.
 
 ### 2.4 A quali domande risponde
 ![Domande](Immagini/09-ontologia-domande.png)
