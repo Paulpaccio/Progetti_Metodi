@@ -37,10 +37,11 @@ Testo di apertura con il rimando alla sezione *Accesso ai dati*, che collega la 
 ![Esplora il modello](Immagini/07-ontologia-esplora.png)
 
 
-<img width="1920" height="1080" alt="11" src="https://github.com/user-attachments/assets/505a412b-2904-4e2f-b829-e7af1e879f02" />
+<img width="1920" height="1080" alt="Muckup Cultura" src="https://github.com/user-attachments/assets/c81f4db3-c3ed-440e-984c-1b9706cdbf1b" />
 
+Cinque classi principali. Un dipinto è un caso particolare di opera d'arte, da cui eredita codice, titolo e descrizione; ogni dipinto è conservato in un istituto, che si trova in un comune, e ha un riferimento temporale che può assumere tre forme. Il diagramma qui riportato è una rappresentazione semplificata del modello: la versione completa, comprensiva di proprietà, tipi di dato e assiomi, è disponibile in formato Graffoo nella sezione Scarica il modello.
 
-Diagramma semplificato: `Painting` come sottoclasse di `Artwork`, la catena `Artwork → CulturalInstituteOrSite → Place`, il ramo `TimeReference` con le tre sottoclassi `ExactDate`, `YearRange`, `CenturyReference`. È una rappresentazione volutamente ridotta; la versione completa di proprietà, tipi di dato e assiomi è scaricabile in formato Graffoo.
+Diagramma semplificato: Diagramma semplificato: Painting come sottoclasse di Artwork, da cui eredita codice, titolo e descrizione; la catena Painting → CulturalInstituteOrSite → Place; il ramo TimeReference con le tre sottoclassi ExactDate, YearRange e CenturyReference.
 
 ### 2.3 Legenda delle classi
 ![Legenda](Immagini/08-ontologia-legenda.png)
