@@ -48,6 +48,9 @@ La pagina raccoglie le comunicazioni del progetto in tre colonne:
 
 Ogni colonna riporta data, titolo e un link **leggi di più**, oltre alla data dell'ultima comunicazione pubblicata.
 
+## Footer
+![Footer](Immagini/PM-Footer.png)
+
 ## Note
 
 Questo mockup rappresenta lo stato del prodotto per le US relative a home, navigazione e catalogo dataset. Verrà esteso nelle sprint successive man mano che verranno completate nuove User Story (es. pagina Contatti, scheda di dettaglio dataset, pagina Ontologia).
