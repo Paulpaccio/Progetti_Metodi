@@ -11,4 +11,4 @@ Deliverable relativi alla protezione dei dati personali prodotti in questo sprin
 
 ## Deliverable US3.3 e dove si trovano
 - [x] Sezione "destinatari dei dati" → questa cartella
-- [x] Mockup pagina informativa — sezione destinatari → `../Mockup/Privacy/Immagini/` screen: `<06-privacy-destinatari-dati.png>`
+- [x] Mockup pagina informativa — sezione destinatari → `../Mockup/Privacy/` screen: `<06-privacy-destinatari-dati.png>`
