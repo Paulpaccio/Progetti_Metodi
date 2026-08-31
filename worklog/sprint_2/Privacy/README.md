@@ -10,7 +10,7 @@ Deliverable relativi alla protezione dei dati personali prodotti nello sprint 2.
 
 ## Deliverable US2.5 e dove si trovano
 - [x] Nota di motivazione della base giuridica → questa cartella
-- [x] Mockup pagina informativa — sezione dati di navigazione → `../Mockup/Immagini/`:
+- [x] Mockup pagina informativa — sezione dati di navigazione → `../Mockup/Privacy/Immagini/`:
   - `05-privacy-dati-navigazione.png`
   - `05.1-privacy-dati-navigazione.png`
   - `05.2-privacy-dati-navigazione.png`
