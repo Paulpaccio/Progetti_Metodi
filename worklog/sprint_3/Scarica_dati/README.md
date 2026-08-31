@@ -27,7 +27,7 @@ e la versione condivisa (v1.0.0 · 28/08/2026).
 
 ![Download del formato RDF/Turtle, prima del click, con rimando ad API e SPARQL](Immagini/Scarica_dati_RDF_1.png)
 
->La card RDF descrive il file `RDF_OpereArte_Onto-PM.ttl`: le stesse opere rappresentate come grafo di entità collegate (opere, istituti, luoghi, riferimenti temporali), pronte per essere interrogate con SPARQL o integrate con altri vocabolari. 
+> Il riquadro RDF descrive il file `RDF_OpereArte_Onto-PM.ttl`: le stesse opere rappresentate come grafo di entità collegate (opere, istituti, luoghi, riferimenti temporali), pronte per essere interrogate con SPARQL. 
 Sotto il riquadro c'è il rimando **API e SPARQL** che indirizza chi preferisce interrogare i dati senza scaricarli.
 
 ![Riquadro RDF dopo il download, con messaggio di conferma](Immagini/Scarica_dati_RDF_2.png)
