@@ -10,7 +10,6 @@ Il file [`metadati_dcat-ap_it.ttl`](metadati_dcat-ap_it.ttl) descrive il dataset
 
 È utile distinguere due livelli. I file CSV e `RDF_OpereArte_Onto-PM.ttl` contengono i **dati**: le opere, gli istituti, i luoghi. Questo file contiene i **metadati**: descrive il dataset in quanto tale — chi lo pubblica, con quale licenza, in quali formati è disponibile, quando è stato aggiornato.
 
-I metadati non servono a interpretare il contenuto, ma a **trovare** il dataset e a sapere se lo si può riusare. Sono ciò che permette a un portale di livello superiore, come dati.gov.it o l'European Data Portal, di indicizzarlo automaticamente tramite *harvesting*.
 
 ---
 
@@ -44,26 +43,7 @@ Un metadato non è testo libero: dove esiste un vocabolario controllato si impie
 | Frequenza di aggiornamento | frequency UE | `UNKNOWN` |
 | Titolare ed editore | codice IPA | `m_bac` |
 
-Il tema *Education* è quello indicato dalla consegna: nel vocabolario europeo copre cultura, turismo, istruzione ed eventi culturali.
-
-Per la licenza, la consegna richiede espressamente di ricavare l'URI dal **vocabolario delle licenze italiane** anziché dal dominio Creative Commons. La licenza adottata è CC BY 4.0, con tipo `Attribution` dal vocabolario ADMS.
-
----
-
-## Nota sugli URL
-
-Gli indirizzi delle distribuzioni fanno riferimento al namespace del progetto, `progetto-shell.org`. Trattandosi di una simulazione di pubblicazione, le risorse non sono effettivamente dereferenziabili: i file sono allegati alla consegna e versionati in questo repository.
-
----
-
-## Verifica
-
-Il file è stato validato sintatticamente con `rdflib` — 68 triple, nessun errore di parsing — e sottoposto a controlli di coerenza interna:
-
-- assenza di risorse orfane, ossia definite ma mai referenziate
-- assenza di URI referenziati ma privi di descrizione
-- corrispondenza fra formato dichiarato ed estensione del file indicato in `downloadURL`
-- referenziazione del documento di licenza da entrambe le distribuzioni
+ La licenza adottata è CC BY 4.0, con tipo `Attribution` dal vocabolario ADMS.
 
 ---
 
@@ -73,7 +53,7 @@ Per la stesura di questo deliverable è stato impiegato uno strumento di intelli
 
 Le verifiche hanno consentito di individuare e correggere quattro difformità:
 
-1. l'URI della licenza, inizialmente tratto dal dominio Creative Commons anziché dal vocabolario delle licenze italiane richiesto dalla consegna;
+1. l'URI della licenza, inizialmente tratto dal dominio Creative Commons anziché dal vocabolario delle licenze italiane;
 2. gli indirizzi delle distribuzioni, che puntavano al sito reale del Ministero anziché al namespace del progetto;
 3. un'incoerenza fra il formato dichiarato per la distribuzione RDF/Turtle e l'estensione del file indicato nel `downloadURL`;
 4. alcune annotazioni provvisorie rimaste nel testo.
