@@ -8,7 +8,7 @@ Il file [`metadati_dcat-ap_it.ttl`](metadati_dcat-ap_it.ttl) descrive il dataset
 
 ## Che cosa descrive
 
-È utile distinguere due livelli. I file CSV e [`RDF_OpereArte_Onto-PM.ttl`](sprint_2/Ontologia/RDF_OpereArte_Onto-PM.ttl) contengono i **dati**: le opere, gli istituti, i luoghi. Questo file contiene i **metadati**: descrive il dataset in quanto tale — chi lo pubblica, con quale licenza, in quali formati è disponibile, quando è stato aggiornato.
+È utile distinguere due livelli. I file CSV e [`RDF_OpereArte_Onto-PM.ttl`](https://github.com/Paulpaccio/Progetti_Metodi/blob/main/worklog/sprint_2/Ontologia/RDF_OpereArte_Onto-PM.ttl) contengono i **dati**: le opere, gli istituti, i luoghi. Questo file contiene i **metadati**: descrive il dataset in quanto tale — chi lo pubblica, con quale licenza, in quali formati è disponibile, quando è stato aggiornato.
 
 
 ---
