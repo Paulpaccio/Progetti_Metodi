@@ -2,7 +2,7 @@
 
 Deliverable di **US2.4 — Metadatazione DCAT-AP_IT**.
 
-Il file [`metadati_dcat-ap_it.ttl`](metadati_dcat-ap_it.ttl) descrive il dataset delle opere d'arte secondo il profilo nazionale **DCAT-AP_IT**, adottato da AgID come specializzazione italiana di DCAT-AP europeo, a sua volta derivato dal vocabolario DCAT del W3C.
+Il file [`metadati_dcat-ap_it.ttl`](metadati_dcat-ap_it.ttl) descrive il dataset delle opere d'arte secondo il profilo nazionale **DCAT-AP_IT**, adottato da AgID come specializzazione italiana di DCAT-AP europeo, a sua volta derivato dal vocabolario DCAT del W3C. Come fonte per la realizzazione è stata usata la guida [Guida Pratica DCAT-AP_IT](https://github.com/giorgialodi/Guida-pratica-DCAT-AP_IT) della professoressa Lodi presente su GitHub.
 
 ---
 
