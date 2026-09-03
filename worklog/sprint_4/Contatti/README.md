@@ -1,6 +1,6 @@
 # dati.cultura.gov.it - Mockup del rifacimento del sito
 
-Mockup a alta fedeltà, statico, della pagina **Contatti**. Le schermate mostrano l'incremento di prodotto relativo alla User Story **US1.7 - Invio di un messaggio dalla pagina contatti**: 
+Mockup a alta fedeltà, statico, della pagina **Contatti** del rifacimento del catalogo open data del Ministero della Cultura (dati.cultura.gov.it), realizzato nell'ambito del progetto SHELL (corso Metodi informatici per la trasformazione digitale, a.a. 2025/2026). Le schermate mostrano l'incremento di prodotto relativo alla User Story **US1.7 - Invio di un messaggio dalla pagina contatti**: 
 - il modulo di contatto,
 - le sue opzioni di classificazione,
 - il flusso di conferma dopo l'invio.
