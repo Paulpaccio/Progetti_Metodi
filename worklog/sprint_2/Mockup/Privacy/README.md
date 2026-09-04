@@ -58,10 +58,10 @@ Mostra la tabella dei **tempi di conservazione** (non oltre 7 giorni per i dati 
 
 ## 4. Relazione con altre User Story
 
-US2.5 fa parte della stessa epic di US3.1 e US3.4 (Privacy e protezione dei dati personali), ma riguarda una cosa diversa: qui si tratta dei dati di navigazione raccolti automaticamente dal sito, mentre le altre riguardano i messaggi che gli utenti inviano dalla pagina Contatti.
+US2.5 fa parte della stessa epic di US3.1-US3.4 (Privacy e protezione dei dati personali), ma riguarda una cosa diversa: qui si tratta dei dati di navigazione raccolti automaticamente dal sito, mentre le altre riguardano i messaggi che gli utenti inviano dalla pagina Contatti.
 
 ---
 
 ## Note
 
-Queste schermate coprono solo la porzione di informativa relativa a US2.5. Il testo integrale della sezione informativa si trova nella cartella [`Privacy/`](../../Privacy/) dello stesso sprint.Queste schermate coprono solo la porzione di informativa relativa a US2.5. Il testo integrale della sezione informativa si trova nella cartella [`Privacy/`](../../Privacy/) dello stesso sprint.
+Queste schermate coprono solo la porzione di informativa relativa a US2.5. Il testo integrale della sezione informativa si trova nella cartella [`Privacy/`](../../Privacy/) dello stesso sprint.
