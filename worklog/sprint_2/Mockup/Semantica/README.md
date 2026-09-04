@@ -1,4 +1,4 @@
-# Consultare il modello semantico - Progetto SHELL
+# Consultare il modello semantico - US 1.3
 
 Questa cartella documenta il mockup della pagina **Ontologia**, realizzato per la User Story **US1.3 - Consultare il modello semantico**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
 
