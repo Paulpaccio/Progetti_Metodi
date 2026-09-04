@@ -29,7 +29,7 @@ Presenta dati.cultura.gov.it come la piattaforma con cui il Ministero della Cult
 
 Spiega poi che i primi dataset pubblicati come LOD nascono dal lavoro congiunto tra istituti centrali e direzioni generali del Ministero, mettendo in relazione informazioni che prima stavano in quattro sistemi separati:
 - la banca dati dei luoghi della cultura
-- le anagrafiche di archivi e aiblioteche
+- le anagrafiche di archivi e biblioteche
 - il catalogo dei beni culturali
 - altre banche dati documentali e fotografiche gestite dal MiC
 
