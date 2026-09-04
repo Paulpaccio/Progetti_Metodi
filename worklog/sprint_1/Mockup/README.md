@@ -4,6 +4,20 @@ Mockup a bassa fedeltà del rifacimento del catalogo open data del Ministero del
 
 Le schermate qui sotto mostrano la struttura prevista per l'incremento di prodotto delle prime User Story: navigazione principale, home/landing page, catalogo dataset e sezione aggiornamenti.
 
+--
+
+## Contenuto della cartella
+Mockup/
+├── README.md ← questo file
+└── Immagini/
+├── 01-home.png ← home page / landing
+├── 02-menu-dropdown.png ← menu di navigazione, tendina aperta
+├── 03-catalogo-dataset.png ← catalogo dataset
+├── 04-aggiornamenti-footer.png ← sezione aggiornamenti e novità
+└── PM-Footer.png ← footer, presente su tutte le pagine
+
+--
+
 ## Immagini/Screenshot
 
 ### 1. Home page / landing
