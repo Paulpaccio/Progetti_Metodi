@@ -48,7 +48,7 @@ Mockup della sezione **Il progetto**, pensata per spiegare in poche righe la nas
 
 1. **Il progetto**: introduzione per l'utente con rimando alla sezione Dataset.
 2. **Cosa sono i LOD**: spiegazione breve e non tecnica con un approfondimento sulla loro funzione.
-3. **Domande frequenti**: le domande più poste dagli utenti con link a una sezione di approfondimento dedicata.
+
 
 ### 2.2 US1.3 — Consultare il modello semantico
 Cartella: [`worklog/sprint_2/Mockup/Semantica`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_2/Mockup/Semantica)
