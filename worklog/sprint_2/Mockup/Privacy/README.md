@@ -37,4 +37,6 @@ Mostra la tabella dei **tempi di conservazione** (non oltre 7 giorni per i dati 
 
 ## Note
 
-Queste schermate coprono solo la porzione di informativa relativa a US2.5. Il testo integrale della sezione arriverà in uno sprint successivo.
+## Note
+
+Queste schermate coprono solo la porzione di informativa relativa a US2.5. Il testo integrale della sezione informativa si trova nella cartella [`Privacy/`](../../Privacy/) dello stesso sprint.
