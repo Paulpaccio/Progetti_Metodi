@@ -10,13 +10,14 @@ La pagina espone in forma divulgativa il modello concettuale formalizzato nella 
 
 ```
 Mockup/Semantica/
-├── README.md                          ← questo file
+├── README.md                                  ← questo file
 └── Immagini/
-    ├── 06-ontologia-intro.png         ← L'ontologia delle opere d'arte
-    ├── 07-ontologia-esplora.png       ← Esplora il modello
-    ├── 08-ontologia-legenda.png       ← Legenda delle classi
-    ├── 09-ontologia-domande.png       ← A quali domande risponde
-    └── 10-ontologia-scarica.png       ← Scarica il modello
+    ├── 06-ontologia-intro.png                 ← L'ontologia delle opere d'arte
+    ├── 07-ontologia-esplora.png                ← Esplora il modello, diagramma
+    ├── 07.1-ontologia-esplora-legenda.png      ← Esplora il modello, legenda delle classi
+    ├── 08-ontologia-domande.png                ← A quali domande risponde, Domande 1 e 2
+    ├── 08.1-ontologia-domande.png               ← A quali domande risponde, Domanda 3
+    └── 09-ontologia-scarica.png                ← Scarica il modello
 ```
 
 ---
@@ -28,9 +29,9 @@ La pagina è organizzata in quattro sezioni, navigabili da un indice laterale se
 | Sezione | Contenuto |
 |---|---|
 | **L'ontologia delle opere d'arte** | Che cosa documenta la sezione, perché il modello è la chiave di lettura dei dataset, riferimento agli standard W3C (RDF, RDFS, OWL) |
-| **Esplora il modello** | Diagramma semplificato delle cinque classi, legenda con identificativo di ciascuna classe, approfondimento sul trattamento del tempo |
-| **A quali domande risponde** | Tre domande scritte in linguaggio naturale, mostrate come blocchi a scomparsa: si vede solo la domanda, e cliccandoci sopra compare la risposta con un esempio sui dati pubblicati. |
-| **Scarica il modello** | Ontologia in RDF/Turtle, diagramma Graffoo in PNG, PDF delle dieci competency question |
+| **Esplora il modello** | Diagramma semplificato delle cinque classi, seguito da una legenda in forma tabellare con identificativo di ciascuna classe, e un approfondimento sul trattamento del tempo |
+| **A quali domande risponde** | Tre domande scritte in linguaggio naturale, mostrate come blocchi a scomparsa: si vede solo la domanda, e cliccandoci sopra compare la risposta con un esempio sui dati pubblicati |
+| **Scarica il modello** | Ontologia in RDF/Turtle, diagramma Graffoo in PNG, PDF delle dieci competency question con query di esempio |
 
 La scelta di articolare la pagina in sezioni brevi con indice risponde al requisito di progetto di **ridurre il testo** rispetto al sito attuale: ogni sezione è autonoma e raggiungibile direttamente, senza obbligare a una lettura sequenziale.
 
@@ -50,24 +51,24 @@ Cinque classi principali. Un dipinto è un caso particolare di opera d'arte, da 
 
 Diagramma semplificato: `Painting` come sottoclasse di `Artwork`, da cui eredita codice, titolo e descrizione; la catena `Painting` → `CulturalInstituteOrSite` → `Place`; il ramo `TimeReference` con le tre sottoclassi `ExactDate`, `YearRange` e `CenturyReference`.
 
-### 2.3 Legenda delle classi
-![Legenda](Immagini/08-ontologia-legenda.png)
+![Legenda delle classi](Immagini/07.1-ontologia-esplora-legenda.png)
 
-La sezione presenta la struttura dell'ontologia in forma tabellare: per ciascuna classe sono indicati che cosa rappresenta e da quale proprietà è identificata univocamente. Le cinque classi principali (`Artwork`, `Painting`, `CulturalInstituteOrSite`, `Place`, `TimeReference`) sono seguite dalle tre sottoclassi di `TimeReference`. `Artwork` porta le proprietà descrittive comuni a qualunque opera d'arte (codice identificativo, titolo, descrizione), mentre `Painting` è la classe da cui partono le relazioni verso l'istituto conservatore e verso il riferimento temporale.
+Scorrendo la stessa sezione, una tabella presenta la struttura dell'ontologia in forma sintetica: per ciascuna classe sono indicati che cosa rappresenta e da quale proprietà è identificata univocamente. Le cinque classi principali (`Artwork`, `Painting`, `CulturalInstituteOrSite`, `Place`, `TimeReference`) sono seguite dalle tre sottoclassi di `TimeReference`. `Artwork` porta le proprietà descrittive comuni a qualunque opera d'arte (codice identificativo, titolo, descrizione), mentre `Painting` è la classe da cui partono le relazioni verso l'istituto conservatore e verso il riferimento temporale.
 
 Il tempo viene trattato come entità autonoma anziché come valore testuale: nelle fonti di catalogazione la datazione compare in forme eterogenee (date complete, intervalli di anni, riferimenti di secolo con eventuali specificazioni di parte) che una singola proprietà testuale non consentirebbe di confrontare. Alle tre sottoclassi si affianca un valore espresso secondo lo standard EDTF, destinato all'interoperabilità con sistemi esterni.
 
-### 2.4 A quali domande risponde
-![Domande](Immagini/09-ontologia-domande.png)
+### 2.3 A quali domande risponde
+![Domande 1 e 2](Immagini/08-ontologia-domande.png)
+![Domanda 3](Immagini/08.1-ontologia-domande.png)
 
-Le domande esposte sul sito sono riformulazioni divulgative delle competency question prodotte nella US2.2. La forma originale, con la variabile `X`, è corretta come artefatto di progettazione ma risulta incomprensibile a un visitatore: sul sito le domande sono quindi poste come le formulerebbe davvero l'utente, mentre l'elenco integrale in forma originale resta disponibile nel PDF scaricabile.
+Le domande esposte sul sito sono riformulazioni divulgative delle competency question prodotte nella US2.2. La forma originale, con la variabile `X`, è corretta come artefatto di progettazione ma risulta incomprensibile a un visitatore: sul sito le domande sono quindi poste come le formulerebbe davvero l'utente, mentre l'elenco integrale in forma originale resta disponibile nel PDF scaricabile. Le due schermate mostrano il funzionamento dei blocchi a scomparsa: nella prima sono aperte le Domande 1 e 2, nella seconda la Domanda 3.
 
 Le tre domande, nel loro insieme, percorrono ogni arco del diagramma semplificato: la specializzazione `Painting`/`Artwork` con le proprietà identificative, le relazioni `isHostedIn` e `isLocatedIn` con le rispettive inverse, e il ramo `hasTimeReference` con le tre sottoclassi.
 
-### 2.5 Scarica il modello
-![Scarica](Immagini/10-ontologia-scarica.png)
+### 2.4 Scarica il modello
+![Scarica](Immagini/09-ontologia-scarica.png)
 
-Tre card di download (TTL, PNG, PDF) con formato e dimensione dichiarati, coerenti con il principio di pubblicazione in formato aperto e riutilizzabile.
+Tre card di download con formato e dimensione dichiarati, coerenti con il principio di pubblicazione in formato aperto e riutilizzabile: l'ontologia in TTL, il diagramma Graffoo in PNG, e un PDF con le dieci competency question corredate delle rispettive query di esempio.
 
 ---
 
@@ -85,8 +86,8 @@ Tre card di download (TTL, PNG, PDF) con formato e dimensione dichiarati, coeren
 
 ## 4. Deliverable
 
-- Mockup della pagina Ontologia, cinque schermate (`Immagini/`)
-- Testi definitivi delle tre domande e delle relative risposte (sezione 2.4 di questo documento)
+- Mockup della pagina Ontologia, sei schermate (`Immagini/`)
+- Testi definitivi delle tre domande e delle relative risposte (sezione 2.3 di questo documento)
 
 Nessun nuovo dato o documento: il diagramma Graffoo e le competency question sono riusati dalla US2.2 (Sprint 1).
 
