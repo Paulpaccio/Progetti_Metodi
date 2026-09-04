@@ -7,6 +7,7 @@ Le schermate qui sotto mostrano la struttura prevista per l'incremento di prodot
 --
 
 ## Contenuto della cartella
+```
 Mockup/
 ├── README.md                          ← questo file
 └── Immagini/
@@ -15,7 +16,7 @@ Mockup/
     ├── 03-catalogo-dataset.png        ← catalogo dataset
     ├── 04-aggiornamenti-footer.png    ← sezione aggiornamenti e novità
     └── PM-Footer.png                  ← footer, presente su tutte le pagine
-
+```
 ---
 
 ## Immagini/Screenshot
