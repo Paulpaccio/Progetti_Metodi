@@ -27,7 +27,7 @@ trattamento dei dati conferiti tramite la pagina dei contatti.
 <img width="791" height="447" alt="08-gestione-segnalazioni-contatti" src="https://github.com/user-attachments/assets/23283c9c-92a5-49a7-be0d-6c30e9166554" />
 
 
-Mostra l'intestazione della sezione **Trattamenti effettuati, finalità e base
+<br> Mostra l'intestazione della sezione **Trattamenti effettuati, finalità e base
 giuridica** e il blocco relativo alla gestione delle segnalazioni della pagina
 contatti, articolato in **Dati trattati** (nome, cognome, email e contenuto del
 messaggio), **Finalità** (ricezione e riscontro delle segnalazioni) e **Base
