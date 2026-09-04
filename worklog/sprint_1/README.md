@@ -13,11 +13,9 @@ Repository: [Paulpaccio/Progetti_Metodi — sprint_1](https://github.com/Paulpac
 | US1.1 | Home page chiara | Medium | Approved |
 | US1.8 | Informazioni utili e immediate (footer) | Low | Approved |
 | US2.2 | Creazione dell'ontologia delle opere d'arte | Highest | Approved |
-| US2.1 | Produzione dati utili e immediate in CSV | High | Completed *(non ancora approvata)* |
+| US2.1 | Produzione dati utili e immediate in CSV | High | Approved |
 
-Non ci sono User Story rimaste in colonna **To do**.
-
-> **Nota sulla US2.1:** la User Story è stata completata dopo la chiusura formale dello Sprint 1 e prima dell'inizio dello Sprint 2. Verrà quindi valutata e approvata in sede di discussione di gruppo - approvazione peraltro necessaria anche per poter avviare la **US2.3 (Trasformazione CSV → RDF/Turtle con YARRRML)**, che dipende dai dati prodotti in questa User Story.
+> **Nota sulla US2.1**: la User Story è stata completata dopo la chiusura formale dello Sprint 1 e prima dell'inizio dello Sprint 2, quindi verrà valutata e approvata in sede di discussione di gruppo. L'approvazione serve anche per avviare la **US2.3 (Trasformazione CSV → RDF/Turtle con YARRRML)**, che dipende dai dati prodotti qui.
 
 ---
 
@@ -28,32 +26,32 @@ Cartella: [`sprint_1/Mockup`](https://github.com/Paulpaccio/Progetti_Metodi/tree
 
 Mockup a bassa fedeltà del rifacimento del catalogo, relativo alle User Story su navigazione, home page e catalogo dataset. Comprende quattro schermate principali più il footer:
 
-1. **Home page / landing** — claim del progetto, due call-to-action (*Catalogo e ricerca tra dataset*, *Accesso ai dati - API e SPARQL*), contatori di dataset pubblicati ed entità collegate, link di approfondimento.
-2. **Menu di navigazione** — testata con le voci Il progetto, Dataset, Ontologia, Accesso ai dati, Contatti; il menu "Accesso ai dati" si espande in tendina (*API e SPARQL* / *Scarica dati*); selettore lingua ITA/ENG.
-3. **Catalogo dataset** — dataset presentati come card (titolo, tag tematico, descrizione, link "esplora il dataset").
-4. **Aggiornamenti e novità** — tre colonne: Nuovi dataset, Aggiornamenti, Comunicazione.
-5. **Footer** (presente su tutte le pagine) — contatti istituzionali, link utili (amministrazione trasparente, privacy, note legali, accessibilità), collegamenti social.
+1. **Home page / landing**: claim del progetto, due call-to-action (*Catalogo e ricerca tra dataset*, *Accesso ai dati - API e SPARQL*), contatori di dataset pubblicati ed entità collegate, link di approfondimento.
+2. **Menu di navigazione**: testata con le voci Il progetto, Dataset, Ontologia, Accesso ai dati, Contatti; il menu "Accesso ai dati" si espande in tendina (*API e SPARQL* / *Scarica dati*); selettore lingua ITA/ENG.
+3. **Catalogo dataset**: dataset presentati come card (titolo, tag tematico, descrizione, link "esplora il dataset").
+4. **Aggiornamenti e novità**: tre colonne, Nuovi dataset, Aggiornamenti, Comunicazione.
+5. **Footer** (presente su tutte le pagine): contatti istituzionali, link utili (amministrazione trasparente, privacy, note legali, accessibilità), collegamenti social.
 
 Il mockup copre lo stato del prodotto per le US relative a home, navigazione e catalogo, e sarà esteso negli sprint successivi (es. pagina Contatti, scheda di dettaglio dataset, pagina Ontologia).
 
 ### 2.2 Ontologia OWL
 Cartella: [`sprint_1/Ontologia`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/sprint_1/Ontologia)
 
-Modello concettuale e ontologia OWL per il dataset delle opere d'arte (dipinti) conservate in istituti e luoghi della cultura.
+Modello concettuale e ontologia OWL per il dataset delle opere d'arte conservate in istituti e luoghi della cultura.
 
-**Modello concettuale** — quattro concetti principali:
-- **`Artwork`** — opera d'arte generica (codice, titolo, descrizione); specializzata in **`Painting`** (unico sottotipo popolato), che porta le relazioni verso istituto e riferimento temporale.
-- **`CulturalInstituteOrSite`** — istituto/luogo della cultura che ospita un dipinto.
-- **`Place`** — luogo geografico (comune), identificato dal codice ISTAT.
-- **`TimeReference`** — riferimento temporale, specializzato in tre sottoclassi mutuamente disgiunte: `ExactDate`, `YearRange`, `CenturyReference`.
+**Modello concettuale**: quattro concetti principali.
+- **`Artwork`**: opera d'arte generica (codice, titolo, descrizione); specializzata in **`Painting`** (unico sottotipo popolato), che porta le relazioni verso istituto e riferimento temporale.
+- **`CulturalInstituteOrSite`**: istituto/luogo della cultura che ospita un dipinto.
+- **`Place`**: luogo geografico (comune), identificato dal codice ISTAT.
+- **`TimeReference`**: riferimento temporale, specializzato in tre sottoclassi disgiunte, `ExactDate`, `YearRange`, `CenturyReference`.
 
 Il file [`RDF_Ontologia-PM.ttl`](https://github.com/Paulpaccio/Progetti_Metodi/blob/main/sprint_1/Ontologia/RDF_Ontologia-PM.ttl.txt) contiene la formalizzazione completa (classi, object/datatype property, disgiunzioni, `owl:hasKey`, `owl:inverseOf`), verificata con il reasoner **HermiT** in Protégé.
 
 Il modello è documentato anche graficamente in due diagrammi complementari (cartella `Diagrammi/`):
-- **Diagramma E-R**, per una lettura orientata alla progettazione dei dati;
-- **Diagramma Graffoo**, per la formalizzazione OWL.
+- **Diagramma E-R**: lettura orientata alla progettazione dei dati.
+- **Diagramma Graffoo**: formalizzazione OWL.
 
-**Competency Question (10)** — hanno guidato la modellazione e sono state riviste iterativamente durante lo sviluppo; coprono tra l'altro l'identificazione univoca di opere/istituti/luoghi (`owl:hasKey`), la navigazione delle relazioni dirette e inverse (`isHostedIn`/`hosts`, `isLocatedIn`/`hasCulturalInstitute`) e l'interrogazione uniforme dei riferimenti temporali indipendentemente dal formato originale (`hasEDTFValue`).
+**Competency Question (10)**: hanno guidato la modellazione e sono state riviste iterativamente durante lo sviluppo. Coprono tra l'altro l'identificazione univoca di opere/istituti/luoghi (`owl:hasKey`), la navigazione delle relazioni dirette e inverse (`isHostedIn`/`hosts`, `isLocatedIn`/`hasCulturalInstitute`) e l'interrogazione uniforme dei riferimenti temporali indipendentemente dal formato originale (`hasEDTFValue`).
 
 **Principali scelte di design:**
 - attributi comuni su `Artwork`, relazioni specifiche su `Painting` (derivate dal contenuto reale del CSV);
@@ -66,7 +64,6 @@ Il modello è documentato anche graficamente in due diagrammi complementari (car
 
 ---
 
-## 3. Collegamento con lo Sprint 2
+## Nota
 
-L'approvazione della **US2.1 (Produzione dati in CSV)** è un prerequisito per l'avvio della **US2.3 (Trasformazione CSV → RDF/Turtle con YARRRML)**, che rappresenta quindi il naturale punto di partenza dello Sprint 2 una volta chiusa la discussione di gruppo sulla US2.1.
-
+L'approvazione di **US2.1** è il prerequisito per avviare **US2.3 (Trasformazione CSV → RDF/Turtle con YARRRML)**: sarà il punto di partenza dello Sprint 2, una volta chiusa la discussione di gruppo su US2.1.
