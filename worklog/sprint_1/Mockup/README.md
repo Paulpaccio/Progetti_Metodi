@@ -8,15 +8,15 @@ Le schermate qui sotto mostrano la struttura prevista per l'incremento di prodot
 
 ## Contenuto della cartella
 Mockup/
-├── README.md ← questo file
+├── README.md                          ← questo file
 └── Immagini/
-├── 01-home.png ← home page / landing
-├── 02-menu-dropdown.png ← menu di navigazione, tendina aperta
-├── 03-catalogo-dataset.png ← catalogo dataset
-├── 04-aggiornamenti-footer.png ← sezione aggiornamenti e novità
-└── PM-Footer.png ← footer, presente su tutte le pagine
+    ├── 01-home.png                    ← home page / landing
+    ├── 02-menu-dropdown.png           ← menu di navigazione, tendina aperta
+    ├── 03-catalogo-dataset.png        ← catalogo dataset
+    ├── 04-aggiornamenti-footer.png    ← sezione aggiornamenti e novità
+    └── PM-Footer.png                  ← footer, presente su tutte le pagine
 
---
+---
 
 ## Immagini/Screenshot
 
