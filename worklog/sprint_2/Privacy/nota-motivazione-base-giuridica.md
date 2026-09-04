@@ -1,7 +1,7 @@
 # Nota di motivazione della base giuridica
 ### Trattamento dei dati di navigazione
 
-**Deliverable:** US2.5 — Informativa privacy: tracciamento del sito
+**Deliverable:** US2.5 — Informativa privacy: tracciamento del sito <br>
 **Progetto:** dati.cultura.gov.it — Corso "Metodi informatici per la trasformazione digitale", a.a. 2025/2026
 
 ---
