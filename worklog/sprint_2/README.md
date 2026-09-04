@@ -5,7 +5,28 @@ Riepilogo delle attività e dei deliverable prodotti durante il secondo sprint d
 Repository: [Paulpaccio/Progetti_Metodi — sprint_2](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_2)
 
 ---
+## Struttura della cartella
 
+```
+worklog/sprint_2/
+├── README.md                  ← questo file
+├── Mockup/
+│   ├── ilProgetto/
+│   ├── Privacy/
+│   └── Semantica/
+├── Ontologia/
+│   ├── README.md
+│   ├── RDF_OpereArte_Onto-PM.ttl
+│   ├── mapping.yarrrml.yml
+│   └── CSVs/
+├── Privacy/
+│   ├── README.md
+│   └── nota-motivazione-base-giuridica.md
+└── SPARQL/
+    ├── README.md
+    └── Immagini/
+```
+---
 ## 1. Stato delle User Story (board Trello/Jira)
 
 | US | Titolo | Priorità | Stato |
