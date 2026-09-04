@@ -1,32 +1,40 @@
-# dati.cultura.gov.it - Mockup del rifacimento del sito
+# Informativa privacy — dati di navigazione - Progetto SHELL
 
-Mockup a bassa fedeltà del rifacimento del catalogo open data del Ministero della Cultura ([dati.cultura.gov.it](https://dati.cultura.gov.it/)), realizzato nell'ambito del progetto SHELL (corso *Metodi informatici per la trasformazione digitale*, a.a. 2025/2026).
+Questa cartella documenta il mockup della sezione dell'informativa sulla privacy dedicata ai dati di navigazione, realizzato per la User Story **US2.5 - Informativa privacy: tracciamento del sito**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
 
-Le schermate mostrano la struttura prevista per l'incremento di prodotto delle prime User Story: navigazione principale, home/landing page, catalogo dataset e sezione aggiornamenti.
+## Contenuto della cartella
 
-## Immagini/Screenshot
+```
+Mockup/Privacy/
+├── README.md                                    ← questo file
+└── Immagini/
+    ├── 05-privacy-dati-navigazione.png          ← intestazione e dati trattati
+    ├── 05.1-privacy-dati-navigazione.png        ← finalità e base giuridica
+    └── 05.2-privacy-dati-navigazione.png        ← tempi di conservazione
+```
+---
 
-### 1. Informativa privacy — dati di navigazione
+## 1. Le tre schermate
 
-La sezione dell'informativa sulla privacy dedicata ai dati di navigazione (increment di Sprint 2, US2.5) è mostrata in tre schermate, corrispondenti allo scorrimento della pagina.
+Tre schermate mostrano la sezione dell'informativa privacy sui dati di navigazione.
 
-#### 5.1 Intestazione e dati trattati
+### 1.1 Intestazione e dati trattati
 ![Informativa privacy - intestazione](Immagini/05-privacy-dati-navigazione.png)
 
 Mostra l'intestazione dell'informativa (riferimenti normativi, data di ultimo aggiornamento) e la sezione **Dati trattati**: indirizzi IP, nomi a dominio, URI delle risorse richieste e altri parametri tecnici raccolti implicitamente dai protocolli di comunicazione di Internet.
 
-#### 5.2 Finalità e base giuridica
+### 1.2 Finalità e base giuridica
 ![Informativa privacy - finalità e base giuridica](Immagini/05.1-privacy-dati-navigazione.png)
 
-Mostra la **Finalità** del trattamento (rilevazione statistica aggregata sull'uso del sito) e la **Base giuridica**: art. 6, par. 1, lett. e) GDPR — esecuzione di un compito di interesse pubblico, senza necessità di consenso ai sensi dell'art. 122 del d.lgs. 196/2003.
+Mostra la **Finalità** del trattamento (rilevazione statistica aggregata sull'uso del sito) e la **Base giuridica**: art. 6, par. 1, lett. e) GDPR, esecuzione di un compito di interesse pubblico, senza necessità di consenso ai sensi dell'art. 122 del d.lgs. 196/2003.
 
-#### 5.3 Tempi di conservazione
+### 1.3 Tempi di conservazione
 ![Informativa privacy - tempi di conservazione](Immagini/05.2-privacy-dati-navigazione.png)
 
-Mostra la tabella dei **tempi di conservazione** (non oltre 7 giorni per i dati di navigazione) e un box di evidenza che rassicura l'utente sull'anonimizzazione delle statistiche pubblicate.
+Mostra la tabella dei **tempi di conservazione** (non oltre 7 giorni per i dati di navigazione) e un box di evidenza che rassicura l'utente sull'anonimità delle statistiche pubblicate.
 
-Queste schermate coprono solo la porzione di informativa relativa a US2.5
+---
 
 ## Note
 
-Questo mockup rappresenta lo stato del prodotto per le US relative a home, navigazione e catalogo dataset. Verrà esteso nelle sprint successive man mano che verranno completate nuove User Story (es. pagina Contatti, scheda di dettaglio dataset, pagina Ontologia).
+Queste schermate coprono solo la porzione di informativa relativa a US2.5. Il testo integrale della sezione arriverà in uno sprint successivo.
