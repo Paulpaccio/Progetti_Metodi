@@ -5,7 +5,27 @@ Riepilogo delle attività e dei deliverable prodotti durante il primo sprint del
 Repository: [Paulpaccio/Progetti_Metodi — sprint_1](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/sprint_1)
 
 ---
+## Struttura della cartella
 
+```
+sprint_1/
+├── README.md                  ← questo file
+├── Mockup/
+│   ├── README.md
+│   └── Immagini/
+│       ├── 01-home.png
+│       ├── 02-menu-dropdown.png
+│       ├── 03-catalogo-dataset.png
+│       ├── 04-aggiornamenti-footer.png
+│       └── PM-Footer.png
+└── Ontologia/
+    ├── README.md
+    ├── RDF_Ontologia-PM.ttl
+    └── Diagrammi/
+        ├── DiagrammaER_Onto-PM.drawio.png
+        └── Graffoo_Onto-PM.drawio.png
+```
+---
 ## 1. Stato delle User Story (board Trello/Jira)
 
 | US | Titolo | Priorità | Stato |
