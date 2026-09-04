@@ -1,4 +1,4 @@
-# Il progetto dati.cultura.gov.it - US 1.9
+# Il progetto - US 1.9
 
 Questa cartella documenta il mockup della sezione **Il progetto**, realizzato per la User Story **US1.9 - Il progetto dati.cultura.gov.it**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
 
