@@ -1,15 +1,39 @@
-# Ontologia — Modello concettuale, CSV, YARRRML e RDF/Turtle
+# Trasformazione CSV → RDF/Turtle con YARRRML - US 2.3
 
-Questa cartella contiene il modello concettuale, l’ontologia OWL, i CSV puliti, i mapping YARRRML e il grafo RDF/Turtle relativi al dataset dei dipinti del Ministero della Cultura.
-L’obiettivo è fornire una rappresentazione formale, interrogabile e interoperabile dei dati, conforme ai principi dei Linked Open Data.
+Questa cartella contiene il modello concettuale, l'ontologia OWL, i CSV puliti, i mapping YARRRML e il grafo RDF/Turtle relativi al dataset dei dipinti del Ministero della Cultura, realizzati per la User Story **US2.3 - Trasformazione CSV → RDF/Turtle con YARRRML**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
 
---- 
-## 1 CSVs
-[I file CSVs](worklog/sprint_2/Ontologia/CSVsworklog/sprint_2/Ontologia/CSVs) contiene non solo il file CSV (in UTF-8) della tabella presente nelle indicazioni del progetto ([opere_arte_completo.csv](worklog/sprint_2/Ontologia/CSVs/opere_arte_completo.csv), ma ne sono inseriti altri sei divisi per categorie. Questo è stato fatto per facilitare la scrittura dell'RDF in YARRRML in quanto è stato garantire i valori diversi appartenenti alle diverse classi, specialmente per il padre (`TimeReference`) e le tre diverse sottoclassi `ExactDate`, `YearRange`, `CenturyReference`.
+> **Come data manager, voglio che i dati del CSV siano disponibili anche come linked open data, per facilitarne il riuso e l'integrazione con altre fonti.**
 
-## Mapping YARRRML
-I mapping sono stati generati con [Matey/RML.io](https://rml.io/yarrrml/matey/#) e potete trovare lo [script YARRRML qui](worklog/sprint_2/Ontologia/RDF_OpereArte_Onto-PM.ttl.txt.). 
-**I prefissi presenti**
+L'obiettivo è fornire una rappresentazione formale, interrogabile e interoperabile dei dati, conforme ai principi dei Linked Open Data.
+
+## Contenuto della cartella
+
+```
+Ontologia/
+├── README.md                          ← questo file
+├── mapping.yarrrml.yml                ← script di mapping YARRRML
+├── RDF_OpereArte_Onto-PM.ttl          ← grafo RDF/Turtle generato dal mapping
+└── CSVs/
+    ├── opere_arte_completo.csv        ← file principale, come da indicazioni di progetto
+    ├── paintings.csv
+    ├── institutes.csv
+    ├── places.csv
+    ├── exact_dates.csv
+    ├── year_ranges.csv
+    └── century_references.csv
+```
+
+---
+
+## 1. CSV
+
+La cartella [`CSVs/`](CSVs/) non contiene solo il file principale in UTF-8 richiesto dalle indicazioni di progetto, [`opere_arte_completo.csv`](CSVs/opere_arte_completo.csv), ma anche altri sei CSV divisi per categoria. Sono stati aggiunti per facilitare la scrittura del mapping YARRRML: separare i dati per categoria permette di distinguere con chiarezza i valori delle diverse classi, in particolare della classe padre `TimeReference` e delle sue tre sottoclassi `ExactDate`, `YearRange`, `CenturyReference`.
+
+## 2. Mapping YARRRML
+
+I mapping sono stati generati con [Matey/RML.io](https://rml.io/yarrrml/matey/#): lo script si trova in [`mapping.yarrrml.yml`](mapping.yarrrml.yml).
+
+**Prefissi presenti:**
 ```
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -18,7 +42,25 @@ I mapping sono stati generati con [Matey/RML.io](https://rml.io/yarrrml/matey/#)
 @prefix data: <http://www.progetto-shell.org/data/> .
 ```
 
-## 2. Note
-Questa cartella contiene l’intero flusso di modellazione e trasformazione dei dati:
-`CSV → YARRRML → RDF/Turtle → Ontologia OWL`
-ed è la base per le fasi successive di pubblicazione SPARQL e documentazione DCAT-AP-IT.
+---
+
+## 3. Copertura del test di accettazione
+
+| Requisito | Dove è soddisfatto |
+|---|---|
+| Il Turtle rispetta classi e proprietà dell'ontologia | `RDF_OpereArte_Onto-PM.ttl` |
+| È generato con YARRRML | [`mapping.yarrrml.yml`](mapping.yarrrml.yml) |
+
+---
+
+## 4. Deliverable
+
+- `mapping.yarrrml.yml` (mapping YARRRML)
+- `RDF_OpereArte_Onto-PM.ttl` (grafo RDF/Turtle)
+- Sette file CSV in `CSVs/`
+
+---
+
+## 5. Relazione con altre User Story
+
+Questa cartella fa parte dell'epic **Pubblicazione del dataset opere d'arte** (PM-7). Contiene l'intero flusso di modellazione e trasformazione dei dati, CSV → YARRRML → RDF/Turtle → Ontologia OWL, ed è la base su cui si costruiscono le fasi successive: pubblicazione dell'endpoint SPARQL (US1.4) e documentazione DCAT-AP-IT.
