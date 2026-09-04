@@ -1,4 +1,4 @@
-# Privacy - protezione dei dati personali - US 2.5
+# Protezione dei dati personali - US 2.5
 
 Questa cartella contiene i deliverable testuali relativi alla protezione dei dati personali prodotti per la User Story **US2.5 - Informativa privacy: tracciamento del sito**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
 
