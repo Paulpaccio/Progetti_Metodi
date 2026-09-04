@@ -1,6 +1,8 @@
-# Informativa privacy — dati di navigazione - Progetto SHELL
+# Informativa privacy - dati di navigazione - Progetto SHELL
 
 Questa cartella documenta il mockup della sezione dell'informativa sulla privacy dedicata ai dati di navigazione, realizzato per la User Story **US2.5 - Informativa privacy: tracciamento del sito**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
+
+> **Come titolare del trattamento, voglio informare gli utenti su come vengono trattati i dati di navigazione, indicando finalità, tempi di conservazione e base giuridica, per garantire trasparenza e conformità alla normativa.**
 
 ## Contenuto della cartella
 
@@ -12,11 +14,14 @@ Mockup/Privacy/
     ├── 05.1-privacy-dati-navigazione.png        ← finalità e base giuridica
     └── 05.2-privacy-dati-navigazione.png        ← tempi di conservazione
 ```
+
+Il testo integrale dell'informativa e la nota di motivazione della base giuridica si trovano nella cartella [`Privacy/`](../../Privacy/) dello stesso sprint, non qui: questa cartella contiene solo il mockup grafico della sezione.
+
 ---
 
 ## 1. Le tre schermate
 
-Tre schermate mostrano la sezione dell'informativa privacy sui dati di navigazione.
+Tre schermate mostrano la sezione dell'informativa privacy sui dati di navigazione, nell'ordine in cui si vedono scorrendo la pagina.
 
 ### 1.1 Intestazione e dati trattati
 ![Informativa privacy - intestazione](Immagini/05-privacy-dati-navigazione.png)
@@ -35,8 +40,28 @@ Mostra la tabella dei **tempi di conservazione** (non oltre 7 giorni per i dati 
 
 ---
 
-## Note
+## 2. Copertura del test di accettazione
+
+| Requisito | Dove è soddisfatto |
+|---|---|
+| La sezione indica finalità, base giuridica e tempi di conservazione per il trattamento dei dati di navigazione | Schermate 1.2 (finalità e base giuridica) e 1.3 (tempi di conservazione) |
+| La base giuridica è motivata con riferimento all'art. 6 GDPR e alla natura pubblica del titolare | Schermata 1.2, e approfondita nella nota di motivazione in [`Privacy/`](../../Privacy/) |
+| Mockup: pagina informativa, sezione dati di navigazione v1 | Cartella `Immagini/`, tre schermate |
+
+---
+
+## 3. Deliverable
+
+- Mockup della sezione "tracciamento navigazione" dell'informativa privacy, tre schermate (`Immagini/`)
+- Nota di motivazione della base giuridica, in [`Privacy/`](../../Privacy/)
+---
+
+## 4. Relazione con altre User Story
+
+US2.5 fa parte della stessa epic di US3.1 e US3.4 (Privacy e protezione dei dati personali), ma riguarda una cosa diversa: qui si tratta dei dati di navigazione raccolti automaticamente dal sito, mentre le altre riguardano i messaggi che gli utenti inviano dalla pagina Contatti.
+
+---
 
 ## Note
 
-Queste schermate coprono solo la porzione di informativa relativa a US2.5. Il testo integrale della sezione informativa si trova nella cartella [`Privacy/`](../../Privacy/) dello stesso sprint.
+Queste schermate coprono solo la porzione di informativa relativa a US2.5. Il testo integrale della sezione informativa si trova nella cartella [`Privacy/`](../../Privacy/) dello stesso sprint.Queste schermate coprono solo la porzione di informativa relativa a US2.5. Il testo integrale della sezione informativa si trova nella cartella [`Privacy/`](../../Privacy/) dello stesso sprint.
