@@ -2,7 +2,7 @@
 
 Deliverable relativi alla protezione dei dati personali prodotti in questo sprint. <br>
 Le sezioni dell'informativa qui indicate fanno parte dell'informativa privacy
-condivisa del sito: insieme alle altre sezioni compongono l'informativa completa disponibile nella radice del repository.
+condivisa del sito: insieme alle altre sezioni compongono l'informativa completa disponibile nella radice del repository (https://github.com/Paulpaccio/Progetti_Metodi/blob/main/worklog/Informativa_sul_trattamento_dei_dati_personali.pdf).
 
 ## Contenuto della cartella
 - `nota-motivazione-base-giuridica-contatti.md` — motivazione della base giuridica
