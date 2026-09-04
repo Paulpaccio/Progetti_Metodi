@@ -1,4 +1,4 @@
-# Informativa privacy - dati di navigazione - Progetto SHELL
+# Informativa privacy - dati di navigazione - US 2.5
 
 Questa cartella documenta il mockup della sezione dell'informativa sulla privacy dedicata ai dati di navigazione, realizzato per la User Story **US2.5 - Informativa privacy: tracciamento del sito**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
 
