@@ -29,6 +29,7 @@ I mapping sono stati generati con [Matey/RML.io](https://rml.io/yarrrml/matey/#)
 @prefix dco: <http://www.progetto-shell.org/dati-cultura-ontology#> .
 @prefix data: <http://www.progetto-shell.org/data/> .
 ```
+> **Prefissi RDF**: in un file RDF, ogni classe o proprietà ha un indirizzo web completo come nome (es. `http://www.progetto-shell.org/dati-cultura-ontology#Painting`), troppo lungo da scrivere ogni volta. I prefissi sono delle scorciatoie e si dichiarano una volta sola all'inizio del file, poi si usano al posto dell'indirizzo intero. Qui ce ne sono cinque: `rdf` e `xsd` (i vocabolari di base del web semantico), `sd` (per i servizi SPARQL), `dco` (il vocabolario della nostra ontologia, con le classi e le proprietà che abbiamo definito noi, come `dco:hasTitle`) e `data` (i dati veri e propri: i singoli dipinti, istituti e luoghi).
 
 ---
 
@@ -37,7 +38,7 @@ I mapping sono stati generati con [Matey/RML.io](https://rml.io/yarrrml/matey/#)
 | Requisito | Dove è soddisfatto |
 |---|---|
 | Il Turtle rispetta classi e proprietà dell'ontologia | `RDF_OpereArte_Onto-PM.ttl` |
-| È generato con YARRRML | [`mapping.yarrrml.yml`](mapping.yarrrml.yml) |
+| È generato con YARRRML | [`mapping.yarrrml.yml`](mapping.yarrrml.yml), tramite Matey/RML.io |
 
 ---
 
@@ -45,10 +46,10 @@ I mapping sono stati generati con [Matey/RML.io](https://rml.io/yarrrml/matey/#)
 
 - `mapping.yarrrml.yml` (mapping YARRRML)
 - `RDF_OpereArte_Onto-PM.ttl` (grafo RDF/Turtle)
-- Sette file CSV in `CSVs/`
+
 
 ---
 
 ## 4. Relazione con altre User Story
 
-Questa cartella fa parte dell'epic **Pubblicazione del dataset opere d'arte** (PM-7). Contiene l'intero flusso di modellazione e trasformazione dei dati, CSV → YARRRML → RDF/Turtle → Ontologia OWL, ed è la base su cui si costruiscono le fasi successive: pubblicazione dell'endpoint SPARQL (US1.4) e documentazione DCAT-AP-IT.
+Questa cartella fa parte dell'epic **Pubblicazione del dataset opere d'arte** (PM-7). Riceve in input i CSV prodotti in **US2.1** (Sprint 1) e li trasforma in RDF/Turtle secondo l'ontologia di **US2.2**. È a sua volta la base per la pubblicazione dell'endpoint SPARQL (**US1.4**) e per la documentazione DCAT-AP-IT (**US2.4**).
