@@ -1,6 +1,6 @@
 # Trasformazione CSV → RDF/Turtle con YARRRML - US 2.3
 
-Questa cartella contiene il modello concettuale, l'ontologia OWL, i CSV puliti, i mapping YARRRML e il grafo RDF/Turtle relativi al dataset dei dipinti del Ministero della Cultura, realizzati per la User Story **US2.3 - Trasformazione CSV → RDF/Turtle con YARRRML**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
+Questa cartella contiene il mapping YARRRML e il grafo RDF/Turtle relativi al dataset dei dipinti del Ministero della Cultura, realizzati per la User Story **US2.3 - Trasformazione CSV → RDF/Turtle con YARRRML**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
 
 > **Come data manager, voglio che i dati del CSV siano disponibili anche come linked open data, per facilitarne il riuso e l'integrazione con altre fonti.**
 
