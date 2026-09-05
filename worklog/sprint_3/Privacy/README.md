@@ -4,8 +4,6 @@ Questa cartella contiene il testo della sezione dell'informativa privacy dedicat
 
 > **Come funzionaria, voglio sapere quali risorse interne possono accedere ai messaggi ricevuti, per rispettare il principio di minimizzazione e gestire correttamente gli accessi.**
 
-Questa sezione fa parte dell'**informativa privacy condivisa del sito**: insieme alle altre sezioni, compone l'informativa completa disponibile [`Informativa_sul_trattamento_dei_dati_personali.pdf`](https://github.com/Paulpaccio/Progetti_Metodi/blob/main/worklog/Informativa_sul_trattamento_dei_dati_personali.pdf).
-
 ## Contenuto della cartella
 
 ```
