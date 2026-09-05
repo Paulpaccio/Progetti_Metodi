@@ -10,7 +10,7 @@ Questa cartella documenta il mockup della pagina **API e SPARQL**, realizzato pe
 Mockup/API_SPARQL/
 ├── README.md                      ← questo file
 └── Immagini/
-    ├── API_SPARQL_.png            ← pagina, vista d'insieme
+    ├── API_SPARQL_.png            ← come si presenta la pagina
     ├── API_SPARQL_Query_1.png     ← query "dove si trova un'opera?"
     ├── API_SPARQL_Query_2.png     ← query "opere per secolo" (accordion)
     └── API_SPARQL_Metodi.png      ← i due metodi + esempio di chiamata API
@@ -18,7 +18,7 @@ Mockup/API_SPARQL/
 
 ---
 
-## 1. Vista d'insieme
+## 1. Come si presenta la pagina
 ![Vista d'insieme](Immagini/API_SPARQL_.png)
 
 La pagina spiega prima in parole semplici cosa sono endpoint e query (riquadro "Come funziona?"), poi mostra la scheda tecnica dell'endpoint: versione (v1.0.0), indirizzo (`http://localhost:7200/repositories/dati-cultura`) e contenuto (337 triple, ontologia più dati di opere, istituti e luoghi).
@@ -33,7 +33,7 @@ Una query SPARQL eseguibile, con pulsante "Copia query", che restituisce titolo,
 
 Una seconda query, dentro un blocco a scomparsa, che restituisce le opere datate per secolo in un intervallo scelto. 
 
-## 4. Come usare la query, e link ai dati completi
+## 4. Come usare la query
 ![Metodi e chiamata API](Immagini/API_SPARQL_Metodi.png)
 
 Due metodi per eseguire la query: da browser con l'editor grafico (Metodo 1), oppure con la domanda già scritta dentro l'indirizzo, utile per un programma (Metodo 2),  con un esempio di chiamata API pronto e il pulsante "Copia indirizzo". In fondo, un rimando alla pagina **Scarica Dati**, per chi preferisce lavorare offline con tutti i dati in RDF/Turtle, allineata alla stessa versione (v1.0.0).
