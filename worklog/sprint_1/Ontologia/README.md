@@ -1,22 +1,21 @@
-# Ontologia - Progetto SHELL
+# Creazione dell'ontologia delle opere d'arte - US 2.2
 
-Questa cartella documenta il modello concettuale e l'ontologia OWL sviluppati per il sotto-progetto **dati.cultura** del progetto SHELL (rifacimento del catalogo [dati.cultura.gov.it](https://dati.cultura.gov.it/)), con particolare riferimento al dataset delle opere d'arte (dipinti) conservate in istituti e luoghi della cultura.
+Questa cartella contiene il modello concettuale e l'ontologia OWL per il dataset delle opere d'arte (dipinti) conservate in istituti e luoghi della cultura, realizzati per la User Story **US2.2 - Creazione dell'ontologia delle opere d'arte**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
+
+> **Come data manager, voglio che le opere d'arte e le informazioni collegate siano rappresentate secondo un modello semantico condiviso, per rendere chiari e interoperabili i dati.**
 
 ## Contenuto della cartella
 
 ```
-ontologia/
-├── README.md                         ← questo file
-├── ontologia_dati_cultura.ttl        ← ontologia OWL (Turtle)
+Ontologia/
+├── README.md                                  ← questo file
+├── CQ_Onto-PM.txt                              ← elenco delle competency question
+├── RDF_Ontologia-PM.ttl                        ← ontologia OWL (Turtle)
 └── Diagrammi/
-    ├── graffoo.drawio                ← disegno graffoo, sorgente editabile
-    ├── graffoo.svg                   ← disegno graffoo, per la visualizzazione
-    ├── er_diagram.drawio              ← schema E-R, sorgente editabile
-    └── er_diagram.svg                 ← schema E-R, per la visualizzazione
+    ├── DiagrammaER_Onto-PM.drawio.png          ← schema E-R, per la visualizzazione
+    ├── DiagrammaER_Onto-PM.drawio.xml          ← schema E-R, sorgente editabile
+    └── Graffoo_Onto-PM.drawio.png              ← disegno Graffoo, per la visualizzazione
 ```
-
-I file relativi alla pubblicazione dei dati (CSV, RDF/Linked Open Data, mapping YARRRML, metadati DCAT-AP_IT) si trovano nelle cartelle dedicate del repository, non qui, questa cartella riguarda solo il modello concettuale e la sua formalizzazione.
-
 ---
 
 ## 1. Il modello concettuale in breve
@@ -28,34 +27,38 @@ L'ontologia descrive quattro concetti principali:
 - **`Place`**: il luogo geografico (comune) in cui si trova un istituto, identificato dal codice ISTAT.
 - **`TimeReference`**: il riferimento temporale di un dipinto, specializzato in tre sottoclassi **mutuamente disgiunte**: **`ExactDate`** (una data AAAA-MM-DD), **`YearRange`** (un intervallo tra due anni), **`CenturyReference`** (un secolo, con numero e parte opzionale: inizio, metà, fine, prima metà, seconda metà).
 
+Le relazioni principali: un dipinto **è ospitato in** un istituto (`isHostedIn`, e viceversa **ospita**, `hosts`); un istituto **si trova in** un luogo (`isLocatedIn`, e viceversa **ha istituto**, `hasCulturalInstitute`); un dipinto **ha un riferimento temporale** (`hasTimeReference`). Quest'ultima, a differenza delle prime due, non è dichiarata funzionale nella direzione inversa: uno stesso riferimento temporale può essere condiviso da più dipinti quando il valore coincide, coerente con la cardinalità (0,N) nello schema E-R.
+
 Il file [`RDF_Ontologia-PM.ttl`](./RDF_Ontologia-PM.ttl) contiene la formalizzazione completa: classi, object property, datatype property, disgiunzioni, chiavi (`owl:hasKey`) e proprietà inverse (`owl:inverseOf`).
 
-Il disegno [`Diagrammi/Graffoo_Onto-PM.drawio.png`](./Diagrammi/Graffoo_Onto-PM.drawio.png) rappresenta graficamente questo  modello secondo la notazione Graffoo. Lo schema [`Diagrammi/DiagrammaER_Onto-PM.drawio.png`](./Diagrammi/DiagrammaER_Onto-PM.drawio.png) ne dà una lettura più semplice, orientata alla progettazione dei dati piuttosto che alla formalizzazione OWL. Coerentemente con quanto indicato nel testo del progetto ("il modello può essere espresso con uno schema E/R semplificato [...] da finalizzare poi in un'ontologia"), i due diagrammi descrivono lo **stesso** modello concettuale a due livelli di formalizzazione diversi, non due modelli distinti.
+Il disegno [`Diagrammi/Graffoo_Onto-PM.drawio.png`](./Diagrammi/Graffoo_Onto-PM.drawio.png) rappresenta graficamente questo modello secondo la notazione Graffoo. Lo schema [`Diagrammi/DiagrammaER_Onto-PM.drawio.png`](./Diagrammi/DiagrammaER_Onto-PM.drawio.png) ne dà una lettura più semplice, orientata alla progettazione dei dati piuttosto che alla formalizzazione OWL. Coerentemente con quanto indicato nel testo del progetto ("il modello può essere espresso con uno schema E/R semplificato [...] da finalizzare poi in un'ontologia"), i due diagrammi descrivono lo **stesso** modello concettuale a due livelli di formalizzazione diversi, non due modelli distinti.
 
 ### Diagramma Entity-Relation
 ![E-R](Diagrammi/DiagrammaER_Onto-PM.drawio.png)
 
 ### Graffoo
-![E-R](Diagrammi/Graffoo_Onto-PM.drawio.png)
+![Graffoo](Diagrammi/Graffoo_Onto-PM.drawio.png)
 
 ---
 
-## 2. Competency Question
+## 2. Competency question
 
-Le CQ sono state riviste più volte nel corso dello sviluppo, mano a mano che il modello si affinava: un percorso iterativo dichiarato esplicitamente qui invece che nascosto, perché riflette il reale processo di modellazione seguito.
+Il file [`CQ_Onto-PM.txt`](CQ_Onto-PM.txt) elenca le domande a cui l'ontologia deve saper rispondere. Sono state riviste più volte durante lo sviluppo, mano a mano che il modello si affinava: un percorso iterativo dichiarato esplicitamente qui invece che nascosto, perché riflette il reale processo di modellazione seguito.
 
-| # | Competency Question | Cosa giustifica nel modello |
+| # | Competency question | Cosa giustifica nel modello |
 |---|---|---|
 | 1 | Qual è il codice, il titolo e la descrizione di un'opera d'arte? | `hasCode`, `hasTitle`, `hasDescription` su `Artwork` |
 | 2 | In quale istituto/luogo della cultura è conservato il dipinto X? | `isHostedIn` |
 | 3 | In quale luogo geografico si trova l'istituto X? | `isLocatedIn` |
 | 4 | Qual è il tempo di riferimento del dipinto X, sia esso una data esatta, un intervallo di anni o un secolo? | la gerarchia `TimeReference` / `ExactDate` / `YearRange` / `CenturyReference` e la loro disgiunzione |
-| 5 | Quali opere d'arte hanno un riferimento temporale compreso in un dato intervallo di anni, indipendentemente dal formato originale del dato (data esatta, intervallo o secolo)? | `hasEDTFValue`: senza un valore standardizzato comune alle tre sottoclassi, una query di questo tipo richiederebbe tre logiche di confronto diverse |
+| 5 | Quali opere d'arte hanno un riferimento temporale compreso in un dato intervallo di anni, indipendentemente dal formato originale del dato? | `hasEDTFValue`: senza un valore standardizzato comune alle tre sottoclassi, una query di questo tipo richiederebbe tre logiche di confronto diverse |
 | 6 | Quali dipinti sono conservati presso l'istituto X? | `hosts` (inversa di `isHostedIn`) |
 | 7 | Quali istituti della cultura si trovano nel luogo geografico X? | `hasCulturalInstitute` (inversa di `isLocatedIn`) |
 | 8 | Dato un codice identificativo, esiste un'unica opera d'arte (o istituto, o luogo) a cui corrisponde? | `owl:hasKey` su `Artwork`, `CulturalInstituteOrSite`, `Place` |
-| 9 | Per un'opera datata genericamente a un secolo, è nota anche la parte del secolo (inizio, metà, fine, prima/seconda metà) a cui risale? | `hasCenturyPart`, distinta da `hasCenturyNumber` |
-| 10 | Quali sono il codice, il titolo e la descrizione di un'opera d'arte, indipendentemente dal suo tipo specifico? | `hasCode`, `hasTitle`, `hasDescription` su `Artwork`, perché sono comuni a tutte le opere d'arte e non esclusive della classe `Painting` (ad esempio un'ipotetica classe `Sculpture`) |
+| 9 | Per un'opera datata genericamente a un secolo, è nota anche la parte del secolo a cui risale? | `hasCenturyPart`, distinta da `hasCenturyNumber` |
+| 10 | Quali sono il codice, il titolo e la descrizione di un'opera d'arte, indipendentemente dal suo tipo specifico? | `hasCode`, `hasTitle`, `hasDescription` su `Artwork`, perché sono comuni a tutte le opere d'arte e non esclusive della classe `Painting` |
+
+> ⚠️ Verificare che la CQ6 sia effettivamente presente nel file `CQ_Onto-PM.txt`: in una trascrizione precedente della lista, l'elenco saltava da CQ5 a CQ7.
 
 ---
 
@@ -94,3 +97,27 @@ Alcune situazioni incontrate durante il lavoro non erano state trattate a lezion
 ## 4. Come consultare l'ontologia
 
 Il file [`RDF_Ontologia-PM.ttl`](./RDF_Ontologia-PM.ttl) si apre direttamente in [Protégé](https://protege.stanford.edu/) (File → Open). Per verificare i vincoli (chiavi, disgiunzioni) è necessario lanciare un reasoner OWL2 DL: è stato verificato con HermiT.
+
+---
+
+## 5. Copertura del test di accettazione
+
+| Requisito | Verifica | Esito |
+|---|---|---|
+| Risponde ad almeno 5 competency question (minimo richiesto: 3) | 10 CQ documentate, ciascuna con una giustificazione precisa nel modello (sezione 2) | ✅ |
+| È disegnata in Graffoo | [`Graffoo_Onto-PM.drawio.png`](Diagrammi/Graffoo_Onto-PM.drawio.png) | ✅ |
+
+---
+
+## 6. Deliverable
+
+- Disegno Graffoo (`Diagrammi/Graffoo_Onto-PM.drawio.png`)
+- Disegno diagramma E-R (`Diagrammi/DiagrammaER_Onto-PM.drawio.png`)
+- Elenco delle competency question (`CQ_Onto-PM.txt`)
+- Ontologia in RDF/Turtle (`RDF_Ontologia-PM.ttl`)
+
+---
+
+## 7. Relazione con altre User Story
+
+Questa cartella fa parte dell'epic **Semantica e ontologie** (PM-3). Il disegno Graffoo assolve la funzione di artefatto visuale di questa US: la pagina che lo espone in forma divulgativa al pubblico del sito è prodotta separatamente nella **US1.3** (Sprint 2). Le competency question qui elencate sono inoltre la base delle query SPARQL di esempio documentate in **US1.4**.
