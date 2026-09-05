@@ -5,85 +5,71 @@ Riepilogo delle attività e dei deliverable prodotti durante il primo sprint del
 Repository: [Paulpaccio/Progetti_Metodi — sprint_1](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/sprint_1)
 
 ---
+
 ## Struttura della cartella
 
 ```
 sprint_1/
-├── README.md                  ← questo file
-├── Mockup/
+├── README.md                              ← questo file
+├── CSV/
 │   ├── README.md
-│   └── Immagini/
-│       ├── 01-home.png
-│       ├── 02-menu-dropdown.png
-│       ├── 03-catalogo-dataset.png
-│       ├── 04-aggiornamenti-footer.png
-│       └── PM-Footer.png
+│   ├── opere_arte_completo.csv
+│   ├── paintings.csv
+│   ├── institutes.csv
+│   ├── places.csv
+│   ├── exact_dates.csv
+│   ├── year_ranges.csv
+│   └── century_references.csv
+├── Mockup/
+│   ├── HomePage/
+│   │   ├── README.md
+│   │   └── Immagini/
+│   ├── Footer/
+│       ├── README.md
+│       └── Immagini/
 └── Ontologia/
     ├── README.md
+    ├── CQ_Onto-PM.txt
     ├── RDF_Ontologia-PM.ttl
     └── Diagrammi/
         ├── DiagrammaER_Onto-PM.drawio.png
+        ├── DiagrammaER_Onto-PM.drawio.xml
         └── Graffoo_Onto-PM.drawio.png
 ```
+
 ---
+
 ## 1. Stato delle User Story (board Trello/Jira)
 
 | US | Titolo | Priorità | Stato |
 |---|---|---|---|
-| US1.1 | Home page chiara | Medium | Approved |
-| US1.8 | Informazioni utili e immediate (footer) | Low | Approved |
-| US2.2 | Creazione dell'ontologia delle opere d'arte | Highest | Approved |
-| US2.1 | Produzione dati utili e immediate in CSV | High | Approved |
-
-> **Nota sulla US2.1**: la User Story è stata completata dopo la chiusura formale dello Sprint 1 e prima dell'inizio dello Sprint 2, quindi verrà valutata e approvata in sede di discussione di gruppo. L'approvazione serve anche per avviare la **US2.3 (Trasformazione CSV → RDF/Turtle con YARRRML)**, che dipende dai dati prodotti qui.
+| US1.1 | Home page chiara | Medium | Approvato |
+| US1.8 | Informazioni utili e immediate (footer) | Low | Approvato |
+| US2.1 | Produzione dati in CSV | High | Approvato |
+| US2.2 | Creazione dell'ontologia delle opere d'arte | Highest | Approvato |
 
 ---
 
 ## 2. Deliverable prodotti
 
-### 2.1 Mockup dell'interfaccia (bassa fedeltà)
-Cartella: [`sprint_1/Mockup`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/sprint_1/Mockup)
+### 2.1 US1.1 — Home page chiara
+Cartella: [`sprint_1/Mockup/HomePage`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/sprint_1/Mockup/HomePage)
 
-Mockup a bassa fedeltà del rifacimento del catalogo, relativo alle User Story su navigazione, home page e catalogo dataset. Comprende quattro schermate principali più il footer:
+Mockup della home page: titolo, breve descrizione introduttiva, due pulsanti principali (**Catalogo e ricerca tra dataset**, **Accesso ai dati - API e SPARQL**), due numeri riassuntivi (dataset pubblicati, entità collegate). Il menu in testata resta sempre visibile e raggiunge tutte le sezioni del sito; la voce **Accesso ai dati** si apre in una tendina con due opzioni (API e SPARQL, Scarica Dati).
 
-1. **Home page / landing**: claim del progetto, due call-to-action (*Catalogo e ricerca tra dataset*, *Accesso ai dati - API e SPARQL*), contatori di dataset pubblicati ed entità collegate, link di approfondimento.
-2. **Menu di navigazione**: testata con le voci Il progetto, Dataset, Ontologia, Accesso ai dati, Contatti; il menu "Accesso ai dati" si espande in tendina (*API e SPARQL* / *Scarica dati*); selettore lingua ITA/ENG.
-3. **Catalogo dataset**: dataset presentati come card (titolo, tag tematico, descrizione, link "esplora il dataset").
-4. **Aggiornamenti e novità**: tre colonne, Nuovi dataset, Aggiornamenti, Comunicazione.
-5. **Footer** (presente su tutte le pagine): contatti istituzionali, link utili (amministrazione trasparente, privacy, note legali, accessibilità), collegamenti social.
+### 2.2 US1.8 — Informazioni utili e immediate (footer)
+Cartella: [`sprint_1/Mockup/Footer`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/sprint_1/Mockup/Footer)
 
-Il mockup copre lo stato del prodotto per le US relative a home, navigazione e catalogo, e sarà esteso negli sprint successivi (es. pagina Contatti, scheda di dettaglio dataset, pagina Ontologia).
+Mockup del footer diviso in tre blocchi: contatti istituzionali, link utili (amministrazione trasparente, privacy, note legali, accessibilità), collegamenti social.
 
-### 2.2 Ontologia OWL
+### 2.3 US2.1 — Produzione dati in CSV
+Cartella: [`sprint_1/CSV`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/sprint_1/CSV)
+
+**File principale `opere_arte_completo.csv` con le 13 opere della tabella di consegna, più sei CSV divisi per categoria (usati poi per il mapping YARRRML della US2.3, Sprint 2). Verificato contro il test di accettazione: righe totali e quoting RFC 4180 corretti; **due scostamenti documentati**: 14 colonne invece di 8 (per la scomposizione del riferimento temporale in più campi) e presenza del BOM UTF-8 in tutti i file.** (DA RIVEDERE)
+
+### 2.4 US2.2 — Creazione dell'ontologia delle opere d'arte
 Cartella: [`sprint_1/Ontologia`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/sprint_1/Ontologia)
 
-Modello concettuale e ontologia OWL per il dataset delle opere d'arte conservate in istituti e luoghi della cultura.
-
-**Modello concettuale**: quattro concetti principali.
-- **`Artwork`**: opera d'arte generica (codice, titolo, descrizione); specializzata in **`Painting`** (unico sottotipo popolato), che porta le relazioni verso istituto e riferimento temporale.
-- **`CulturalInstituteOrSite`**: istituto/luogo della cultura che ospita un dipinto.
-- **`Place`**: luogo geografico (comune), identificato dal codice ISTAT.
-- **`TimeReference`**: riferimento temporale, specializzato in tre sottoclassi disgiunte, `ExactDate`, `YearRange`, `CenturyReference`.
-
-Il file [`RDF_Ontologia-PM.ttl`](https://github.com/Paulpaccio/Progetti_Metodi/blob/main/sprint_1/Ontologia/RDF_Ontologia-PM.ttl.txt) contiene la formalizzazione completa (classi, object/datatype property, disgiunzioni, `owl:hasKey`, `owl:inverseOf`), verificata con il reasoner **HermiT** in Protégé.
-
-Il modello è documentato anche graficamente in due diagrammi complementari (cartella `Diagrammi/`):
-- **Diagramma E-R**: lettura orientata alla progettazione dei dati.
-- **Diagramma Graffoo**: formalizzazione OWL.
-
-**Competency Question (10)**: hanno guidato la modellazione e sono state riviste iterativamente durante lo sviluppo. Coprono tra l'altro l'identificazione univoca di opere/istituti/luoghi (`owl:hasKey`), la navigazione delle relazioni dirette e inverse (`isHostedIn`/`hosts`, `isLocatedIn`/`hasCulturalInstitute`) e l'interrogazione uniforme dei riferimenti temporali indipendentemente dal formato originale (`hasEDTFValue`).
-
-**Principali scelte di design:**
-- attributi comuni su `Artwork`, relazioni specifiche su `Painting` (derivate dal contenuto reale del CSV);
-- `Painting` come sottoclasse di `Artwork` anziché tipo controllato, coerentemente con un dataset che contiene solo dipinti;
-- `hasCode`/`hasName` a dominio "union" (`owl:unionOf`) per evitare duplicazioni tra classi;
-- tre sottoclassi di `TimeReference` rese disgiunte per riflettere il fatto che ogni dipinto ha un solo tipo di riferimento temporale;
-- `hasEDTFValue` (xsd:string) per un confronto temporale uniforme tra data, intervallo e secolo;
-- `owl:hasKey` su `Artwork`, `CulturalInstituteOrSite`, `Place` per garantire l'univocità dei codici;
-- `hasCenturyPart` modellato come stringa vincolata (`owl:oneOf`) per semplicità, invece che con individui dedicati.
+Modello concettuale e ontologia OWL per il dataset delle opere d'arte: quattro classi principali (`Artwork`, `Painting`, `CulturalInstituteOrSite`, `Place`, `TimeReference` con le sue tre sottoclassi disgiunte), documentate in un diagramma E-R semplificato e in un diagramma Graffoo completo. Dieci competency question verificate con il reasoner HermiT in Protégé.
 
 ---
-
-## Nota
-
-L'approvazione di **US2.1** è il prerequisito per avviare **US2.3 (Trasformazione CSV → RDF/Turtle con YARRRML)**: sarà il punto di partenza dello Sprint 2, una volta chiusa la discussione di gruppo su US2.1.
