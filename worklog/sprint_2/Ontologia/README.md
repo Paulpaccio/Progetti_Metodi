@@ -12,24 +12,12 @@ L'obiettivo è fornire una rappresentazione formale, interrogabile e interoperab
 Ontologia/
 ├── README.md                          ← questo file
 ├── mapping.yarrrml.yml                ← script di mapping YARRRML
-├── RDF_OpereArte_Onto-PM.ttl          ← grafo RDF/Turtle generato dal mapping
-└── CSVs/
-    ├── opere_arte_completo.csv        ← file principale, come da indicazioni di progetto
-    ├── paintings.csv
-    ├── institutes.csv
-    ├── places.csv
-    ├── exact_dates.csv
-    ├── year_ranges.csv
-    └── century_references.csv
+└── RDF_OpereArte_Onto-PM.ttl          ← grafo RDF/Turtle generato dal mapping
 ```
-
+> I CSV di partenza sono il deliverable di **US2.1** (Sprint 1), si trovano in [`sprint_1/CSV/`](../../sprint_1/CSV/)
 ---
 
-## 1. CSV
-
-La cartella [`CSVs/`](CSVs/) non contiene solo il file principale in UTF-8 richiesto dalle indicazioni di progetto, [`opere_arte_completo.csv`](CSVs/opere_arte_completo.csv), ma anche altri sei CSV divisi per categoria. Sono stati aggiunti per facilitare la scrittura del mapping YARRRML: separare i dati per categoria permette di distinguere con chiarezza i valori delle diverse classi, in particolare della classe padre `TimeReference` e delle sue tre sottoclassi `ExactDate`, `YearRange`, `CenturyReference`.
-
-## 2. Mapping YARRRML
+## 1. Mapping YARRRML
 
 I mapping sono stati generati con [Matey/RML.io](https://rml.io/yarrrml/matey/#): lo script si trova in [`mapping.yarrrml.yml`](mapping.yarrrml.yml).
 
@@ -44,7 +32,7 @@ I mapping sono stati generati con [Matey/RML.io](https://rml.io/yarrrml/matey/#)
 
 ---
 
-## 3. Copertura del test di accettazione
+## 2. Copertura del test di accettazione
 
 | Requisito | Dove è soddisfatto |
 |---|---|
@@ -53,7 +41,7 @@ I mapping sono stati generati con [Matey/RML.io](https://rml.io/yarrrml/matey/#)
 
 ---
 
-## 4. Deliverable
+## 3. Deliverable
 
 - `mapping.yarrrml.yml` (mapping YARRRML)
 - `RDF_OpereArte_Onto-PM.ttl` (grafo RDF/Turtle)
@@ -61,6 +49,6 @@ I mapping sono stati generati con [Matey/RML.io](https://rml.io/yarrrml/matey/#)
 
 ---
 
-## 5. Relazione con altre User Story
+## 4. Relazione con altre User Story
 
 Questa cartella fa parte dell'epic **Pubblicazione del dataset opere d'arte** (PM-7). Contiene l'intero flusso di modellazione e trasformazione dei dati, CSV → YARRRML → RDF/Turtle → Ontologia OWL, ed è la base su cui si costruiscono le fasi successive: pubblicazione dell'endpoint SPARQL (US1.4) e documentazione DCAT-AP-IT.
