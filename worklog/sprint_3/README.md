@@ -12,7 +12,8 @@ Repository: [Paulpaccio/Progetti_Metodi — sprint_3](https://github.com/Paulpac
 
 ```
 worklog/sprint_3/
-├── README.md                          ← questo file
+├── README.md                        ← questo file
+├── retrospettiva.md
 ├── Metadati/
 │   ├── README.md
 │   └── metadati_dcat-ap_it.ttl
