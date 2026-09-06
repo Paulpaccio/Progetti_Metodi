@@ -3,7 +3,7 @@
 
 Deliverable di **US1.6 — Consultare i metadati per citazione, riuso e affidabilità**.
 
-![Scheda del dataset](mockup_scheda_dataset.png)
+
 
 ## Che cosa mostra
 
