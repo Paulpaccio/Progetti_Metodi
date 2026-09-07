@@ -1,8 +1,10 @@
-# Ricerca dataset nel catalogo - US 1.2
+# Ricerca dataset nel catalogo e formato visibile - US 1.2 e US 1.11
 
-Questa cartella documenta il mockup della pagina "Dataset" del catalogo, realizzata per la User Story **US1.2 - Ricerca dataset nel catalogo**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
+Questa cartella documenta il mockup della pagina "Dataset" del catalogo, realizzata per due User Story che condividono la stessa schermata: **US1.2 - Ricerca dataset nel catalogo** e **US1.11 - Formato visibile nella sezione dataset**, nell'ambito del progetto SHELL, sotto-progetto dati.cultura.
 
-> **Come ricercatrice, voglio cercare dataset per parola chiave o categoria, per trovare velocemente i dati sulle opere d'arte che mi interessano.**
+> **US1.2 - Come ricercatrice, voglio cercare dataset per parola chiave o categoria, per trovare velocemente i dati sulle opere d'arte che mi interessano.**
+
+> **US1.11 - Come ricercatrice, vorrei capire subito in che formato sono i dati, senza dover aprire dataset per dataset per vederne le specifiche.**
 
 ## Contenuto della cartella
 
@@ -17,34 +19,47 @@ Mockup/Dataset/
 ---
 
 ## 1. Intestazione, barra di ricerca e risultati
-
 ![Intestazione, barra di ricerca e risultati](Immagini/Dataset_head.png)
 
-Mostra la parte superiore della pagina Dataset. Nella colonna di sinistra è presente il pannello **Cerca tra dataset** con i campi di ricerca **per titolo** e **per parola chiave**, il selettore **Ordina per** (es. Rilevanza) e l'avvio dei filtri **Cerca per categorie** (Temi, Cataloghi, Categorie HVD - Dati ad Alto Valore). Nell'area centrale, in alto, sono indicati il numero di **Dataset trovati**, il selettore dei **risultati per pagina** e il percorso di navigazione (Home >> Dataset). Sotto sono elencate le schede dei dataset: ciascuna riporta titolo, breve descrizione, i **formati disponibili** (badge CSV, XML, XLS, XSD, JSON), l'ente che ha pubblicato il dataset, la data di ultima modifica, il tema e alcuni tag.
+Mostra la parte superiore della pagina Dataset. Nella colonna di sinistra è presente il pannello **Cerca tra dataset** con i campi di ricerca **per titolo** e **per parola chiave**, il selettore **Ordina per** (es. Rilevanza) e l'avvio dei filtri **Cerca per categorie** (Temi, Cataloghi, Categorie HVD - Dati ad Alto Valore). Nell'area centrale, in alto, sono indicati il numero di **Dataset trovati**, il selettore dei **risultati per pagina** e il percorso di navigazione (Home >> Dataset).
 
 ## 2. Filtri per categoria e paginazione
-
 ![Filtri per categoria e paginazione](Immagini/Dataset_foot.png)
 
 Mostra la parte inferiore della stessa pagina. Nel pannello di sinistra il filtro **Temi** è espanso, con l'elenco dei temi selezionabili, seguito dai filtri **Cataloghi** e **Categorie (HVD)**. Nell'area centrale prosegue l'elenco delle schede dei dataset. In basso è presente la **paginazione** dei risultati (pagine 1, 2, 3 ... con l'ultima pagina) e il selettore del numero di **risultati per pagina** (10, 20, 40). Chiude la schermata il footer del sito con logo, link utili e collegamenti social, coerente con le altre pagine.
 
+## 3. Formato visibile in anteprima
+
+![Formati disponibili sulle card dataset](../Dataset/Immagini/Dataset_head.png)
+
+Ogni scheda del catalogo riporta, oltre a titolo e descrizione, un gruppo di badge colorati con i **formati disponibili** per quel dataset: CSV, XML, XLS, XSD, JSON. L'utente vede quindi subito in che formato sono i dati di un dataset, senza doverlo aprire.
+
 ---
 
-## 3. Copertura del test di accettazione
+## 4. Copertura del test di accettazione
 
-| Requisito (dalla Descrizione) | Dove è soddisfatto |
+**US1.2** 
+
+| Requisito | Dove è soddisfatto |
 |---|---|
 | Cercare dataset per parola chiave | Campo "per parola chiave" nel pannello "Cerca tra dataset", schermata 1 |
 | Cercare/filtrare dataset per categoria | Filtri "Cerca per categorie" (Temi, Cataloghi, Categorie HVD), schermate 1 e 2 |
 
+**US1.11**
+
+| Requisito | Dove è soddisfatto |
+|---|---|
+| È visibile in anteprima il formato dei dati | Badge di formato (CSV, XML, XLS, XSD, JSON) su ogni scheda dataset, schermata 1, senza dover aprire il dataset |
+
 ---
 
-## 4. Deliverable
+## 5. Deliverable
 
 - Mockup della pagina Dataset, due schermate (`Immagini/`)
 
+
 ---
 
-## 5. Relazione con altre User Story
+## 6. Relazione con altre User Story
 
-Questa cartella fa parte dell'epic **Catalogo dati e ricerca dataset** (PM-2), la stessa di **US1.11** (Formato visibile nella sezione dataset). 
+Questa cartella fa parte dell'epic **Catalogo dati e ricerca dataset** (PM-2). US1.2 e US1.11 condividono la stessa schermata.
