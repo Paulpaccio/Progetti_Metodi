@@ -130,7 +130,7 @@ Ne discende, sul piano dei diritti, la spettanza del diritto di **opposizione** 
 Deliverable: sezione nell'informativa completa, nota di motivazione (`nota-motivazione-base-giuridica-2.md`) e mockup `08-gestione-segnalazioni-contatti.png`.
 
 ### 2.5 US3.4 — Cancellazione su richiesta dell'interessato
-Cartelle: [`worklog/sprint_4/Privacy`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Privacy/Cancellazione_Dati) e [`worklog/sprint_4/Mockup/Privacy/DirittiInteressato`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Mockup/Privacy/DirittiInteressato) <!-- MODIFICATO: link più preciso -->
+Cartelle: [`worklog/sprint_4/Privacy`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Privacy/Cancellazione_Dati) e [`worklog/sprint_4/Mockup/Privacy/DirittiInteressato`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Mockup/Privacy/DirittiInteressato) 
 
 Sezione **"Diritti dell'interessato"** dell'informativa (sezione 11 del PDF): elenco dei diritti esercitabili (accesso, rettifica, cancellazione, limitazione, opposizione), precisazione che la portabilità non è applicabile trattandosi di trattamento fondato sul compito di interesse pubblico, e modalità di esercizio (richiesta al Titolare o al RPD, riscontro entro un mese).
 
