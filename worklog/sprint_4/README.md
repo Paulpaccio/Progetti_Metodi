@@ -62,18 +62,18 @@ worklog/sprint_4/
 
 ```
 ---
-
-## 1. Stato delle User Story (board Trello/Jira)
-
 | US | Titolo | Ticket | Priorità | Stima (SP) | Stato |
 |---|---|---|---|---|---|
+| US1.2 | Ricerca dataset nel catalogo | PM-43 | High | 2.0 | Approvato |
 | US1.6 | Consultare i metadati per citazione, riuso e affidabilità | PM-27 | High | 4.0 | Approvato |
 | US1.7 | Invio di un messaggio dalla pagina contatti | PM-29 | Low | 4.0 | Approvato |
+| US1.12 | Licenza utilizzata nel footer | PM-42 | Low | 1.0 | Approvato |
+| US1.13 | Lasciare un commento | PM-44 | Lowest | 1.0 | Approvato |
 | US3.1 | Tempi di conservazione dei messaggi | PM-26 | Medium | 4.0 | Approvato |
 | US3.2 | Base giuridica del trattamento dei messaggi | PM-15 | Highest | 4.0 | Approvato |
 | US3.4 | Cancellazione su richiesta dell'interessato | PM-19 | High | 6.0 | Approvato |
 
-**Totale story point dello sprint: 22.0**
+**Totale story point dello sprint: 26.0**
 
 ---
 
@@ -144,12 +144,16 @@ Il documento `procedura-interna-cancellazione-dati.md` è un **documento interno
 
 Deliverable: sezione nell'informativa completa, procedura interna (`procedura-interna-cancellazione-dati.md`) e mockup `09-diritti-interessato.png`.
 
-### 2.6 Materiali aggiuntivi prodotti nello sprint
+### 2.6 US1.2 — Ricerca dataset nel catalogo
+Cartella: [`worklog/sprint_4/Mockup/Dataset`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Mockup/Dataset)
 
-Nella cartella sono presenti due mockup che non rientrano nelle user story pianificate per lo sprint:
+Mockup della pagina Dataset del catalogo, in due schermate: pannello *Cerca tra dataset* con ricerca per titolo e per parola chiave, selettore *Ordina per* e filtri per categorie (Temi, Cataloghi, Categorie HVD); elenco delle schede dataset con titolo, descrizione, badge dei formati disponibili, ente pubblicatore, data di ultima modifica, tema e tag; paginazione e footer.
 
-- **Pagina Dataset** ([`Mockup/Dataset`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Mockup/Dataset)) — riferita a **US1.2 Ricerca dataset nel catalogo**, in due schermate: pannello *Cerca tra dataset* con ricerca per titolo e per parola chiave, selettore *Ordina per* e filtri per categorie (Temi, Cataloghi, Categorie HVD); elenco delle schede dataset con titolo, descrizione, badge dei formati disponibili, ente pubblicatore, data di ultima modifica, tema e tag; paginazione e footer.
-- **Licenza nel footer** ([`Mockup/Licenza_Footer`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Mockup/Licenza_Footer)) — seconda versione del footer (`Footer_V2.png`), che aggiorna il mockup prodotto in **US1.8** (Sprint 1).
+### 2.7 US1.12 e US1.13 — Licenza nel footer e banner commenti
+Cartella: [`worklog/sprint_4/Mockup/Licenza_Footer`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Mockup/Licenza_Footer)
+
+Aggiornamento del footer (`Footer_V2.png`) che copre insieme due User Story: **US1.12**, con l'aggiunta della colonna dedicata alla licenza CC BY 4.0 (stessa licenza già dichiarata nei metadati DCAT-AP_IT di US2.4), e **US1.13**, con l'aggiunta di un banner in cima al footer che invita l'utente a lasciare un commento ("Aiutaci a migliorare, lascia la tua opinione"). Aggiorna il footer già documentato in US1.8 (Sprint 1).
+
 
 ---
 
