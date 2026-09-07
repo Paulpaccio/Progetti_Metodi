@@ -45,7 +45,7 @@ La tabella riporta inoltre tema, parole chiave, data di rilascio e lingua del da
 
 ## 3. Le distribuzioni
 
-![Le due distribuzioni](Immagini/Dataset_Scheda_3.png)
+![Le due distribuzioni](Immagini/Dataset_Scheda_3.png) 
 
 Lo stesso dataset è offerto in CSV e in RDF/Turtle. La distinzione riflette il modello DCAT: un unico dataset e due **distribuzioni**, che ne sono l'incarnazione in formati diversi. È per questa ragione che licenza e formato sono dichiarati sulla distribuzione e non sul dataset, mentre titolare, tema e date valgono per entrambe.
 
