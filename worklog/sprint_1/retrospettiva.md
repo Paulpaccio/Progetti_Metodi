@@ -21,11 +21,11 @@ Lo sprint si è chiuso con quattro user story approvate (US1.1, US1.8, US2.1, US
 
 ### Criticità emersa
 
-L'unico intoppo ha riguardato la **US2.3** *[da verificare: nel worklog la user story che risulta completata nello Sprint 2 è la US2.2 — Creazione dell'ontologia delle opere d'arte; la US2.3 compare invece come pianificata nello Sprint 2]*: per problemi personali, la persona responsabile non ha caricato in tempo il lavoro svolto.
+L'unico intoppo ha riguardato la **US2.3**: per problemi personali, la persona responsabile non ha caricato in tempo il lavoro svolto.
 
 Due aspetti sono da distinguere:
 
-- il **fatto in sé** — un imprevisto personale — non è un problema di processo e non è imputabile a nessuno;
+- il **fatto in sé** - un imprevisto personale - non è un problema di processo e non è imputabile a nessuno;
 - il **modo in cui il gruppo l'ha appreso** lo è: il ritardo è emerso a ridosso della chiusura dello sprint, quando non c'era più margine per riorganizzare il lavoro o ridistribuire il carico.
 
 Il gruppo ha deciso di approvare la user story nello sprint successivo.
