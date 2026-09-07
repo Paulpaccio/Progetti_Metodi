@@ -49,7 +49,7 @@ La user story rimasta aperta nello Sprint 1 è stata completata e approvata, com
 
 ### LACKED — cosa ci è mancato
 
-- **Un criterio per distinguere ciò che è completo da ciò che è provvisorio.** Il mockup delle FAQ (US1.10) è stato approvato con contenuti segnaposto: la scelta è corretta se la user story riguarda la struttura della pagina, ma il fatto che domande e risposte non siano ancora scritte è dichiarato solo nel README della cartella e non risulta dalla board. Il debito così diventa invisibile.
+- **Un modo per dichiarare le scelte progettuali, non solo i risultati.** Il mockup delle FAQ (US1.10) è stato approvato con testi segnaposto. La scelta è corretta — un mockup rappresenta la struttura della pagina, non i contenuti editoriali definitivi — ma il gruppo non l'ha mai discussa esplicitamente né messa a verbale: la nota lasciata nel README può quindi essere letta da un terzo come lavoro incompleto anziché come decisione.
 - **Una verifica del lavoro sul repository al momento dell'approvazione.** In questo sprint non è servita perché non è mancato nulla, ma l'approvazione si è basata sulla dichiarazione di chi aveva svolto il lavoro, non su un controllo.
 - **Il tempo per scrivere il report mentre lo sprint era in corso.** La documentazione di sprint è stata ricostruita a posteriori dalle sottocartelle.
 
@@ -57,7 +57,7 @@ La user story rimasta aperta nello Sprint 1 è stata completata e approvata, com
 
 - **Un ambiente condiviso per l'endpoint.** GraphDB gira in locale (`localhost:7200`): il risultato è verificabile solo sulla macchina di chi l'ha configurato, e questo rende impossibile a un altro membro del gruppo controllare le query in autonomia.
 - **Una checklist di fine user story** — deliverable sul remoto, README compilato, test di accettazione riportato, board aggiornata — da spuntare prima di dichiarare il lavoro concluso.
-- **Più tempo sui contenuti reali.** Le FAQ sono rimaste una struttura vuota per mancanza di tempo, non per una decisione.
+- **Un verbale delle decisioni progettuali.** Diverse scelte — che cosa un mockup debba contenere, che cosa resti fuori dal perimetro — sono state prese di fatto senza essere registrate da nessuna parte.
 
 ---
 
