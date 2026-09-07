@@ -1,5 +1,5 @@
-# Progetto rifacimento del sito `dati.cultura.gov.it`
-Rifacimento del catalogo open data del Ministero della Cultura ([dati.cultura.gov.it](https://dati.cultura.gov.it/)), realizzato per il corso *Metodi informatici per la trasformazione digitale* — a.a. 2025/2026.
+# Progetto `dati.cultura.gov.it`
+Realizzazione di un piccolo catalogo open data del Ministero della Cultura ([dati.cultura.gov.it](https://dati.cultura.gov.it/)), realizzato per il corso *Metodi informatici per la trasformazione digitale* — a.a. 2025/2026.
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
