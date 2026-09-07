@@ -31,7 +31,7 @@ worklog/sprint_4/
 │   │   ├── README.md
 │   │   └── Immagini/
 │   │        └── Footer_V2.png
-│   ├── Metadati Dataset/
+│   ├── MetadatiDataset/
 │   │   ├── README.md 
 │   │   └── Immagini/ 
 │   │        ├── Dataset_scheda_1.png 
@@ -53,8 +53,8 @@ worklog/sprint_4/
 └── Privacy/
         ├── BaseGiuridica_Messaggi/
         |   ├── README.md 
-        |   └── /nota-motivazione-base-giuridica-2.md
-        ├── /Cancellazione_Dati/   
+        |   └── nota-motivazione-base-giuridica-2.md
+        ├── Cancellazione_Dati/   
         |   ├── README.md 
         |   └── procedura-interna-cancellazione-dati.md
         └── TempiConservazione/
