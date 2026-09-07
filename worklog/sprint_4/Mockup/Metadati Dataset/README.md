@@ -19,13 +19,13 @@ Mockup/Dataset/
 
 ## 1. Che cosa mostra
 
-![Intestazione e metadati principali](Immagini/Dataset_Scheda_1.png)
+![Intestazione e metadati principali](Immagini/Dataset_scheda_1.png)
 
 La pagina che si apre selezionando un dataset dall'elenco del catalogo. Riporta in forma leggibile i metadati DCAT-AP_IT prodotti in US2.4 e le due distribuzioni scaricabili.
 
 La sezione risponde a tre esigenze distinte di chi consulta il catalogo: **citare** correttamente il dataset in una pubblicazione, **valutarne l'affidabilità** attraverso la data di ultimo aggiornamento, e **sapere se può essere riutilizzato** verificando la licenza.
 
-![Metadati aggiuntivi](Immagini/Dataset_Scheda_2.png)
+![Metadati aggiuntivi](Immagini/Dataset_scheda_2.png)
 
 ---
 
@@ -45,7 +45,7 @@ La tabella riporta inoltre tema, parole chiave, data di rilascio e lingua del da
 
 ## 3. Le distribuzioni
 
-![Le due distribuzioni](Immagini/Dataset_Scheda_3.png) 
+![Le due distribuzioni](Immagini/Dataset_scheda_3.png) 
 
 Lo stesso dataset è offerto in CSV e in RDF/Turtle. La distinzione riflette il modello DCAT: un unico dataset e due **distribuzioni**, che ne sono l'incarnazione in formati diversi. È per questa ragione che licenza e formato sono dichiarati sulla distribuzione e non sul dataset, mentre titolare, tema e date valgono per entrambe.
 
