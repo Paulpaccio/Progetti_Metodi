@@ -12,44 +12,39 @@ L'obiettivo è dare a chi arriva sul sito un'idea rapida di cosa offre dati.cult
 Mockup/HomePage/
 ├── README.md                          ← questo file
 └── Immagini/
-    ├── 01-home.png                    ← home page
-    └── 02-menu-dropdown.png           ← home page, menu a tendina aperto (DA SISTEMARE)
+    └──  Mockup_HomePage-PM.pdf        ← home page
+
 ```
 
 ---
 
 ## 1. Home page
-![Home page](Immagini/01-home.png)
+![Home page](Immagini//Mockup_HomePage-PM.pdf)
 
 La home introduce il progetto con un titolo, una breve descrizione e due link di approfondimento. Sotto, due pulsanti principali portano subito a due azioni: **Catalogo e ricerca tra dataset** e **Accesso ai dati - API e SPARQL**. A destra due numeri riassuntivi (dataset pubblicati, entità collegate) della dimensione del progetto.
 
 Il menu in alto (Il progetto, Dataset, Ontologia, Accesso ai dati, Contatti) resta sempre visibile e raggiunge tutte le sezioni del sito.
 
-## 2. Menu a tendina aperto
-![Menu a tendina](Immagini/02-menu-dropdown.png)
-
-La voce **Accesso ai dati** del menu si apre in una tendina con due opzioni: **API e SPARQL** e **Scarica Dati**, per distinguere subito chi vuole interrogare i dati da chi vuole scaricarli. In alto a destra compare anche un riquadro per la scelta della lingua (Italiano/English).
-
 ---
 
-## 3. Copertura del test di accettazione
+## 2. Copertura del test di accettazione
 
 | Requisito | Dove è soddisfatto |
 |---|---|
 | La home mostra le sezioni principali: catalogo | Voce menu **Dataset**, pulsante **Catalogo e ricerca tra dataset** |
 | La home mostra le sezioni principali: semantica | Voce menu **Ontologia** |
-| La home mostra le sezioni principali: API/SPARQL | Voce menu **Accesso ai dati** (tendina), pulsante **Accesso ai dati - API e SPARQL** |
+| La home mostra le sezioni principali: API/SPARQL | Voce menu **Accesso ai dati**, pulsante **Accesso ai dati - API e SPARQL** |
 | La home mostra le sezioni principali: contatti | Voce menu **Contatti** |
 | Testo introduttivo di poche righe | Titolo e breve descrizione |
 
 ---
 
-## 4. Deliverable
+## 3. Deliverable
 
 - Mockup della home page, con menu di navigazione (`Immagini/`)
 
 ---
 
-## 5. Relazione con altre User Story
+## 4. Relazione con altre User Story
 
-Questa cartella fa parte dell'epic **Home page e presentazione dell'iniziativa** (PM-1). Il footer, visibile anche in questa pagina, è documentato a parte nella US1.8 - Informazioni utili e immediate, perché è un elemento condiviso da tutte le pagine del sito, non specifico della home. (DA RIVEDERE)
+Questa cartella fa parte dell'epic **Home page e presentazione dell'iniziativa** (PM-1). Il footer, visibile anche in questa pagina, è documentato a parte nella US1.8 -Informazioni utili e immediate, perché è un elemento condiviso da tutte le pagine del sito, non specifico della home. 
