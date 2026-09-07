@@ -1,6 +1,6 @@
 # Invio di un messaggio dalla pagina contatti - US 1.7
 
-Mockup ad alta fedeltà, statico, della pagina **Contatti** del rifacimento del catalogo open data del Ministero della Cultura (dati.cultura.gov.it), realizzato nell'ambito del progetto SHELL (corso Metodi informatici per la trasformazione digitale, a.a. 2025/2026). Le schermate mostrano l'incremento di prodotto relativo alla User Story **US1.7 - Invio di un messaggio dalla pagina contatti**:
+Mockup ad alta fedeltà, statico, della pagina **Contatti** del rifacimento del catalogo open data del Ministero della Cultura (dati.cultura.gov.it), realizzato nell'ambito del progetto SHELL (corso Metodi informatici per la trasformazione digitale, a.a. 2025/2026). Le schermate mostrano l'incremento di prodotto relativo alla User Story **US1.7 - Invio di un messaggio dalla pagina contatti**.
 
 > **Come utente, voglio inviare un messaggio dalla pagina contatti fornendo nome, cognome ed email, per segnalare un problema al Ministero.**
 
