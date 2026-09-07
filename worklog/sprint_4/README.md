@@ -165,6 +165,8 @@ Aggiornamento del footer (`Footer_V2.png`) che copre insieme due User Story: **U
 
 | US | Requisito | Dove è soddisfatto |
 |---|---|---|
+| US1.2 | Cercare dataset per parola chiave | Campo "per parola chiave", pannello "Cerca tra dataset" |
+| US1.2 | Cercare/filtrare dataset per categoria | Filtri "Cerca per categorie" (Temi, Cataloghi, Categorie HVD) |
 | US1.6 | Titolare (`dct:rightsHolder`) | Ministero della Cultura |
 | US1.6 | Editore (`dct:publisher`) | Ministero della Cultura |
 | US1.6 | Identificativo (`dct:identifier`) | `m_bac:D.1` |
@@ -173,6 +175,9 @@ Aggiornamento del footer (`Footer_V2.png`) che copre insieme due User Story: **U
 | US1.7 | Modulo con campi obbligatori e invio senza account | Prima schermata, `Contatti_Vuoto.png` |
 | US1.7 | Classificazione della richiesta | Seconda schermata, sei opzioni in tendina |
 | US1.7 | Conferma di ricezione con riferimento univoco | Quarta schermata, `MSG-1757`, stato *da lavorare* |
+| US1.11 | È visibile in anteprima il formato dei dati | Badge di formato su ogni scheda dataset |
+| US1.12 | Indicazione della licenza aperta, con link | Colonna "CC BY 4.0" nel footer, `Footer_V2.png` |
+| US1.13 | Banner per invitare a lasciare un commento | Fascia in cima al footer, "lascia la tua opinione" |
 | US3.1 | Tempi di conservazione dichiarati per entrambi i trattamenti | Sezione 9 dell'informativa, mockup `07-tempi-conservazione.png` |
 | US3.2 | Base giuridica esplicitata e motivata | Sezione 4.1 dell'informativa, `nota-motivazione-base-giuridica-2.md` |
 | US3.4 | Diritti dell'interessato elencati con modalità di esercizio | Sezione 11 dell'informativa, mockup `09-diritti-interessato.png` |
