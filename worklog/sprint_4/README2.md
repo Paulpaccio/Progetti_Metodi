@@ -16,7 +16,7 @@ worklog/sprint_4/
 ├── retrospettiva.md
 ├── Mockup/
 │   ├── Contatti/
-│   |    ├── README.md
+│   |    ├── README.md 
 │   |    └── Immagini/
 │   |        ├── Contatti_Vuoto.png 
 │   |        ├── Contatti_Tipologia_Dropdown.png
