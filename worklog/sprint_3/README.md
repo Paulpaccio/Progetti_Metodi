@@ -2,9 +2,9 @@
 
 Riepilogo delle attività e dei deliverable prodotti durante il terzo sprint del progetto **SHELL**, sotto-progetto **dati.cultura**, relativo al rifacimento del catalogo open data del Ministero della Cultura ([dati.cultura.gov.it](https://dati.cultura.gov.it/)), realizzato nell'ambito del corso *Metodi informatici per la trasformazione digitale* (a.a. 2025/2026).
 
-Periodo: 28 agosto – 1 settembre.
+**Repository**: [Paulpaccio/Progetti_Metodi — sprint_3](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_3)
 
-Repository: [Paulpaccio/Progetti_Metodi — sprint_3](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_3)
+**Periodo**: 28 agosto – 1 settembre.
 
 ---
 
