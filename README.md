@@ -23,12 +23,12 @@ Il perimetro è definito da tre personas — **Maria**, ricercatrice e data jour
 
 ## Il gruppo
 
-| Componente | Ruolo principale | Area di responsabilità tecnica |
-|---|---|---|
-| Paolo | Product Owner | Ontologia e modello semantico |
-| Ilaria | Scrum Master | Metadatazione DCAT-AP_IT |
-| Asia | Data Expert | API ed endpoint SPARQL |
-| Alessia | Privacy Expert | Conformità e protezione dei dati personali |
+| Nome |   Cognome   | Matricola | Ruolo Principale |
+|-------|------------|-----------|------------------|
+| Paolo | Magnanelli |  1231652  | Product Owner |
+| Ilaria | Iudice | 1217167 | Scrum Master |
+| Asia  | Milan | 1217247 | Data Expert |
+| Alessia | Bolzicco | 1230260 | Privacy Expert |
 
 I ruoli sono rimasti stabili per tutta la durata del progetto, ma i confini sono stati volutamente porosi: trattandosi di un lavoro didattico, ogni componente ha partecipato ad attività fuori dalla propria area per imparare attraverso la pratica. È un compromesso rispetto all'applicazione rigorosa di SCRUM, e come tale è dichiarato nel report finale.
 
