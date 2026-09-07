@@ -18,13 +18,13 @@ Mockup/Catalogo/
 
 ## 1. Intestazione, barra di ricerca e risultati
 
-![Intestazione, barra di ricerca e risultati](Immagini/Ricerca_Dataset_1.png)
+![Intestazione, barra di ricerca e risultati](Immagini/Dataset_head.png)
 
 Mostra la parte superiore della pagina Dataset. Nella colonna di sinistra è presente il pannello **Cerca tra dataset** con i campi di ricerca **per titolo** e **per parola chiave**, il selettore **Ordina per** (es. Rilevanza) e l'avvio dei filtri **Cerca per categorie** (Temi, Cataloghi, Categorie HVD - Dati ad Alto Valore). Nell'area centrale, in alto, sono indicati il numero di **Dataset trovati**, il selettore dei **risultati per pagina** e il percorso di navigazione (Home >> Dataset). Sotto sono elencate le schede dei dataset: ciascuna riporta titolo, breve descrizione, i **formati disponibili** (badge CSV, XML, XLS, XSD, JSON), l'ente che ha pubblicato il dataset, la data di ultima modifica, il tema e alcuni tag.
 
 ## 2. Filtri per categoria e paginazione
 
-![Filtri per categoria e paginazione](Immagini/Ricerca_Dataset_2.png)
+![Filtri per categoria e paginazione](Immagini/Dataset_foot.png)
 
 Mostra la parte inferiore della stessa pagina. Nel pannello di sinistra il filtro **Temi** è espanso, con l'elenco dei temi selezionabili, seguito dai filtri **Cataloghi** e **Categorie (HVD)**. Nell'area centrale prosegue l'elenco delle schede dei dataset. In basso è presente la **paginazione** dei risultati (pagine 1, 2, 3 ... con l'ultima pagina) e il selettore del numero di **risultati per pagina** (10, 20, 40). Chiude la schermata il footer del sito con logo, link utili e collegamenti social, coerente con le altre pagine.
 
