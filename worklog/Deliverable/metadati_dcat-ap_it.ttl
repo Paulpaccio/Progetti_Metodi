@@ -1,0 +1,109 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix dco: <http://www.progetto-shell.org/dati-cultura-ontology#> .
+@prefix data: <http://www.progetto-shell.org/data/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+
+#    Catalogo
+
+<http://www.progetto-shell.org/resource/Catalogo/dati-cultura-shell>
+    a dcatapit:Catalog, dcat:Catalog ;
+    dct:title "Catalogo dati.cultura - Progetto SHELL"@it ;
+    dct:description "Catalogo dei dati aperti prodotti nell'ambito del sotto-progetto dati.cultura del progetto SHELL, relativi alle opere d'arte conservate in istituti e luoghi della cultura italiani."@it ;
+    dct:publisher <http://www.progetto-shell.org/resource/Amministrazione/m_bac> ;
+    dct:modified "2026-08-25"^^xsd:date ;
+    dct:issued "2026-08-25"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> ;
+    dcat:dataset <http://www.progetto-shell.org/resource/Dataset/opere-arte-m_bac> .
+
+
+#    Dataset
+
+<http://www.progetto-shell.org/resource/Dataset/opere-arte-m_bac>
+    a dcatapit:Dataset, dcat:Dataset ;
+    dct:identifier "m_bac:D.1" ;
+    dct:title "Opere d'arte conservate in istituti e luoghi della cultura"@it ;
+    dct:description "Dataset delle opere d'arte (dipinti) conservate presso istituti e luoghi della cultura italiani, con indicazione dell'istituto ospitante e del luogo geografico di riferimento. Pubblicato in formato CSV e come Linked Open Data (RDF/Turtle) secondo l'ontologia del progetto SHELL."@it ;
+    dct:modified "2026-08-25"^^xsd:date ;
+    dct:issued "2026-08-25"^^xsd:date ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+    dct:rightsHolder <http://www.progetto-shell.org/resource/Amministrazione/m_bac> ;
+    dct:publisher <http://www.progetto-shell.org/resource/Amministrazione/m_bac> ;
+    dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/UNKNOWN> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+    owl:versionInfo "1.0" ;
+    dcat:keyword "dipinti"@it , "beni culturali"@it , "patrimonio culturale"@it , "linked open data"@it ;
+    dcat:contactPoint <http://www.progetto-shell.org/resource/PuntoContatto/dati-cultura-shell> ;
+    dct:subject <http://eurovoc.europa.eu/2122> ; 
+    dct:conformsTo <http://www.progetto-shell.org/resource/Standard/ontologia-dati-cultura> ;
+    dct:spatial <http://publications.europa.eu/resource/authority/country/ITA> ;
+    dcat:distribution <http://www.progetto-shell.org/resource/Distribuzione/opere-arte-csv> , <http://www.progetto-shell.org/resource/Distribuzione/opere-arte-ttl> .
+
+
+
+#    Distribuzioni
+
+<http://www.progetto-shell.org/resource/Distribuzione/opere-arte-csv>
+    a dcatapit:Distribution, dcat:Distribution ;
+    dct:title "Opere d'arte - distribuzione CSV"@it ;
+    dct:description "Dataset delle opere d'arte in formato tabellare CSV, con codifica UTF-8."@it ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ; 
+    dcat:accessURL   <http://www.progetto-shell.org/dataset/opere-arte> ;
+    dcat:downloadURL <http://www.progetto-shell.org/dataset/opere-arte/opere_arte.csv> .
+
+<http://www.progetto-shell.org/resource/Distribuzione/opere-arte-ttl>
+    a dcatapit:Distribution, dcat:Distribution ;
+    dct:title "Opere d'arte - distribuzione RDF/Turtle (Linked Open Data)"@it ;
+    dct:description "Dataset delle opere d'arte serializzato come Linked Open Data in RDF/Turtle, conforme all'ontologia del progetto."@it ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ; 
+    dcat:accessURL   <http://www.progetto-shell.org/dataset/opere-arte> ;
+    dcat:downloadURL <http://www.progetto-shell.org/dataset/opere-arte/opere_arte.ttl> .
+
+
+
+#    #Titolare / Editore (Ministero della Cultura, IPA: m_bac)
+
+<http://www.progetto-shell.org/resource/Amministrazione/m_bac>
+    a dcatapit:Agent, foaf:Agent ;
+    dct:identifier "m_bac" ;
+    foaf:name "Ministero della Cultura"@it .
+
+
+
+#    #Punto di contatto del dataset
+
+<http://www.progetto-shell.org/resource/PuntoContatto/dati-cultura-shell>
+    a dcatapit:Organization, vcard:Organization, vcard:Kind ;
+    vcard:fn "Ufficio dati aperti"@it ;
+    vcard:hasEmail <mailto:dati@cultura.gov.it> .
+
+
+
+#    #Licenza
+
+<https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>
+    a dcatapit:LicenseDocument, dct:LicenseDocument ;
+    dct:type <http://purl.org/adms/licencetype/Attribution> ;
+    foaf:name "Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)"@it ;
+    owl:versionInfo "4.0" .
+
+
+
+#    #Standard di conformità (la nostra ontologia)
+
+<http://www.progetto-shell.org/resource/Standard/ontologia-dati-cultura>
+    a dcatapit:Standard, dct:Standard ;
+    dct:identifier "http://www.progetto-shell.org/dati-cultura-ontology" ;
+    dct:title "Ontologia opere d'arte - progetto dati.cultura (SHELL)"@it ;
+    dct:description "Ontologia OWL che definisce le classi e le proprietà a cui il dataset è conforme (Artwork, Painting, CulturalInstituteOrSite, Place, TimeReference e sottoclassi)."@it .
