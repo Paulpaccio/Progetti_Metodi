@@ -10,6 +10,55 @@ Riepilogo delle attività e dei deliverable prodotti durante il quarto e ultimo 
 
 ## Struttura della cartella
 
+worklog/sprint_4/
+├── README.md  ← questo file
+├── retrospettiva.md
+├── Mockup/
+│   ├── Contatti/
+│   |    ├── README.md
+│   |    └── Immagini/
+│   |        ├── Contatti_Vuoto.png 
+│   |        ├── Contatti_Tipologia_Dropdown.png
+│   |        ├── Contatti_Persona_Elena_Form.png 
+│   |        └── Contatti_Persona_Elena_Conferma.png 
+│   ├── Dataset/
+│   │   ├── README.md
+│   │   └── Immagini/
+│   |        ├── Dataset_head.png 
+│   |        └── Dataset_foot.png
+│   ├── Licenza_Footer/
+│   │   ├── README.md
+│   │   └── Immagini/
+│   │        └── Footer_V2.png
+│   ├── Metadati Dataset/
+│   │   ├── README.md 
+│   │   └── Immagini/ 
+│   │        ├── Dataset_scheda_1.png 
+│   │        ├── Dataset_scheda_2.png 
+│   │        └── Dataset_scheda_3.png 
+│   └── Privacy/
+│       ├── DirittiInteressato/
+│       |   ├── README.md 
+│       |   └── Immagini/
+|       |         └── 09-diritti-interessato.png
+|       ├── GestioneSegnalazioni/     
+│       |   ├── README.md 
+│       |   └── Immagini/
+|       |         └── /gestione-segnalazioni-contatti.png
+│       └── TempiConservazione/
+│           ├── README.md 
+│           └── Immagini/
+|                 └── 07-tempi-conservazione.png
+└── Privacy/
+        ├── BaseGiuridica_Messaggi/
+        |   ├── README.md 
+        |   └── /nota-motivazione-base-giuridica-2.md
+        ├── /Cancellazione_Dati/   
+        |   ├── README.md 
+        |   └── procedura-interna-cancellazione-dati.md
+        └── TempiConservazione/
+            └── README.md 
+
 
 
 
