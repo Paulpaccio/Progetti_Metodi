@@ -10,12 +10,34 @@ Repository: [Paulpaccio/Progetti_Metodi — sprint_2](https://github.com/Paulpac
 
 ```
 worklog/sprint_2/
-├── README.md                      ← questo file
+├── README.md                    ← questo file
+├── retrospettiva.md
 ├── Mockup/
 │   ├── ilProgetto/
+|   |    ├── README.md
+|   |    └── Immagini/
+|   |        ├── ilProgetto_head.png        
+|   |        └── ilProgetto_LOD.png        
 │   ├── DomandeFrequenti/
+|   |    ├── README.md                 
+|   |    └── Immagini/
+|   |         ├── ilProgetto_QnA.png    
+|   |         └── ilProgetto_QnAext.png  
 │   ├── Privacy/
+|   |    ├── README.md                                   
+|   |    └── Immagini/
+|   |         ├── 05-privacy-dati-navigazione.png        
+|   |         ├── 05.1-privacy-dati-navigazione.png       
+|   |         └── 05.2-privacy-dati-navigazione.png       
 │   └── Semantica/
+|       ├── README.md                                 
+|       └── Immagini/
+|            ├── 06-ontologia-intro.png                
+|            ├── 07-ontologia-esplora.png                
+|            ├── 07.1-ontologia-esplora-legenda.png     
+|            ├── 08-ontologia-domande.png               
+|            ├── 08.1-ontologia-domande.png               
+|            └── 09-ontologia-scarica.png                
 ├── Ontologia/
 │   ├── README.md
 │   ├── RDF_OpereArte_Onto-PM.ttl
@@ -24,8 +46,13 @@ worklog/sprint_2/
 │   ├── README.md
 │   └── nota-motivazione-base-giuridica.md
 └── SPARQL/
-    ├── README.md
+    ├── README.md                         
     └── Immagini/
+        ├── query1-.png                   
+        ├── query1-risultati.png          
+        ├── query2-.png                  
+        ├── query2-risultati.png          
+        └── esempio-risposta-api.srx       
 ```
 
 ---
@@ -104,6 +131,25 @@ Deliverable prodotti: nota di motivazione della base giuridica (`nota-motivazion
 
 ---
 
+## 3. Copertura dei test di accettazione
+
+| US | Requisito | Dove è soddisfatto |
+|---|---|---|
+| US1.9 | La pagina spiega l'iniziativa del catalogo | Sezione "Il progetto" del mockup |
+| US1.9 | Rimando alla sezione Dataset | Presente nel mockup |
+| US1.10 | Sezione FAQ con domande a scomparsa | Mockup con tre domande in blocchi a scomparsa |
+| US1.3 | Diagramma con cinque classi | Sezione "Esplora il modello" |
+| US1.3 | Legenda delle classi | Presente nel mockup |
+| US1.3 | Almeno tre competency question | Sezione "A quali domande risponde" |
+| US1.3 | Link per scaricare il modello TTL | Sezione "Scarica il modello" |
+| US2.3 | Mapping YARRRML | `mapping.yarrrml.yml` |
+| US2.3 | File RDF/Turtle | `RDF_OpereArte_Onto-PM.ttl` |
+| US1.4 | Endpoint SPARQL attivo | Repository GraphDB `dati-cultura` |
+| US1.4 | Due query di esempio pronte | Sezione 2.5, Query 1 e 2 |
+| US2.5 | Informativa privacy per il tracciamento del sito | Mockup a tre schermate |
+| US2.5 | Base giuridica motivata | `nota-motivazione-base-giuridica.md` |
+
+---
 ## Nota
 
 I dati e l'endpoint prodotti in **US2.3** e **US1.4** sono la base su cui si costruisce lo Sprint 3. Le User Story US1.5 (Download dei dati) e US2.6 (Esposizione di API e SPARQL endpoint) riusano lo stesso dataset e la stessa versione dei file RDF/Turtle e CSV.
