@@ -10,6 +10,7 @@ Riepilogo delle attività e dei deliverable prodotti durante il quarto e ultimo 
 
 ## Struttura della cartella
 
+```
 worklog/sprint_4/
 ├── README.md  ← questo file
 ├── retrospettiva.md
@@ -59,9 +60,7 @@ worklog/sprint_4/
         └── TempiConservazione/
             └── README.md 
 
-
-
-
+```
 ---
 
 ## 1. Stato delle User Story (board Trello/Jira)
