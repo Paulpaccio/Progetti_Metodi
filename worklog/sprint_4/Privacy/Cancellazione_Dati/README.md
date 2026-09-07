@@ -53,4 +53,6 @@ La sezione "Diritti dell'interessato" è presente nell'informativa privacy compl
 
 ## 5. Relazione con altre User Story
 
-Questa cartella fa parte della stessa epic di **US2.5**, **US3.1**, **US3.2** e **US3.3** (Privacy e protezione dei dati personali, PM-6).
+## 5. Relazione con altre User Story
+
+Il mockup grafico di questa stessa sezione si trova in [`Mockup/Privacy/DirittiInteressato/`](../../Mockup/Privacy/DirittiInteressato/). Questa cartella fa parte della stessa epic di **US2.5**, **US3.1**, **US3.2** e **US3.3** (Privacy e protezione dei dati personali, PM-6).
