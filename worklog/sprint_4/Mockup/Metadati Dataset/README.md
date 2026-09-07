@@ -7,12 +7,12 @@ Questa cartella documenta il mockup della scheda di dettaglio del dataset, reali
 ## Contenuto della cartella
 
 ```
-Mockup/Dataset/
+Mockup/MetadatiDataset/
 ├── README.md                          ← questo file
 └── Immagini/
-    ├── Dataset_Scheda_1.png           ← intestazione e metadati principali
-    ├── Dataset_Scheda_2.png           ← metadati aggiuntivi e nota sul profilo DCAT-AP_IT
-    └── Dataset_Scheda_3.png           ← le due distribuzioni (CSV, RDF/Turtle)
+    ├── Dataset_scheda_1.png           ← intestazione e metadati principali
+    ├── Dataset_scheda_2.png           ← metadati aggiuntivi e nota sul profilo DCAT-AP_IT
+    └── Dataset_scheda_3.png           ← le due distribuzioni (CSV, RDF/Turtle)
 ```
 
 ---
@@ -29,7 +29,21 @@ La sezione risponde a tre esigenze distinte di chi consulta il catalogo: **citar
 
 ---
 
-## 2. Copertura del test di accettazione
+## 2. Le distribuzioni
+
+![Le due distribuzioni](Immagini/Dataset_scheda_3.png) 
+
+Lo stesso dataset è offerto in CSV e in RDF/Turtle. La distinzione riflette il modello DCAT: un unico dataset e due **distribuzioni**, che ne sono l'incarnazione in formati diversi. È per questa ragione che licenza e formato sono dichiarati sulla distribuzione e non sul dataset, mentre titolare, tema e date valgono per entrambe.
+
+---
+
+## 3. Riuso
+
+La pagina non produce nuovi metadati, visualizza il deliverable di **US2.4**. Le entità `Dataset`, `Distribution`, `Publisher` e `License` erano già state introdotte nel modello concettuale con **US1.2**, quindi questa user story non estende ulteriormente il modello.
+
+---
+
+## 4. Copertura del test di accettazione
 
 | Campo richiesto | Proprietà DCAT | Valore |
 |---|---|---|
@@ -40,20 +54,6 @@ La sezione risponde a tre esigenze distinte di chi consulta il catalogo: **citar
 | Data di aggiornamento | `dct:modified` | 25/08/2026 |
 
 La tabella riporta inoltre tema, parole chiave, data di rilascio e lingua del dataset, anch'essi presenti nel file dei metadati. Ogni valore visualizzato corrisponde a una tripla di [`metadati_dcat-ap_it.ttl`](../../Metadati/metadati_dcat-ap_it.ttl), la pagina non introduce informazioni che il metadato non contenga.
-
----
-
-## 3. Le distribuzioni
-
-![Le due distribuzioni](Immagini/Dataset_scheda_3.png) 
-
-Lo stesso dataset è offerto in CSV e in RDF/Turtle. La distinzione riflette il modello DCAT: un unico dataset e due **distribuzioni**, che ne sono l'incarnazione in formati diversi. È per questa ragione che licenza e formato sono dichiarati sulla distribuzione e non sul dataset, mentre titolare, tema e date valgono per entrambe.
-
----
-
-## 4. Riuso
-
-La pagina non produce nuovi metadati, visualizza il deliverable di **US2.4**. Le entità `Dataset`, `Distribution`, `Publisher` e `License` erano già state introdotte nel modello concettuale con **US1.2**, quindi questa user story non estende ulteriormente il modello.
 
 ---
 
