@@ -44,6 +44,8 @@ sprint_1/
 
 ---
 
+## 1. Stato delle User Story (board Trello/Jira)
+
 | US | Titolo | Ticket | Priorità | Stima (SP) | Stato |
 |---|---|---|---|---|---|
 | US1.1 | Home page chiara | PM-10 | Medium | 5.0 | Approvato |
