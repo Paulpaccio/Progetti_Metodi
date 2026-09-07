@@ -1,0 +1,166 @@
+@prefix : <http://www.progetto-shell.org/dati-cultura-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.progetto-shell.org/dati-cultura-ontology> a owl:Ontology ;
+    rdfs:label "Ontologia opere d'arte - progetto dati.cultura (SHELL)"@it ;
+    rdfs:comment "Competency questions di riferimento: (1) Quali sono il codice, il titolo e la descrizione di un'opera d'arte, indipendentemente dal suo tipo specifico? (2) In quale istituto è conservato il dipinto X? (3) In quale luogo geografico si trova l'istituto X? (4) Qual è il tempo di riferimento del dipinto X (data esatta, intervallo o secolo)? (5) Quali opere d'arte hanno un riferimento temporale in un dato intervallo di anni, indipendentemente dal formato originale? (6) Quali dipinti sono conservati nell'istituto X? (7) Quali istituti si trovano nel luogo geografico X? (8) Dato un codice, esiste un'unica opera d'arte/istituto/luogo a cui corrisponde? (9) Per un'opera datata a un secolo, è nota anche la parte del secolo (Inizio, Metà, Fine)? (10) Quali sono il codice, il titolo e la descrizione di un'opera d'arte, indipendentemente dal suo tipo specifico?"@it .
+
+
+#################################################################
+#    Classi
+#################################################################
+
+:Artwork a owl:Class ;
+    rdfs:label "Art work"@en ;
+    rdfs:comment "Generica opera d'arte."@it .
+
+:Painting a owl:Class ;
+    rdfs:subClassOf :Artwork ;
+    rdfs:label "Painting"@en ;
+    rdfs:comment "Un dipinto, tipo specifico di opera d'arte."@it .
+
+:CulturalInstituteOrSite a owl:Class ;
+    rdfs:label "Cultural institute or site"@en ;
+    rdfs:comment "Luogo o istituto della cultura che ospita opere d'arte."@it .
+
+:Place a owl:Class ;
+    rdfs:label "Place"@en ;
+    rdfs:comment "Luogo geografico (es. comune), identificato dal codice ISTAT."@it .
+
+:TimeReference a owl:Class ;
+    rdfs:label "Time reference"@en ;
+    rdfs:comment "Riferimento temporale astratto di un'opera d'arte: può essere una data esatta, un intervallo di anni o un riferimento a un secolo."@it .
+
+:ExactDate a owl:Class ;
+    rdfs:subClassOf :TimeReference ;
+    rdfs:label "Exact date"@en .
+
+:YearRange a owl:Class ;
+    rdfs:subClassOf :TimeReference ;
+    rdfs:label "Year range"@en .
+
+:CenturyReference a owl:Class ;
+    rdfs:subClassOf :TimeReference ;
+    rdfs:label "Century reference"@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( :ExactDate :YearRange :CenturyReference ) .
+
+
+#################################################################
+#    Object properties
+#################################################################
+
+:isHostedIn a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :Painting ;
+    rdfs:range :CulturalInstituteOrSite ;
+    owl:inverseOf :hosts ;
+    rdfs:label "is hosted in"@en ;
+    rdfs:comment "Collega un dipinto all'istituto/luogo della cultura che lo ospita."@it .
+
+:hosts a owl:ObjectProperty ;
+    rdfs:domain :CulturalInstituteOrSite ;
+    rdfs:range :Painting ;
+    rdfs:label "hosts"@en .
+
+:isLocatedIn a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :CulturalInstituteOrSite ;
+    rdfs:range :Place ;
+    owl:inverseOf :hasCulturalInstitute ;
+    rdfs:label "is located in"@en ;
+    rdfs:comment "Collega l'istituto/luogo della cultura al luogo geografico in cui si trova."@it .
+
+:hasCulturalInstitute a owl:ObjectProperty ;
+    rdfs:domain :Place ;
+    rdfs:range :CulturalInstituteOrSite ;
+    rdfs:label "has cultural institute"@en .
+
+:hasTimeReference a owl:ObjectProperty, owl:FunctionalProperty ;
+    rdfs:domain :Painting ;
+    rdfs:range :TimeReference ;
+    owl:inverseOf :isTimeReferenceOf ;
+    rdfs:label "has time reference"@en ;
+    rdfs:comment "Collega il dipinto al suo riferimento temporale."@it .
+
+:isTimeReferenceOf a owl:ObjectProperty ;
+    rdfs:domain :TimeReference ;
+    rdfs:range :Painting ;
+    rdfs:label "is time reference of"@en ;
+    rdfs:comment "Non dichiarata funzionale: uno stesso riferimento temporale è condiviso da più dipinti quando il valore coincide (stesso URI riusato), coerentemente con la cardinalità (0,N) nello schema E-R."@it .
+
+
+#################################################################
+#    Datatype properties
+#################################################################
+
+:hasCode a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :Artwork :CulturalInstituteOrSite ) ] ;
+    rdfs:range xsd:string ;
+    rdfs:label "has code"@en ;
+    rdfs:comment "Codice identificativo univoco (dell'opera d'arte o dell'istituto)."@it .
+
+:hasTitle a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :Artwork ;
+    rdfs:range xsd:string ;
+    rdfs:label "has title"@en .
+
+:hasDescription a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :Artwork ;
+    rdfs:range xsd:string ;
+    rdfs:label "has description"@en .
+
+:hasName a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( :CulturalInstituteOrSite :Place ) ] ;
+    rdfs:range xsd:string ;
+    rdfs:label "has name"@en .
+
+:hasISTATCode a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :Place ;
+    rdfs:range xsd:string ;
+    rdfs:label "has ISTAT code"@en .
+
+:hasEDTFValue a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :TimeReference ;
+    rdfs:range xsd:string ;
+    rdfs:label "has EDTF value"@en ;
+    rdfs:comment "Valore temporale espresso secondo lo standard EDTF (Extended Date/Time Format) della Library of Congress. La proprietà utilizza xsd:string poiché EDTF non dispone di un datatype nativo in RDF/OWL. Il contenuto deve rispettare le specifiche EDTF per rappresentare date singole, intervalli, secoli o valori temporali incerti."@it .
+
+:hasDate a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :ExactDate ;
+    rdfs:range xsd:date ;
+    rdfs:label "has date"@en .
+
+:hasStartYear a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :YearRange ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "has start year"@en .
+
+:hasEndYear a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :YearRange ;
+    rdfs:range xsd:gYear ;
+    rdfs:label "has end year"@en .
+
+:hasCenturyNumber a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :CenturyReference ;
+    rdfs:range xsd:integer ;
+    rdfs:label "has century number"@en .
+
+:hasCenturyPart a owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:domain :CenturyReference ;
+    rdfs:range [ a rdfs:Datatype ;
+                 owl:oneOf ( "Inizio" "Metà" "Fine" "Prima metà" "Seconda metà" ) ] ;
+    rdfs:label "has century part"@en ;
+    rdfs:comment "I valori ammessi sono esattamente le cinque stringhe elencate. Il confronto in OWL è case-sensitive: chi produce i dati deve usare esattamente questa forma (solo l'iniziale del valore maiuscola, es. \"Prima metà\"), senza variazioni di maiuscole/minuscole."@it .
+
+
+#################################################################
+#    Chiavi (identificazione univoca)
+#################################################################
+
+:Artwork owl:hasKey ( :hasCode ) .
+
+:CulturalInstituteOrSite owl:hasKey ( :hasCode ) .
+
+:Place owl:hasKey ( :hasISTATCode ) .
