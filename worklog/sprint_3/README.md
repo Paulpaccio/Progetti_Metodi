@@ -56,8 +56,7 @@ worklog/sprint_3/
 
 **Totale story point dello sprint: 23.0**
 
-> **Nota**: **US1.11** (PM-40, Formato visibile nella sezione dataset) è formalmente assegnata a questo sprint su Jira, ma non compare nella tabella: il suo mockup non è stato prodotto qui, riusa lo screenshot già realizzato per **US1.2** (Ricerca dataset nel catalogo), documentato nello **Sprint 4**. Vedi [`worklog/sprint_4/Mockup/Dataset`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Mockup/Dataset).
-
+> **Nota**: **US1.11** (PM-40, Formato visibile nella sezione dataset) è formalmente assegnata a questo sprint su Jira, ma il suo mockup non è stato prodotto qui. Riusa lo screenshot già realizzato per **US1.2** (Ricerca dataset nel catalogo), documentato nello **Sprint 4**. Vedi [`worklog/sprint_4/Mockup/Dataset`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Mockup/Dataset).
 ---
 
 ## 2. Deliverable prodotti
