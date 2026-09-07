@@ -7,7 +7,7 @@
 | Paolo | Magnanelli |  1231652  | Product Owner |
 | Ilaria | Iudice | 0000000 | Scrum Master |
 | Asia  | Milan | 1217247 | Data Expert |
-| Alessia | Bolzicco | 0000000 | Privacy Expert |
+| Alessia | Bolzicco | 1230260 | Privacy Expert |
 
 ---
 
