@@ -67,6 +67,7 @@ worklog/sprint_4/
 | US1.2 | Ricerca dataset nel catalogo | PM-43 | High | 2.0 | Approvato |
 | US1.6 | Consultare i metadati per citazione, riuso e affidabilità | PM-27 | High | 4.0 | Approvato |
 | US1.7 | Invio di un messaggio dalla pagina contatti | PM-29 | Low | 4.0 | Approvato |
+| US1.11* | Formato visibile nella sezione dataset | PM-40 | Lowest | --- | Approvato |
 | US1.12 | Licenza utilizzata nel footer | PM-42 | Low | 1.0 | Approvato |
 | US1.13 | Lasciare un commento | PM-44 | Lowest | 1.0 | Approvato |
 | US3.1 | Tempi di conservazione dei messaggi | PM-26 | Medium | 4.0 | Approvato |
@@ -74,6 +75,9 @@ worklog/sprint_4/
 | US3.4 | Cancellazione su richiesta dell'interessato | PM-19 | High | 6.0 | Approvato |
 
 **Totale story point dello sprint: 26.0**
+
+> **Nota**: US1.11 è formalmente assegnata a **Sprint 3** su Jira (PM-40), non a questo sprint. Compare in questa tabella solo perché il suo test di accettazione è soddisfatto dallo stesso mockup di US1.2, prodotto in questo sprint. 
+
 
 ---
 
@@ -144,10 +148,10 @@ Il documento `procedura-interna-cancellazione-dati.md` è un **documento interno
 
 Deliverable: sezione nell'informativa completa, procedura interna (`procedura-interna-cancellazione-dati.md`) e mockup `09-diritti-interessato.png`.
 
-### 2.6 US1.2 — Ricerca dataset nel catalogo
+### 2.6 US1.2 e US1.11 — Ricerca dataset nel catalogo e formato visibile
 Cartella: [`worklog/sprint_4/Mockup/Dataset`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Mockup/Dataset)
 
-Mockup della pagina Dataset del catalogo, in due schermate: pannello *Cerca tra dataset* con ricerca per titolo e per parola chiave, selettore *Ordina per* e filtri per categorie (Temi, Cataloghi, Categorie HVD); elenco delle schede dataset con titolo, descrizione, badge dei formati disponibili, ente pubblicatore, data di ultima modifica, tema e tag; paginazione e footer.
+Mockup della pagina Dataset del catalogo, in due schermate, che copre insieme due User Story: **US1.2** (pannello *Cerca tra dataset* con ricerca per titolo e per parola chiave, selettore *Ordina per* e filtri per categorie: Temi, Cataloghi, Categorie HVD; elenco delle schede dataset con titolo, descrizione, ente pubblicatore, data di ultima modifica, tema e tag; paginazione e footer) e **US1.11** (i badge dei formati disponibili su ogni scheda dataset, CSV/XML/XLS/XSD/JSON, che rendono visibile il formato senza dover aprire il dataset).
 
 ### 2.7 US1.12 e US1.13 — Licenza nel footer e banner commenti
 Cartella: [`worklog/sprint_4/Mockup/Licenza_Footer`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Mockup/Licenza_Footer)
