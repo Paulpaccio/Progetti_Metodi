@@ -7,11 +7,11 @@ Questa cartella documenta il mockup della pagina "Dataset" del catalogo, realizz
 ## Contenuto della cartella
 
 ```
-Mockup/Catalogo/
+Mockup/Dataset/
 ├── README.md                      ← questo file
 └── Immagini/
-    ├── Ricerca_Dataset_1.png      ← intestazione, barra di ricerca e risultati
-    └── Ricerca_Dataset_2.png      ← filtri per categoria e paginazione
+    ├── Dataset_head.png      ← intestazione, barra di ricerca e risultati
+    └── Dataset_foot.png      ← filtri per categoria e paginazione
 ```
 
 ---
