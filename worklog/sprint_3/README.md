@@ -12,21 +12,31 @@ Repository: [Paulpaccio/Progetti_Metodi — sprint_3](https://github.com/Paulpac
 
 ```
 worklog/sprint_3/
-├── README.md                        ← questo file
-├── retrospettiva.md
+├── README.md ← questo file
+├── retrospettiva.md 
 ├── Metadati/
-│   ├── README.md
-│   └── metadati_dcat-ap_it.ttl
+│ ├── README.md
+│ └── metadati_dcat-ap_it.ttl 
 ├── Mockup/
 │   ├── API_SPARQL/
 │   │   ├── README.md
 │   │   └── Immagini/
+│   |       ├── API_SPARQL_.png 
+│   |       ├── API_SPARQL_Query_1.png
+│   |       ├── API_SPARQL_Query_2.png 
+│   |       └── API_SPARQL_Metodi.png 
 │   ├── Privacy/
-│   │   ├── README.md
-│   │   └── Immagini/
+│   │    ├── README.md
+│   │    └── Immagini/
+│   │        └── 06-privacy-destinatari-dati.png 
 │   └── Scarica_dati/
-│       ├── README.md
-│       └── Immagini/
+│        ├── README.md
+│        └── Immagini/
+│             ├── Scarica_dati_.png 
+│             ├── Scarica_dati_CSV_1.png
+│             ├── Scarica_dati_CSV_2.png 
+│             ├── Scarica_dati_RDF_1.png 
+│             └── Scarica_dati_RDF_2.png 
 └── Privacy/
     ├── README.md
     └── sezione-destinatari-dati.md
