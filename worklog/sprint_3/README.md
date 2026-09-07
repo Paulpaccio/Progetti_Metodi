@@ -49,11 +49,14 @@ worklog/sprint_3/
 | US | Titolo | Ticket | Priorità | Stima (SP) | Stato |
 |---|---|---|---|---|---|
 | US1.5 | Download dei dati | PM-23 | High | 6.0 | Approvato |
+| US1.11 | Formato visibile nella sezione dataset | PM-40 | Lowest | *N/D* | Approvato |
 | US2.4 | Metadatazione DCAT-AP_IT | PM-25 | Highest | 7.0 | Approvato |
 | US2.6 | Esposizione di API e SPARQL endpoint | PM-31 | Medium | 6.0 | Approvato |
 | US3.3 | Destinatari e accesso ai messaggi | PM-17 | Medium | 4.0 | Approvato |
 
 **Totale story point dello sprint: 23.0**
+
+> **Nota**: **US1.11** (PM-40, Formato visibile nella sezione dataset) è formalmente assegnata a questo sprint su Jira, ma non compare nella tabella: il suo mockup non è stato prodotto qui, riusa lo screenshot già realizzato per **US1.2** (Ricerca dataset nel catalogo), documentato nello **Sprint 4**. Vedi [`worklog/sprint_4/Mockup/Dataset`](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_4/Mockup/Dataset).
 
 ---
 
