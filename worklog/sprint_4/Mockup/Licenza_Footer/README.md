@@ -22,10 +22,12 @@ Mockup/Licenza_Footer/
 Il footer è organizzato in quattro colonne: 
 - contatti istituzionali (logo, indirizzo, email, PEC),
 - **Link utili** (amministrazione trasparente, privacy, note legali, accessibilità),
-- una colonna dedicata alla **licenza** con il simbolo CC BY 4.0, la dicitura "i contenuti del sito sono rilasciati con licenza CC-BY 4.0" e il rimando alla pagina interna "Licenze e condizioni d'uso" per le eventuali eccezioni, e
+- una colonna dedicata alla **licenza** con il simbolo CC BY 4.0, la dicitura "i contenuti del sito sono rilasciati con licenza CC-BY 4.0" e il rimando alla pagina interna "Licenze e condizioni d'uso" per le eventuali eccezioni, 
 - i collegamenti social.
 
 In cima al footer è presente anche una fascia con l'invito a segnalare difficoltà o suggerimenti.
+
+> **Che cos'è la licenza CC BY 4.0**: è una licenza aperta che permette a chiunque di usare, copiare, modificare e persino vendere questi dati, anche per scopi commerciali. L'unica condizione è citare la fonte (il Ministero della Cultura). È lo standard consigliato per i dati della Pubblica Amministrazione italiana, ed è la stessa licenza già dichiarata nei metadati DCAT-AP_IT.
 
 > Rispetto al footer di **US1.8** (Sprint 1), questa versione ("V2") aggiunge proprio la colonna della licenza che prima assente.
 
