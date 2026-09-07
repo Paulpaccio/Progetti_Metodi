@@ -2,7 +2,9 @@
 
 Riepilogo delle attività e dei deliverable prodotti durante il secondo sprint del progetto **SHELL**, sotto-progetto **dati.cultura**, relativo al rifacimento del catalogo open data del Ministero della Cultura ([dati.cultura.gov.it](https://dati.cultura.gov.it/)), realizzato nell'ambito del corso *Metodi informatici per la trasformazione digitale* (a.a. 2025/2026).
 
-Repository: [Paulpaccio/Progetti_Metodi — sprint_2](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_2)
+**Repository**: [Paulpaccio/Progetti_Metodi — sprint_2](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/worklog/sprint_2)
+
+**Periodo:** 24 agosto – 28 agosto.
 
 ---
 
