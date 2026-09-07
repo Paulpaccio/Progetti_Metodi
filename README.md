@@ -5,7 +5,7 @@
 | Nome |   Cognome   | Matricola | Ruolo Principale |
 |-------|------------|-----------|------------------|
 | Paolo | Magnanelli |  1231652  | Product Owner |
-| Ilaria | Iudice | 0000000 | Scrum Master |
+| Ilaria | Iudice | 1217167 | Scrum Master |
 | Asia  | Milan | 1217247 | Data Expert |
 | Alessia | Bolzicco | 1230260 | Privacy Expert |
 
