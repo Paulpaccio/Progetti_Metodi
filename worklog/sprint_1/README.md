@@ -2,7 +2,9 @@
 
 Riepilogo delle attività e dei deliverable prodotti durante il primo sprint del progetto **SHELL**, sotto-progetto **dati.cultura**, relativo al rifacimento del catalogo open data del Ministero della Cultura ([dati.cultura.gov.it](https://dati.cultura.gov.it/)), realizzato nell'ambito del corso *Metodi informatici per la trasformazione digitale* (a.a. 2025/2026).
 
-Repository: [Paulpaccio/Progetti_Metodi — sprint_1](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/sprint_1)
+**Repository**: [Paulpaccio/Progetti_Metodi — sprint_1](https://github.com/Paulpaccio/Progetti_Metodi/tree/main/sprint_1)
+
+**Periodo:** 20 agosto – 24 agosto
 
 ---
 
@@ -42,14 +44,14 @@ sprint_1/
 
 ---
 
-## 1. Stato delle User Story (board Trello/Jira)
-
 | US | Titolo | Ticket | Priorità | Stima (SP) | Stato |
 |---|---|---|---|---|---|
-| US1.1 | Home page chiara | PM-10 | Medium | *N/D* | Approvato |
-| US1.8 | Informazioni utili e immediate (footer) | PM-30 | Low | *N/D* | Approvato |
-| US2.1 | Produzione dati in CSV | PM-9 | High | *N/D* | Approvato |
-| US2.2 | Creazione dell'ontologia delle opere d'arte | PM-16 | Highest | *N/D* | Approvato |
+| US1.1 | Home page chiara | PM-10 | Medium | 5.0 | Approvato |
+| US1.8 | Informazioni utili e immediate (footer) | PM-30 | Low | 2.0 | Approvato |
+| US2.1 | Produzione dati in CSV | PM-9 | High | 4.0 | Approvato |
+| US2.2 | Creazione dell'ontologia delle opere d'arte | PM-16 | Highest | 10.0 | Approvato |
+
+**Totale story point dello sprint: 21.0**
 
 ---
 
