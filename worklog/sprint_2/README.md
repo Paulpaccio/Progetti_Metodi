@@ -59,15 +59,16 @@ worklog/sprint_2/
 
 ## 1. Stato delle User Story (board Trello/Jira)
 
-| US | Titolo | Priorità | Stato |
-|---|---|---|---|
-| US1.9 | Il progetto dati.cultura.gov.it | Low | Approvato |
-| US1.10 | Sezione FAQ (domande frequenti) | Lowest | Approvato |
-| US1.3 | Consultare il modello semantico | Low | Approvato |
-| US2.3 | Trasformazione CSV → RDF/Turtle con YARRRML | Highest | Approvato |
-| US1.4 | Accesso ai dati via API/SPARQL con esempi pronti | High | Approvato |
-| US2.5 | Informativa privacy: tracciamento del sito | High | Approvato |
+| US | Titolo | Ticket | Priorità | Stima (SP) | Stato |
+|---|---|---|---|---|---|
+| US1.9 | Il progetto dati.cultura.gov.it | PM-37 | Low | N/A | Approvato |
+| US1.10 | Sezione FAQ (domande frequenti) | PM-38 | Lowest | N/A | Approvato |
+| US1.3 | Consultare il modello semantico | PM-18 | Low | 4.0 | Approvato |
+| US2.3 | Trasformazione CSV → RDF/Turtle con YARRRML | PM-20 | Highest | 10.0 | Approvato |
+| US1.4 | Accesso ai dati via API/SPARQL con esempi pronti | PM-21 | High | 4.0 | Approvato |
+| US2.5 | Informativa privacy: tracciamento del sito | PM-28 | High | 6.0 | Approvato |
 
+**Totale story point dello sprint: 24.0**
 ---
 
 ## 2. Deliverable prodotti
